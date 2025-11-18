@@ -7,17 +7,17 @@
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
     <meta name="theme-color" content="#e2e5eb" />
-    <title>LINE Courses｜高雄建築師公會課程快覽</title>
+    <title>高雄建築師公會公告快覽</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="top-bar shell">
       <div class="top-bar__search">
-        <label class="sr-only" for="search">搜尋課程或連結</label>
+        <label class="sr-only" for="search">搜尋主旨或附件</label>
         <input
           id="search"
           type="search"
-          placeholder="搜尋課程或連結"
+          placeholder="搜尋主旨或附件"
           autocomplete="off"
         />
       </div>
@@ -26,12 +26,10 @@
     <header class="hero">
       <div class="shell hero__inner">
         <div class="hero__lede">
-          <p class="hero__eyebrow">
-            <span class="hero__eyebrow-abbr">LINE</span>課程快訊
-          </p>
-          <h1 class="hero__title">專業進修懶人包</h1>
+          <p class="hero__eyebrow"><span class="hero__eyebrow-abbr">KAA</span>高雄建築師公會</p>
+          <h1 class="hero__title">最新消息</h1>
           <p class="hero__description">
-            即時掌握高雄建築師公會的最新課程、講座與報名連結，手機與平板皆可瀏覽。
+            掌握高雄建築師公會最新公告，手機與平板皆可輕鬆瀏覽。
           </p>
           <div class="hero__actions">
             <a
@@ -40,7 +38,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              前往課程列表
+              前往公會網站
             </a>
           </div>
         </div>
@@ -48,38 +46,38 @@
     </header>
 
     <main class="shell flow">
-      <section class="controls" aria-label="課程篩選與排序">
+      <section class="controls" aria-label="篩選與排序">
         <fieldset class="status-group">
-          <legend class="field-label">顯示課程狀態</legend>
+          <legend class="field-label">顯示截止狀態</legend>
           <label class="status-option">
             <input type="checkbox" name="statusFilter" value="due-soon" checked />
-            <span>即將開課</span>
+            <span>即將截止</span>
           </label>
           <label class="status-option">
             <input type="checkbox" name="statusFilter" value="active" checked />
-            <span>尚未開課</span>
+            <span>截止未到</span>
           </label>
           <label class="status-option">
             <input type="checkbox" name="statusFilter" value="expired" />
-            <span>已結束</span>
+            <span>已截止</span>
           </label>
         </fieldset>
 
         <div class="field-group">
           <label class="field-label" for="sortSelect">排序方式</label>
           <select id="sortSelect">
-            <option value="deadline-asc">開課日最接近</option>
-            <option value="deadline-desc">開課日晚到早</option>
-            <option value="date-desc">最新課程在前</option>
-            <option value="date-asc">最早課程在前</option>
+            <option value="deadline-asc">截止日期最接近</option>
+            <option value="deadline-desc">截止日期最晚</option>
+            <option value="date-desc">最新公告在前</option>
+            <option value="date-asc">最早公告在前</option>
           </select>
         </div>
 
-        <button id="clearFilters" type="button">重設篩選</button>
+        <button id="clearFilters" type="button">重設條件</button>
       </section>
 
       <section aria-live="polite">
-        <div id="status" class="status">課程載入中...</div>
+        <div id="status" class="status">資料載入中...</div>
         <div id="documentList" class="document-grid" hidden></div>
       </section>
     </main>
