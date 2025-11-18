@@ -38,6 +38,10 @@ LINE 風格的高雄建築師公會專業課程快覽。專案會抓取 [news_cl
 3. 在 GitHub 介面啟用 Pages（Branch: `main`, Folder: `/root`），即可得到公開網址。
 4. 未來若要更新資料，重新執行 `npm run fetch` 並推送新的 `courses.json`。
 
+### 自動更新
+
+此專案已建立 GitHub Actions（`.github/workflows/update-courses.yml`），每小時自動執行 `npm run fetch` 並把新的 `data/courses.json` 推送回 `master`。如需暫停可停用該 workflow，或用 `workflow_dispatch` 立即手動觸發。
+
 ## 檔案結構
 
 - `scripts/fetchCourses.js`：從 KAA 網站抓取課程並輸出 JSON。
