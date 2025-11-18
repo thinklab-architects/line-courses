@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#e2e5eb" />
+    <title>LINE Courses｜高雄建築師公會課程快覽</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="top-bar shell">
+      <div class="top-bar__search">
+        <label class="sr-only" for="search">搜尋課程或連結</label>
+        <input
+          id="search"
+          type="search"
+          placeholder="搜尋課程或連結"
+          autocomplete="off"
+        />
+      </div>
+    </div>
+
+    <header class="hero">
+      <div class="shell hero__inner">
+        <div class="hero__lede">
+          <p class="hero__eyebrow">
+            <span class="hero__eyebrow-abbr">LINE</span>課程快訊
+          </p>
+          <h1 class="hero__title">專業進修懶人包</h1>
+          <p class="hero__description">
+            即時掌握高雄建築師公會的最新課程、講座與報名連結，手機與平板皆可瀏覽。
+          </p>
+          <div class="hero__actions">
+            <a
+              class="hero__link"
+              href="https://www.kaa.org.tw/news_class_list.php"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              前往課程列表
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="shell flow">
+      <section class="controls" aria-label="課程篩選與排序">
+        <fieldset class="status-group">
+          <legend class="field-label">顯示課程狀態</legend>
+          <label class="status-option">
+            <input type="checkbox" name="statusFilter" value="due-soon" checked />
+            <span>即將開課</span>
+          </label>
+          <label class="status-option">
+            <input type="checkbox" name="statusFilter" value="active" checked />
+            <span>尚未開課</span>
+          </label>
+          <label class="status-option">
+            <input type="checkbox" name="statusFilter" value="expired" />
+            <span>已結束</span>
+          </label>
+        </fieldset>
+
+        <div class="field-group">
+          <label class="field-label" for="sortSelect">排序方式</label>
+          <select id="sortSelect">
+            <option value="deadline-asc">開課日最接近</option>
+            <option value="deadline-desc">開課日晚到早</option>
+            <option value="date-desc">最新課程在前</option>
+            <option value="date-asc">最早課程在前</option>
+          </select>
+        </div>
+
+        <button id="clearFilters" type="button">重設篩選</button>
+      </section>
+
+      <section aria-live="polite">
+        <div id="status" class="status">課程載入中...</div>
+        <div id="documentList" class="document-grid" hidden></div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <div class="shell footer-inner">
+        <p class="footer-copy">
+          資料來源：
+          <a
+            href="https://www.kaa.org.tw/news_class_list.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >高雄建築師公會－專業課程</a>
+          ｜GitHub Pages 自動佈署。
+        </p>
+        <p id="updatedAt" class="footer-updated" aria-live="polite">
+          課程更新：尚未同步
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
