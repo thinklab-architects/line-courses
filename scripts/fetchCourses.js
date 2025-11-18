@@ -6,6 +6,7 @@ import { load } from 'cheerio';
 const BASE_URL = 'https://www.kaa.org.tw/news_class_list.php';
 const MAX_PAGES = 200;
 const WAIT_MS = 300;
+const DETAIL_WAIT_MS = 400;
 const HEADERS = {
   'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
@@ -112,6 +113,76 @@ function parseCourses(html) {
   return courses;
 }
 
+function parseDateValue(value) {
+  if (!value) return null;
+  const normalized = value.replace(/\//g, '-').trim();
+  const iso =
+    normalized.length === 10 ? `${normalized}T23:59:59+08:00` : normalized;
+  const timestamp = Date.parse(iso);
+  return Number.isNaN(timestamp) ? null : new Date(timestamp);
+}
+
+function isExpired(deadline) {
+  const date = parseDateValue(deadline);
+  if (!date) {
+    return false;
+  }
+  return date.getTime() < Date.now();
+}
+
+async function fetchCourseCredits(detailUrl) {
+  if (!detailUrl) return null;
+
+  const response = await fetch(detailUrl, { headers: HEADERS });
+  if (!response.ok) {
+    throw new Error(`Failed to fetch detail: ${response.status} ${response.statusText}`);
+  }
+
+  const buffer = Buffer.from(await response.arrayBuffer());
+  const html = buffer.toString('utf8');
+  const $ = load(html);
+
+  const creditContainer = $('td')
+    .map((_, el) => $(el).text().replace(/\s+/g, ' ').trim())
+    .get()
+    .find((text) => /總\s*分|總\s*學分/.test(text));
+
+  if (!creditContainer) {
+    return null;
+  }
+
+  const match = creditContainer.match(/總(?:學)?分[：:\s]*([0-9]+(?:\.[0-9]+)?)/);
+  if (!match) {
+    return null;
+  }
+
+  return Number.parseFloat(match[1]);
+}
+
+async function enrichCoursesWithCredits(courses) {
+  const enriched = [];
+
+  for (const course of courses) {
+    const courseCopy = { ...course, credits: null };
+    const shouldFetchCredits =
+      course.detailUrl && !isExpired(course.deadline);
+
+    if (shouldFetchCredits) {
+      try {
+        courseCopy.credits = await fetchCourseCredits(course.detailUrl);
+      } catch (error) {
+        console.warn(`Failed to fetch credits for ${course.title}: ${error.message}`);
+      }
+
+      await sleep(DETAIL_WAIT_MS);
+    }
+
+    enriched.push(courseCopy);
+  }
+
+  return enriched;
+}
+
 async function fetchPage(page) {
   const url = new URL(BASE_URL);
   if (page > 1) {
@@ -181,7 +252,8 @@ async function main() {
       throw new Error('未擷取到任何課程資料，請稍後再試。');
     }
 
-    const outPath = await writeOutput(courses);
+    const enriched = await enrichCoursesWithCredits(courses);
+    const outPath = await writeOutput(enriched);
     console.log(`Saved ${courses.length} courses to ${outPath}`);
   } catch (error) {
     console.error(error);

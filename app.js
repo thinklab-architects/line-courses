@@ -16,6 +16,7 @@ const state = {
     search: '',
     sort: 'deadline-asc',
     statuses: new Set(DEFAULT_STATUS_VALUES),
+    hasCreditsOnly: false,
   },
 };
 
@@ -28,6 +29,7 @@ const elements = {
   sortSelect: document.getElementById('sortSelect'),
   clearFilters: document.getElementById('clearFilters'),
   updatedAt: document.getElementById('updatedAt'),
+  creditFilter: document.getElementById('creditFilter'),
 };
 
 const statusCheckboxes = Array.from(
@@ -43,6 +45,13 @@ function syncStatusCheckboxes() {
 function resetStatusFilters() {
   state.filters.statuses = new Set(DEFAULT_STATUS_VALUES);
   syncStatusCheckboxes();
+}
+
+function syncCreditFilter() {
+  if (!elements.creditFilter) return;
+  const pressed = Boolean(state.filters.hasCreditsOnly);
+  elements.creditFilter.classList.toggle('filter-chip--active', pressed);
+  elements.creditFilter.setAttribute('aria-pressed', String(pressed));
 }
 
 statusCheckboxes.forEach((checkbox) => {
@@ -65,6 +74,15 @@ statusCheckboxes.forEach((checkbox) => {
 });
 
 syncStatusCheckboxes();
+syncCreditFilter();
+
+if (elements.creditFilter) {
+  elements.creditFilter.addEventListener('click', () => {
+    state.filters.hasCreditsOnly = !state.filters.hasCreditsOnly;
+    syncCreditFilter();
+    render();
+  });
+}
 
 elements.searchInput.addEventListener('input', (event) => {
   state.filters.search = event.target.value.trim();
@@ -94,14 +112,17 @@ elements.clearFilters.addEventListener('click', () => {
   const hasStatusChange =
     state.filters.statuses.size !== DEFAULT_STATUS_VALUES.length ||
     DEFAULT_STATUS_VALUES.some((value) => !state.filters.statuses.has(value));
+  const hasCreditFilter = state.filters.hasCreditsOnly;
 
-  if (!hasSearch && !hasSort && !hasStatusChange) {
+  if (!hasSearch && !hasSort && !hasStatusChange && !hasCreditFilter) {
     return;
   }
 
   state.filters.search = '';
   state.filters.sort = 'deadline-asc';
   resetStatusFilters();
+  state.filters.hasCreditsOnly = false;
+  syncCreditFilter();
 
   elements.searchInput.value = '';
   elements.sortSelect.value = 'deadline-asc';
@@ -302,6 +323,10 @@ function applyFilters() {
     );
   }
 
+  if (state.filters.hasCreditsOnly) {
+    results = results.filter((doc) => Number(doc.credits ?? 0) > 0);
+  }
+
   return sortDocuments(results);
 }
 
@@ -403,6 +428,29 @@ function createDocumentCard(doc) {
 
   header.appendChild(issued);
 
+  let creditHighlight = null;
+  const creditValue = Number(doc.credits ?? 0);
+  if (
+    Number.isFinite(creditValue) &&
+    creditValue > 0 &&
+    doc.deadlineCategory !== 'expired'
+  ) {
+    creditHighlight = document.createElement('div');
+    creditHighlight.className = 'credit-highlight';
+
+    const creditLabel = document.createElement('span');
+    creditLabel.className = 'credit-highlight__label';
+    creditLabel.textContent = '課程總分';
+
+    const creditValueEl = document.createElement('strong');
+    creditValueEl.className = 'credit-highlight__value';
+    creditValueEl.textContent = Number.isInteger(creditValue)
+      ? `${creditValue} 分`
+      : `${creditValue.toFixed(1)} 分`;
+
+    creditHighlight.append(creditLabel, creditValueEl);
+  }
+
   const title = document.createElement('h2');
   title.className = 'document-card__title';
   const titleText =
@@ -437,7 +485,13 @@ function createDocumentCard(doc) {
     createMetaItem('課程連結', createLinkList(doc)),
   );
 
-  card.append(header, title, metaList);
+  const sections = [header];
+  if (creditHighlight) {
+    sections.push(creditHighlight);
+  }
+  sections.push(title, metaList);
+
+  card.append(...sections);
   return card;
 }
 
