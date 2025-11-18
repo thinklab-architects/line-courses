@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "fetch": "node ./scripts/fetchCourses.js",
-    "start": "npx serve ./public"
+    "start": "npx serve ."
   },
   "keywords": [
     "kaa",

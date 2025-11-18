@@ -159,7 +159,7 @@ async function scrapeCourses() {
 }
 
 async function writeOutput(courses) {
-  const outDir = path.resolve(__dirname, '../public/data');
+  const outDir = path.resolve(__dirname, '../data');
   await fs.mkdir(outDir, { recursive: true });
 
   const outPath = path.join(outDir, 'courses.json');

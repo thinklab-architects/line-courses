@@ -4,7 +4,7 @@ LINE 風格的高雄建築師公會專業課程快覽。專案會抓取 [news_cl
 
 ## 功能簡述
 
-- 每日抓取課程列表與報名連結，輸出成 `public/data/courses.json`。
+- 每日抓取課程列表與報名連結，輸出成 `data/courses.json`。
 - 依照開課日期自動分類「尚未開課 / 即將開課 / 已結束」。
 - 支援關鍵字搜尋、開課狀態切換與排序。
 - 純前端版面，可直接部署在 GitHub Pages。
@@ -17,7 +17,7 @@ LINE 風格的高雄建築師公會專業課程快覽。專案會抓取 [news_cl
    npm install
    ```
 
-2. 擷取課程資料（會覆寫 `public/data/courses.json`）
+2. 擷取課程資料（會覆寫 `data/courses.json`）
 
    ```bash
    npm run fetch
@@ -29,7 +29,7 @@ LINE 風格的高雄建築師公會專業課程快覽。專案會抓取 [news_cl
    npm run start
    ```
 
-   預設使用 `npx serve` 啟動簡單的靜態伺服器。
+   預設使用 `npx serve .` 啟動簡單的靜態伺服器。
 
 ## 佈署到 GitHub Pages
 
@@ -41,7 +41,8 @@ LINE 風格的高雄建築師公會專業課程快覽。專案會抓取 [news_cl
 ## 檔案結構
 
 - `scripts/fetchCourses.js`：從 KAA 網站抓取課程並輸出 JSON。
-- `public/`：靜態網站（`index.html`, `app.js`, `styles.css`, `data/courses.json`）。
+- `index.html`, `app.js`, `styles.css`：LINE 風格前端頁面。
+- `data/courses.json`：最新課程資料。
 - `package.json`：包含腳本與依賴設定。
 
 ## 注意事項
