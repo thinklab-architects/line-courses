@@ -1,8 +1,56 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "2025-11-18T17:54:07.786Z",
-  "total": 1037,
+  "updatedAt": "2025-11-19T09:09:27.491Z",
+  "total": 1040,
   "courses": [
+    {
+      "title": "115大東講堂「藝術入村-''元創眷永''在馬祖新村」",
+      "date": "2026-04-18",
+      "deadline": "2026-04-18",
+      "time": "下午2：00~5：00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1236"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1236",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 20
+    },
+    {
+      "title": "115大東講堂「攝影 建築 生活 意象」",
+      "date": "2026-03-07",
+      "deadline": "2026-03-07",
+      "time": "下午2：00~5：00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1235"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1235",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 20
+    },
+    {
+      "title": "115大東講堂「與時光交會：空間博物館」",
+      "date": "2026-01-17",
+      "deadline": "2026-01-17",
+      "time": "下午2：00~5：00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1234"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1234",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 20
+    },
     {
       "title": "114大東講堂「永續行動中-綠色建築環境之建構與案例分享」",
       "date": "2025-12-13",
@@ -132,7 +180,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1225",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": null
     },
     {
@@ -148,7 +196,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1223",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": null
     },
     {
@@ -164,7 +212,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1210",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": null
     },
     {
@@ -292,7 +340,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1209",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null
     },
     {
@@ -308,7 +356,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1221",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null
     },
     {
@@ -324,7 +372,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1208",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null
     },
     {
@@ -452,7 +500,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1215",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null
     },
     {
@@ -468,7 +516,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1199",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null
     },
     {
@@ -484,7 +532,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1214",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null
     },
     {
@@ -612,7 +660,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1201",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": 70
     },
     {
@@ -628,7 +676,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1186",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null
     },
     {
@@ -644,7 +692,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1178",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null
     },
     {
@@ -772,7 +820,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1172",
       "registrationUrl": null,
-      "page": 5,
+      "page": 6,
       "credits": null
     },
     {
@@ -788,7 +836,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1175",
       "registrationUrl": null,
-      "page": 5,
+      "page": 6,
       "credits": null
     },
     {
@@ -804,7 +852,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1167",
       "registrationUrl": null,
-      "page": 5,
+      "page": 6,
       "credits": null
     },
     {
@@ -932,7 +980,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1163",
       "registrationUrl": null,
-      "page": 6,
+      "page": 7,
       "credits": null
     },
     {
@@ -948,7 +996,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1150",
       "registrationUrl": null,
-      "page": 6,
+      "page": 7,
       "credits": null
     },
     {
@@ -964,7 +1012,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1162",
       "registrationUrl": null,
-      "page": 6,
+      "page": 7,
       "credits": null
     },
     {
@@ -1092,7 +1140,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1146",
       "registrationUrl": null,
-      "page": 7,
+      "page": 8,
       "credits": null
     },
     {
@@ -1108,7 +1156,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1158",
       "registrationUrl": null,
-      "page": 7,
+      "page": 8,
       "credits": null
     },
     {
@@ -1124,7 +1172,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1161",
       "registrationUrl": null,
-      "page": 7,
+      "page": 8,
       "credits": null
     },
     {
@@ -1252,7 +1300,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1151",
       "registrationUrl": null,
-      "page": 8,
+      "page": 9,
       "credits": null
     },
     {
@@ -1268,7 +1316,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1142",
       "registrationUrl": null,
-      "page": 8,
+      "page": 9,
       "credits": null
     },
     {
@@ -1284,7 +1332,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1152",
       "registrationUrl": null,
-      "page": 8,
+      "page": 9,
       "credits": null
     },
     {
@@ -1412,7 +1460,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1134",
       "registrationUrl": null,
-      "page": 9,
+      "page": 10,
       "credits": null
     },
     {
@@ -1428,7 +1476,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1137",
       "registrationUrl": null,
-      "page": 9,
+      "page": 10,
       "credits": null
     },
     {
@@ -1444,7 +1492,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1139",
       "registrationUrl": null,
-      "page": 9,
+      "page": 10,
       "credits": null
     },
     {
@@ -1572,7 +1620,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1128",
       "registrationUrl": null,
-      "page": 10,
+      "page": 11,
       "credits": 70
     },
     {
@@ -1588,7 +1636,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1129",
       "registrationUrl": null,
-      "page": 10,
+      "page": 11,
       "credits": null
     },
     {
@@ -1604,7 +1652,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1127",
       "registrationUrl": null,
-      "page": 10,
+      "page": 11,
       "credits": null
     },
     {
@@ -1732,7 +1780,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1110",
       "registrationUrl": null,
-      "page": 11,
+      "page": 12,
       "credits": null
     },
     {
@@ -1748,7 +1796,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1096",
       "registrationUrl": null,
-      "page": 11,
+      "page": 12,
       "credits": null
     },
     {
@@ -1764,7 +1812,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1106",
       "registrationUrl": null,
-      "page": 11,
+      "page": 12,
       "credits": null
     },
     {
@@ -1892,7 +1940,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1120",
       "registrationUrl": null,
-      "page": 12,
+      "page": 13,
       "credits": null
     },
     {
@@ -1908,7 +1956,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1098",
       "registrationUrl": null,
-      "page": 12,
+      "page": 13,
       "credits": null
     },
     {
@@ -1924,7 +1972,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1105",
       "registrationUrl": null,
-      "page": 12,
+      "page": 13,
       "credits": null
     },
     {
@@ -2052,7 +2100,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1092",
       "registrationUrl": null,
-      "page": 13,
+      "page": 14,
       "credits": null
     },
     {
@@ -2068,7 +2116,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1086",
       "registrationUrl": null,
-      "page": 13,
+      "page": 14,
       "credits": null
     },
     {
@@ -2084,7 +2132,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1118",
       "registrationUrl": null,
-      "page": 13,
+      "page": 14,
       "credits": null
     },
     {
@@ -2212,7 +2260,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1080",
       "registrationUrl": null,
-      "page": 14,
+      "page": 15,
       "credits": null
     },
     {
@@ -2228,7 +2276,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1076",
       "registrationUrl": null,
-      "page": 14,
+      "page": 15,
       "credits": null
     },
     {
@@ -2244,7 +2292,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1082",
       "registrationUrl": null,
-      "page": 14,
+      "page": 15,
       "credits": null
     },
     {
@@ -2372,7 +2420,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1064",
       "registrationUrl": null,
-      "page": 15,
+      "page": 16,
       "credits": null
     },
     {
@@ -2388,7 +2436,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1071",
       "registrationUrl": null,
-      "page": 15,
+      "page": 16,
       "credits": 30
     },
     {
@@ -2404,7 +2452,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1063",
       "registrationUrl": null,
-      "page": 15,
+      "page": 16,
       "credits": null
     },
     {
@@ -2532,7 +2580,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1054",
       "registrationUrl": null,
-      "page": 16,
+      "page": 17,
       "credits": null
     },
     {
@@ -2548,7 +2596,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1044",
       "registrationUrl": null,
-      "page": 16,
+      "page": 17,
       "credits": null
     },
     {
@@ -2564,7 +2612,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1053",
       "registrationUrl": null,
-      "page": 16,
+      "page": 17,
       "credits": null
     },
     {
@@ -2692,7 +2740,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1042",
       "registrationUrl": null,
-      "page": 17,
+      "page": 18,
       "credits": null
     },
     {
@@ -2708,7 +2756,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1041",
       "registrationUrl": null,
-      "page": 17,
+      "page": 18,
       "credits": null
     },
     {
@@ -2724,7 +2772,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1040",
       "registrationUrl": null,
-      "page": 17,
+      "page": 18,
       "credits": null
     },
     {
@@ -2852,7 +2900,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1027",
       "registrationUrl": null,
-      "page": 18,
+      "page": 19,
       "credits": null
     },
     {
@@ -2868,7 +2916,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1026",
       "registrationUrl": null,
-      "page": 18,
+      "page": 19,
       "credits": null
     },
     {
@@ -2884,7 +2932,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1025",
       "registrationUrl": null,
-      "page": 18,
+      "page": 19,
       "credits": null
     },
     {
@@ -3012,7 +3060,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1033",
       "registrationUrl": null,
-      "page": 19,
+      "page": 20,
       "credits": null
     },
     {
@@ -3028,7 +3076,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1020",
       "registrationUrl": null,
-      "page": 19,
+      "page": 20,
       "credits": null
     },
     {
@@ -3044,7 +3092,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1035",
       "registrationUrl": null,
-      "page": 19,
+      "page": 20,
       "credits": null
     },
     {
@@ -3172,7 +3220,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1007",
       "registrationUrl": null,
-      "page": 20,
+      "page": 21,
       "credits": null
     },
     {
@@ -3188,7 +3236,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1016",
       "registrationUrl": null,
-      "page": 20,
+      "page": 21,
       "credits": null
     },
     {
@@ -3204,7 +3252,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1013",
       "registrationUrl": null,
-      "page": 20,
+      "page": 21,
       "credits": null
     },
     {
@@ -3332,7 +3380,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1003",
       "registrationUrl": null,
-      "page": 21,
+      "page": 22,
       "credits": null
     },
     {
@@ -3348,7 +3396,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1011",
       "registrationUrl": null,
-      "page": 21,
+      "page": 22,
       "credits": null
     },
     {
@@ -3364,7 +3412,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1004",
       "registrationUrl": null,
-      "page": 21,
+      "page": 22,
       "credits": null
     },
     {
@@ -3492,7 +3540,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=986",
       "registrationUrl": null,
-      "page": 22,
+      "page": 23,
       "credits": null
     },
     {
@@ -3508,7 +3556,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=993",
       "registrationUrl": null,
-      "page": 22,
+      "page": 23,
       "credits": null
     },
     {
@@ -3524,7 +3572,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=985",
       "registrationUrl": null,
-      "page": 22,
+      "page": 23,
       "credits": null
     },
     {
@@ -3652,7 +3700,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=977",
       "registrationUrl": null,
-      "page": 23,
+      "page": 24,
       "credits": null
     },
     {
@@ -3668,7 +3716,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=979",
       "registrationUrl": null,
-      "page": 23,
+      "page": 24,
       "credits": null
     },
     {
@@ -3684,7 +3732,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=976",
       "registrationUrl": null,
-      "page": 23,
+      "page": 24,
       "credits": null
     },
     {
@@ -3812,7 +3860,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=975",
       "registrationUrl": null,
-      "page": 24,
+      "page": 25,
       "credits": null
     },
     {
@@ -3828,7 +3876,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=969",
       "registrationUrl": null,
-      "page": 24,
+      "page": 25,
       "credits": null
     },
     {
@@ -3844,7 +3892,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=962",
       "registrationUrl": null,
-      "page": 24,
+      "page": 25,
       "credits": null
     },
     {
@@ -3972,7 +4020,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=955",
       "registrationUrl": null,
-      "page": 25,
+      "page": 26,
       "credits": null
     },
     {
@@ -3988,7 +4036,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=961",
       "registrationUrl": null,
-      "page": 25,
+      "page": 26,
       "credits": null
     },
     {
@@ -4004,7 +4052,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=956",
       "registrationUrl": null,
-      "page": 25,
+      "page": 26,
       "credits": null
     },
     {
@@ -4132,7 +4180,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=989",
       "registrationUrl": null,
-      "page": 26,
+      "page": 27,
       "credits": null
     },
     {
@@ -4148,7 +4196,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=949",
       "registrationUrl": null,
-      "page": 26,
+      "page": 27,
       "credits": null
     },
     {
@@ -4164,7 +4212,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=947",
       "registrationUrl": null,
-      "page": 26,
+      "page": 27,
       "credits": null
     },
     {
@@ -4292,7 +4340,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=933",
       "registrationUrl": null,
-      "page": 27,
+      "page": 28,
       "credits": null
     },
     {
@@ -4308,7 +4356,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=936",
       "registrationUrl": null,
-      "page": 27,
+      "page": 28,
       "credits": null
     },
     {
@@ -4324,7 +4372,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=938",
       "registrationUrl": null,
-      "page": 27,
+      "page": 28,
       "credits": null
     },
     {
@@ -4452,7 +4500,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=923",
       "registrationUrl": null,
-      "page": 28,
+      "page": 29,
       "credits": null
     },
     {
@@ -4468,7 +4516,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=930",
       "registrationUrl": null,
-      "page": 28,
+      "page": 29,
       "credits": null
     },
     {
@@ -4484,7 +4532,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=914",
       "registrationUrl": null,
-      "page": 28,
+      "page": 29,
       "credits": null
     },
     {
@@ -4612,7 +4660,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=912",
       "registrationUrl": null,
-      "page": 29,
+      "page": 30,
       "credits": null
     },
     {
@@ -4628,7 +4676,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=919",
       "registrationUrl": null,
-      "page": 29,
+      "page": 30,
       "credits": null
     },
     {
@@ -4644,7 +4692,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=908",
       "registrationUrl": null,
-      "page": 29,
+      "page": 30,
       "credits": null
     },
     {
@@ -4772,7 +4820,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=889",
       "registrationUrl": null,
-      "page": 30,
+      "page": 31,
       "credits": null
     },
     {
@@ -4788,7 +4836,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=904",
       "registrationUrl": null,
-      "page": 30,
+      "page": 31,
       "credits": null
     },
     {
@@ -4804,7 +4852,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=888",
       "registrationUrl": null,
-      "page": 30,
+      "page": 31,
       "credits": null
     },
     {
@@ -4932,7 +4980,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=891",
       "registrationUrl": null,
-      "page": 31,
+      "page": 32,
       "credits": null
     },
     {
@@ -4948,7 +4996,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=871",
       "registrationUrl": null,
-      "page": 31,
+      "page": 32,
       "credits": null
     },
     {
@@ -4964,7 +5012,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=886",
       "registrationUrl": null,
-      "page": 31,
+      "page": 32,
       "credits": null
     },
     {
@@ -5092,7 +5140,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=882",
       "registrationUrl": null,
-      "page": 32,
+      "page": 33,
       "credits": null
     },
     {
@@ -5108,7 +5156,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=869",
       "registrationUrl": null,
-      "page": 32,
+      "page": 33,
       "credits": null
     },
     {
@@ -5124,7 +5172,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=874",
       "registrationUrl": null,
-      "page": 32,
+      "page": 33,
       "credits": null
     },
     {
@@ -5252,7 +5300,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=861",
       "registrationUrl": null,
-      "page": 33,
+      "page": 34,
       "credits": null
     },
     {
@@ -5268,7 +5316,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=860",
       "registrationUrl": null,
-      "page": 33,
+      "page": 34,
       "credits": null
     },
     {
@@ -5284,7 +5332,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=844",
       "registrationUrl": null,
-      "page": 33,
+      "page": 34,
       "credits": null
     },
     {
@@ -5412,7 +5460,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=848",
       "registrationUrl": null,
-      "page": 34,
+      "page": 35,
       "credits": null
     },
     {
@@ -5428,7 +5476,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=846",
       "registrationUrl": null,
-      "page": 34,
+      "page": 35,
       "credits": null
     },
     {
@@ -5444,7 +5492,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=843",
       "registrationUrl": null,
-      "page": 34,
+      "page": 35,
       "credits": null
     },
     {
@@ -5572,7 +5620,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=840",
       "registrationUrl": null,
-      "page": 35,
+      "page": 36,
       "credits": null
     },
     {
@@ -5588,7 +5636,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=839",
       "registrationUrl": null,
-      "page": 35,
+      "page": 36,
       "credits": null
     },
     {
@@ -5604,7 +5652,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=836",
       "registrationUrl": null,
-      "page": 35,
+      "page": 36,
       "credits": null
     },
     {
@@ -5732,7 +5780,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=835",
       "registrationUrl": null,
-      "page": 36,
+      "page": 37,
       "credits": null
     },
     {
@@ -5748,7 +5796,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=822",
       "registrationUrl": null,
-      "page": 36,
+      "page": 37,
       "credits": null
     },
     {
@@ -5764,7 +5812,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=824",
       "registrationUrl": null,
-      "page": 36,
+      "page": 37,
       "credits": null
     },
     {
@@ -5892,7 +5940,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=817",
       "registrationUrl": null,
-      "page": 37,
+      "page": 38,
       "credits": null
     },
     {
@@ -5908,7 +5956,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=826",
       "registrationUrl": null,
-      "page": 37,
+      "page": 38,
       "credits": null
     },
     {
@@ -5924,7 +5972,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=815",
       "registrationUrl": null,
-      "page": 37,
+      "page": 38,
       "credits": null
     },
     {
@@ -6052,7 +6100,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=773",
       "registrationUrl": null,
-      "page": 38,
+      "page": 39,
       "credits": null
     },
     {
@@ -6068,7 +6116,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=810",
       "registrationUrl": null,
-      "page": 38,
+      "page": 39,
       "credits": null
     },
     {
@@ -6084,7 +6132,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=772",
       "registrationUrl": null,
-      "page": 38,
+      "page": 39,
       "credits": null
     },
     {
@@ -6212,7 +6260,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=776",
       "registrationUrl": null,
-      "page": 39,
+      "page": 40,
       "credits": null
     },
     {
@@ -6228,7 +6276,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=803",
       "registrationUrl": null,
-      "page": 39,
+      "page": 40,
       "credits": null
     },
     {
@@ -6244,7 +6292,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=769",
       "registrationUrl": null,
-      "page": 39,
+      "page": 40,
       "credits": null
     },
     {
@@ -6372,7 +6420,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=765",
       "registrationUrl": null,
-      "page": 40,
+      "page": 41,
       "credits": null
     },
     {
@@ -6388,7 +6436,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=763",
       "registrationUrl": null,
-      "page": 40,
+      "page": 41,
       "credits": null
     },
     {
@@ -6404,7 +6452,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=754",
       "registrationUrl": null,
-      "page": 40,
+      "page": 41,
       "credits": null
     },
     {
@@ -6532,7 +6580,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=753",
       "registrationUrl": null,
-      "page": 41,
+      "page": 42,
       "credits": null
     },
     {
@@ -6548,7 +6596,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=749",
       "registrationUrl": null,
-      "page": 41,
+      "page": 42,
       "credits": null
     },
     {
@@ -6564,7 +6612,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=747",
       "registrationUrl": null,
-      "page": 41,
+      "page": 42,
       "credits": null
     },
     {
@@ -6692,7 +6740,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=736",
       "registrationUrl": null,
-      "page": 42,
+      "page": 43,
       "credits": null
     },
     {
@@ -6708,7 +6756,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=791",
       "registrationUrl": null,
-      "page": 42,
+      "page": 43,
       "credits": null
     },
     {
@@ -6724,7 +6772,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=745",
       "registrationUrl": null,
-      "page": 42,
+      "page": 43,
       "credits": null
     },
     {
@@ -6852,7 +6900,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=786",
       "registrationUrl": null,
-      "page": 43,
+      "page": 44,
       "credits": null
     },
     {
@@ -6868,7 +6916,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=734",
       "registrationUrl": null,
-      "page": 43,
+      "page": 44,
       "credits": null
     },
     {
@@ -6884,7 +6932,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=733",
       "registrationUrl": null,
-      "page": 43,
+      "page": 44,
       "credits": null
     },
     {
@@ -7012,7 +7060,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=715",
       "registrationUrl": null,
-      "page": 44,
+      "page": 45,
       "credits": null
     },
     {
@@ -7028,7 +7076,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=719",
       "registrationUrl": null,
-      "page": 44,
+      "page": 45,
       "credits": null
     },
     {
@@ -7044,7 +7092,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=712",
       "registrationUrl": null,
-      "page": 44,
+      "page": 45,
       "credits": null
     },
     {
@@ -7172,7 +7220,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=702",
       "registrationUrl": null,
-      "page": 45,
+      "page": 46,
       "credits": null
     },
     {
@@ -7188,7 +7236,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=709",
       "registrationUrl": null,
-      "page": 45,
+      "page": 46,
       "credits": null
     },
     {
@@ -7204,7 +7252,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=805",
       "registrationUrl": null,
-      "page": 45,
+      "page": 46,
       "credits": null
     },
     {
@@ -7332,7 +7380,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=707",
       "registrationUrl": null,
-      "page": 46,
+      "page": 47,
       "credits": null
     },
     {
@@ -7348,7 +7396,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=693",
       "registrationUrl": null,
-      "page": 46,
+      "page": 47,
       "credits": null
     },
     {
@@ -7364,7 +7412,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=706",
       "registrationUrl": null,
-      "page": 46,
+      "page": 47,
       "credits": null
     },
     {
@@ -7492,7 +7540,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=686",
       "registrationUrl": null,
-      "page": 47,
+      "page": 48,
       "credits": null
     },
     {
@@ -7508,7 +7556,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=681",
       "registrationUrl": null,
-      "page": 47,
+      "page": 48,
       "credits": null
     },
     {
@@ -7524,7 +7572,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=691",
       "registrationUrl": null,
-      "page": 47,
+      "page": 48,
       "credits": null
     },
     {
@@ -7652,7 +7700,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=682",
       "registrationUrl": null,
-      "page": 48,
+      "page": 49,
       "credits": null
     },
     {
@@ -7668,7 +7716,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=676",
       "registrationUrl": null,
-      "page": 48,
+      "page": 49,
       "credits": null
     },
     {
@@ -7684,7 +7732,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=683",
       "registrationUrl": null,
-      "page": 48,
+      "page": 49,
       "credits": null
     },
     {
@@ -7812,7 +7860,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=673",
       "registrationUrl": null,
-      "page": 49,
+      "page": 50,
       "credits": null
     },
     {
@@ -7828,7 +7876,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=674",
       "registrationUrl": null,
-      "page": 49,
+      "page": 50,
       "credits": null
     },
     {
@@ -7844,7 +7892,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=671",
       "registrationUrl": null,
-      "page": 49,
+      "page": 50,
       "credits": null
     },
     {
@@ -7972,7 +8020,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=652",
       "registrationUrl": null,
-      "page": 50,
+      "page": 51,
       "credits": null
     },
     {
@@ -7988,7 +8036,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=637",
       "registrationUrl": null,
-      "page": 50,
+      "page": 51,
       "credits": null
     },
     {
@@ -8004,7 +8052,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=650",
       "registrationUrl": null,
-      "page": 50,
+      "page": 51,
       "credits": null
     },
     {
@@ -8132,7 +8180,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=630",
       "registrationUrl": null,
-      "page": 51,
+      "page": 52,
       "credits": null
     },
     {
@@ -8148,7 +8196,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=633",
       "registrationUrl": null,
-      "page": 51,
+      "page": 52,
       "credits": null
     },
     {
@@ -8164,7 +8212,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=649",
       "registrationUrl": null,
-      "page": 51,
+      "page": 52,
       "credits": null
     },
     {
@@ -8292,7 +8340,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=634",
       "registrationUrl": null,
-      "page": 52,
+      "page": 53,
       "credits": null
     },
     {
@@ -8308,7 +8356,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=624",
       "registrationUrl": null,
-      "page": 52,
+      "page": 53,
       "credits": null
     },
     {
@@ -8324,7 +8372,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=631",
       "registrationUrl": null,
-      "page": 52,
+      "page": 53,
       "credits": null
     },
     {
@@ -8452,7 +8500,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=619",
       "registrationUrl": null,
-      "page": 53,
+      "page": 54,
       "credits": null
     },
     {
@@ -8468,7 +8516,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=607",
       "registrationUrl": null,
-      "page": 53,
+      "page": 54,
       "credits": null
     },
     {
@@ -8484,7 +8532,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=598",
       "registrationUrl": null,
-      "page": 53,
+      "page": 54,
       "credits": null
     },
     {
@@ -8612,7 +8660,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=609",
       "registrationUrl": null,
-      "page": 54,
+      "page": 55,
       "credits": null
     },
     {
@@ -8628,7 +8676,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=595",
       "registrationUrl": null,
-      "page": 54,
+      "page": 55,
       "credits": null
     },
     {
@@ -8644,7 +8692,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=603",
       "registrationUrl": null,
-      "page": 54,
+      "page": 55,
       "credits": null
     },
     {
@@ -8772,7 +8820,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=591",
       "registrationUrl": null,
-      "page": 55,
+      "page": 56,
       "credits": null
     },
     {
@@ -8788,7 +8836,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=592",
       "registrationUrl": null,
-      "page": 55,
+      "page": 56,
       "credits": null
     },
     {
@@ -8804,7 +8852,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=573",
       "registrationUrl": null,
-      "page": 55,
+      "page": 56,
       "credits": null
     },
     {
@@ -8932,7 +8980,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=590",
       "registrationUrl": null,
-      "page": 56,
+      "page": 57,
       "credits": null
     },
     {
@@ -8948,7 +8996,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=579",
       "registrationUrl": null,
-      "page": 56,
+      "page": 57,
       "credits": null
     },
     {
@@ -8964,7 +9012,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=580",
       "registrationUrl": null,
-      "page": 56,
+      "page": 57,
       "credits": null
     },
     {
@@ -9092,7 +9140,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=577",
       "registrationUrl": null,
-      "page": 57,
+      "page": 58,
       "credits": null
     },
     {
@@ -9108,7 +9156,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=568",
       "registrationUrl": null,
-      "page": 57,
+      "page": 58,
       "credits": null
     },
     {
@@ -9124,7 +9172,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=563",
       "registrationUrl": null,
-      "page": 57,
+      "page": 58,
       "credits": null
     },
     {
@@ -9252,7 +9300,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=550",
       "registrationUrl": null,
-      "page": 58,
+      "page": 59,
       "credits": null
     },
     {
@@ -9268,7 +9316,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=558",
       "registrationUrl": null,
-      "page": 58,
+      "page": 59,
       "credits": null
     },
     {
@@ -9284,7 +9332,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=557",
       "registrationUrl": null,
-      "page": 58,
+      "page": 59,
       "credits": null
     },
     {
@@ -9412,7 +9460,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=542",
       "registrationUrl": null,
-      "page": 59,
+      "page": 60,
       "credits": null
     },
     {
@@ -9428,7 +9476,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=545",
       "registrationUrl": null,
-      "page": 59,
+      "page": 60,
       "credits": null
     },
     {
@@ -9444,7 +9492,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=541",
       "registrationUrl": null,
-      "page": 59,
+      "page": 60,
       "credits": null
     },
     {
@@ -9572,7 +9620,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=531",
       "registrationUrl": null,
-      "page": 60,
+      "page": 61,
       "credits": null
     },
     {
@@ -9588,7 +9636,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=529",
       "registrationUrl": null,
-      "page": 60,
+      "page": 61,
       "credits": null
     },
     {
@@ -9604,7 +9652,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=526",
       "registrationUrl": null,
-      "page": 60,
+      "page": 61,
       "credits": null
     },
     {
@@ -9732,7 +9780,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=800",
       "registrationUrl": null,
-      "page": 61,
+      "page": 62,
       "credits": null
     },
     {
@@ -9748,7 +9796,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=507",
       "registrationUrl": null,
-      "page": 61,
+      "page": 62,
       "credits": null
     },
     {
@@ -9764,7 +9812,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=513",
       "registrationUrl": null,
-      "page": 61,
+      "page": 62,
       "credits": null
     },
     {
@@ -9892,7 +9940,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=518",
       "registrationUrl": null,
-      "page": 62,
+      "page": 63,
       "credits": null
     },
     {
@@ -9908,7 +9956,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=502",
       "registrationUrl": null,
-      "page": 62,
+      "page": 63,
       "credits": null
     },
     {
@@ -9924,7 +9972,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=503",
       "registrationUrl": null,
-      "page": 62,
+      "page": 63,
       "credits": null
     },
     {
@@ -10052,7 +10100,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=504",
       "registrationUrl": null,
-      "page": 63,
+      "page": 64,
       "credits": null
     },
     {
@@ -10068,7 +10116,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=497",
       "registrationUrl": null,
-      "page": 63,
+      "page": 64,
       "credits": null
     },
     {
@@ -10084,7 +10132,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=486",
       "registrationUrl": null,
-      "page": 63,
+      "page": 64,
       "credits": null
     },
     {
@@ -10212,7 +10260,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=468",
       "registrationUrl": null,
-      "page": 64,
+      "page": 65,
       "credits": null
     },
     {
@@ -10228,7 +10276,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=488",
       "registrationUrl": null,
-      "page": 64,
+      "page": 65,
       "credits": null
     },
     {
@@ -10244,7 +10292,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=494",
       "registrationUrl": null,
-      "page": 64,
+      "page": 65,
       "credits": null
     },
     {
@@ -10372,7 +10420,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=453",
       "registrationUrl": null,
-      "page": 65,
+      "page": 66,
       "credits": null
     },
     {
@@ -10388,7 +10436,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=464",
       "registrationUrl": null,
-      "page": 65,
+      "page": 66,
       "credits": null
     },
     {
@@ -10404,7 +10452,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=490",
       "registrationUrl": null,
-      "page": 65,
+      "page": 66,
       "credits": null
     },
     {
@@ -10532,7 +10580,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=478",
       "registrationUrl": null,
-      "page": 66,
+      "page": 67,
       "credits": null
     },
     {
@@ -10548,7 +10596,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=435",
       "registrationUrl": null,
-      "page": 66,
+      "page": 67,
       "credits": null
     },
     {
@@ -10564,7 +10612,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=467",
       "registrationUrl": null,
-      "page": 66,
+      "page": 67,
       "credits": null
     },
     {
@@ -10692,7 +10740,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=452",
       "registrationUrl": null,
-      "page": 67,
+      "page": 68,
       "credits": null
     },
     {
@@ -10708,7 +10756,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=451",
       "registrationUrl": null,
-      "page": 67,
+      "page": 68,
       "credits": null
     },
     {
@@ -10724,7 +10772,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=420",
       "registrationUrl": null,
-      "page": 67,
+      "page": 68,
       "credits": null
     },
     {
@@ -10852,7 +10900,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=426",
       "registrationUrl": null,
-      "page": 68,
+      "page": 69,
       "credits": null
     },
     {
@@ -10868,7 +10916,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=411",
       "registrationUrl": null,
-      "page": 68,
+      "page": 69,
       "credits": null
     },
     {
@@ -10884,7 +10932,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=436",
       "registrationUrl": null,
-      "page": 68,
+      "page": 69,
       "credits": null
     },
     {
@@ -11012,7 +11060,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=407",
       "registrationUrl": null,
-      "page": 69,
+      "page": 70,
       "credits": null
     },
     {
@@ -11028,7 +11076,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=409",
       "registrationUrl": null,
-      "page": 69,
+      "page": 70,
       "credits": null
     },
     {
@@ -11044,7 +11092,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=408",
       "registrationUrl": null,
-      "page": 69,
+      "page": 70,
       "credits": null
     },
     {
@@ -11172,7 +11220,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=441",
       "registrationUrl": null,
-      "page": 70,
+      "page": 71,
       "credits": null
     },
     {
@@ -11188,7 +11236,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=404",
       "registrationUrl": null,
-      "page": 70,
+      "page": 71,
       "credits": null
     },
     {
@@ -11204,7 +11252,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=379",
       "registrationUrl": null,
-      "page": 70,
+      "page": 71,
       "credits": null
     },
     {
@@ -11332,7 +11380,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=403",
       "registrationUrl": null,
-      "page": 71,
+      "page": 72,
       "credits": null
     },
     {
@@ -11348,7 +11396,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=372",
       "registrationUrl": null,
-      "page": 71,
+      "page": 72,
       "credits": null
     },
     {
@@ -11364,7 +11412,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=365",
       "registrationUrl": null,
-      "page": 71,
+      "page": 72,
       "credits": null
     },
     {
@@ -11492,7 +11540,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=371",
       "registrationUrl": null,
-      "page": 72,
+      "page": 73,
       "credits": null
     },
     {
@@ -11508,7 +11556,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=376",
       "registrationUrl": null,
-      "page": 72,
+      "page": 73,
       "credits": null
     },
     {
@@ -11524,7 +11572,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=370",
       "registrationUrl": null,
-      "page": 72,
+      "page": 73,
       "credits": null
     },
     {
@@ -11652,7 +11700,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=366",
       "registrationUrl": null,
-      "page": 73,
+      "page": 74,
       "credits": null
     },
     {
@@ -11668,7 +11716,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=353",
       "registrationUrl": null,
-      "page": 73,
+      "page": 74,
       "credits": null
     },
     {
@@ -11684,7 +11732,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=360",
       "registrationUrl": null,
-      "page": 73,
+      "page": 74,
       "credits": null
     },
     {
@@ -11812,7 +11860,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=358",
       "registrationUrl": null,
-      "page": 74,
+      "page": 75,
       "credits": null
     },
     {
@@ -11828,7 +11876,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=330",
       "registrationUrl": null,
-      "page": 74,
+      "page": 75,
       "credits": null
     },
     {
@@ -11844,7 +11892,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=329",
       "registrationUrl": null,
-      "page": 74,
+      "page": 75,
       "credits": null
     },
     {
@@ -11972,7 +12020,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=323",
       "registrationUrl": null,
-      "page": 75,
+      "page": 76,
       "credits": null
     },
     {
@@ -11988,7 +12036,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=317",
       "registrationUrl": null,
-      "page": 75,
+      "page": 76,
       "credits": null
     },
     {
@@ -12004,7 +12052,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=321",
       "registrationUrl": null,
-      "page": 75,
+      "page": 76,
       "credits": null
     },
     {
@@ -12132,7 +12180,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=303",
       "registrationUrl": null,
-      "page": 76,
+      "page": 77,
       "credits": null
     },
     {
@@ -12148,7 +12196,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=310",
       "registrationUrl": null,
-      "page": 76,
+      "page": 77,
       "credits": null
     },
     {
@@ -12164,7 +12212,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=302",
       "registrationUrl": null,
-      "page": 76,
+      "page": 77,
       "credits": null
     },
     {
@@ -12292,7 +12340,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=335",
       "registrationUrl": null,
-      "page": 77,
+      "page": 78,
       "credits": null
     },
     {
@@ -12308,7 +12356,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=299",
       "registrationUrl": null,
-      "page": 77,
+      "page": 78,
       "credits": null
     },
     {
@@ -12324,7 +12372,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=300",
       "registrationUrl": null,
-      "page": 77,
+      "page": 78,
       "credits": null
     },
     {
@@ -12452,7 +12500,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=314",
       "registrationUrl": null,
-      "page": 78,
+      "page": 79,
       "credits": null
     },
     {
@@ -12468,7 +12516,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=290",
       "registrationUrl": null,
-      "page": 78,
+      "page": 79,
       "credits": null
     },
     {
@@ -12484,7 +12532,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=293",
       "registrationUrl": null,
-      "page": 78,
+      "page": 79,
       "credits": null
     },
     {
@@ -12612,7 +12660,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=284",
       "registrationUrl": null,
-      "page": 79,
+      "page": 80,
       "credits": null
     },
     {
@@ -12628,7 +12676,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=285",
       "registrationUrl": null,
-      "page": 79,
+      "page": 80,
       "credits": null
     },
     {
@@ -12644,7 +12692,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=283",
       "registrationUrl": null,
-      "page": 79,
+      "page": 80,
       "credits": null
     },
     {
@@ -12772,7 +12820,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=275",
       "registrationUrl": null,
-      "page": 80,
+      "page": 81,
       "credits": null
     },
     {
@@ -12788,7 +12836,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=270",
       "registrationUrl": null,
-      "page": 80,
+      "page": 81,
       "credits": null
     },
     {
@@ -12804,7 +12852,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=273",
       "registrationUrl": null,
-      "page": 80,
+      "page": 81,
       "credits": null
     },
     {
@@ -12932,7 +12980,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=287",
       "registrationUrl": null,
-      "page": 81,
+      "page": 82,
       "credits": null
     },
     {
@@ -12948,7 +12996,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=261",
       "registrationUrl": null,
-      "page": 81,
+      "page": 82,
       "credits": null
     },
     {
@@ -12964,7 +13012,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=258",
       "registrationUrl": null,
-      "page": 81,
+      "page": 82,
       "credits": null
     },
     {
@@ -13092,7 +13140,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=339",
       "registrationUrl": null,
-      "page": 82,
+      "page": 83,
       "credits": null
     },
     {
@@ -13108,7 +13156,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=338",
       "registrationUrl": null,
-      "page": 82,
+      "page": 83,
       "credits": null
     },
     {
@@ -13124,7 +13172,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=246",
       "registrationUrl": null,
-      "page": 82,
+      "page": 83,
       "credits": null
     },
     {
@@ -13252,7 +13300,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=241",
       "registrationUrl": null,
-      "page": 83,
+      "page": 84,
       "credits": null
     },
     {
@@ -13268,7 +13316,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=243",
       "registrationUrl": null,
-      "page": 83,
+      "page": 84,
       "credits": null
     },
     {
@@ -13284,7 +13332,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=222",
       "registrationUrl": null,
-      "page": 83,
+      "page": 84,
       "credits": null
     },
     {
@@ -13412,7 +13460,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=233",
       "registrationUrl": null,
-      "page": 84,
+      "page": 85,
       "credits": null
     },
     {
@@ -13428,7 +13476,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=217",
       "registrationUrl": null,
-      "page": 84,
+      "page": 85,
       "credits": null
     },
     {
@@ -13444,7 +13492,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=225",
       "registrationUrl": null,
-      "page": 84,
+      "page": 85,
       "credits": null
     },
     {
@@ -13572,7 +13620,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=207",
       "registrationUrl": null,
-      "page": 85,
+      "page": 86,
       "credits": null
     },
     {
@@ -13588,7 +13636,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=206",
       "registrationUrl": null,
-      "page": 85,
+      "page": 86,
       "credits": null
     },
     {
@@ -13604,7 +13652,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=262",
       "registrationUrl": null,
-      "page": 85,
+      "page": 86,
       "credits": null
     },
     {
@@ -13732,7 +13780,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=227",
       "registrationUrl": null,
-      "page": 86,
+      "page": 87,
       "credits": null
     },
     {
@@ -13748,7 +13796,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=200",
       "registrationUrl": null,
-      "page": 86,
+      "page": 87,
       "credits": null
     },
     {
@@ -13764,7 +13812,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=203",
       "registrationUrl": null,
-      "page": 86,
+      "page": 87,
       "credits": null
     },
     {
@@ -13892,7 +13940,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=195",
       "registrationUrl": null,
-      "page": 87,
+      "page": 88,
       "credits": null
     },
     {
@@ -13908,7 +13956,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=152",
       "registrationUrl": null,
-      "page": 87,
+      "page": 88,
       "credits": null
     },
     {
@@ -13924,7 +13972,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=193",
       "registrationUrl": null,
-      "page": 87,
+      "page": 88,
       "credits": null
     },
     {
@@ -14052,7 +14100,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=149",
       "registrationUrl": null,
-      "page": 88,
+      "page": 89,
       "credits": null
     },
     {
@@ -14068,7 +14116,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=180",
       "registrationUrl": null,
-      "page": 88,
+      "page": 89,
       "credits": null
     },
     {
@@ -14084,7 +14132,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=159",
       "registrationUrl": null,
-      "page": 88,
+      "page": 89,
       "credits": null
     },
     {
@@ -14212,7 +14260,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=162",
       "registrationUrl": null,
-      "page": 89,
+      "page": 90,
       "credits": null
     },
     {
@@ -14228,7 +14276,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=163",
       "registrationUrl": null,
-      "page": 89,
+      "page": 90,
       "credits": null
     },
     {
@@ -14244,7 +14292,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=146",
       "registrationUrl": null,
-      "page": 89,
+      "page": 90,
       "credits": null
     },
     {
@@ -14372,7 +14420,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=140",
       "registrationUrl": null,
-      "page": 90,
+      "page": 91,
       "credits": null
     },
     {
@@ -14388,7 +14436,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=173",
       "registrationUrl": null,
-      "page": 90,
+      "page": 91,
       "credits": null
     },
     {
@@ -14404,7 +14452,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=144",
       "registrationUrl": null,
-      "page": 90,
+      "page": 91,
       "credits": null
     },
     {
@@ -14532,7 +14580,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=172",
       "registrationUrl": null,
-      "page": 91,
+      "page": 92,
       "credits": null
     },
     {
@@ -14548,7 +14596,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=228",
       "registrationUrl": null,
-      "page": 91,
+      "page": 92,
       "credits": null
     },
     {
@@ -14564,7 +14612,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=126",
       "registrationUrl": null,
-      "page": 91,
+      "page": 92,
       "credits": null
     },
     {
@@ -14692,7 +14740,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=132",
       "registrationUrl": null,
-      "page": 92,
+      "page": 93,
       "credits": null
     },
     {
@@ -14708,7 +14756,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=123",
       "registrationUrl": null,
-      "page": 92,
+      "page": 93,
       "credits": null
     },
     {
@@ -14724,7 +14772,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=128",
       "registrationUrl": null,
-      "page": 92,
+      "page": 93,
       "credits": 0
     },
     {
@@ -14852,7 +14900,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=121",
       "registrationUrl": null,
-      "page": 93,
+      "page": 94,
       "credits": null
     },
     {
@@ -14868,7 +14916,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=120",
       "registrationUrl": null,
-      "page": 93,
+      "page": 94,
       "credits": null
     },
     {
@@ -14884,7 +14932,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=169",
       "registrationUrl": null,
-      "page": 93,
+      "page": 94,
       "credits": null
     },
     {
@@ -15012,7 +15060,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=117",
       "registrationUrl": null,
-      "page": 94,
+      "page": 95,
       "credits": null
     },
     {
@@ -15028,7 +15076,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=115",
       "registrationUrl": null,
-      "page": 94,
+      "page": 95,
       "credits": null
     },
     {
@@ -15044,7 +15092,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=108",
       "registrationUrl": null,
-      "page": 94,
+      "page": 95,
       "credits": null
     },
     {
@@ -15172,7 +15220,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=103",
       "registrationUrl": null,
-      "page": 95,
+      "page": 96,
       "credits": null
     },
     {
@@ -15188,7 +15236,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=99",
       "registrationUrl": null,
-      "page": 95,
+      "page": 96,
       "credits": null
     },
     {
@@ -15204,7 +15252,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=102",
       "registrationUrl": null,
-      "page": 95,
+      "page": 96,
       "credits": null
     },
     {
@@ -15332,7 +15380,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=93",
       "registrationUrl": null,
-      "page": 96,
+      "page": 97,
       "credits": null
     },
     {
@@ -15348,7 +15396,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=88",
       "registrationUrl": null,
-      "page": 96,
+      "page": 97,
       "credits": null
     },
     {
@@ -15364,7 +15412,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=87",
       "registrationUrl": null,
-      "page": 96,
+      "page": 97,
       "credits": null
     },
     {
@@ -15492,7 +15540,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=78",
       "registrationUrl": null,
-      "page": 97,
+      "page": 98,
       "credits": null
     },
     {
@@ -15508,7 +15556,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=77",
       "registrationUrl": null,
-      "page": 97,
+      "page": 98,
       "credits": 0
     },
     {
@@ -15524,7 +15572,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=76",
       "registrationUrl": null,
-      "page": 97,
+      "page": 98,
       "credits": null
     },
     {
@@ -15652,7 +15700,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=72",
       "registrationUrl": null,
-      "page": 98,
+      "page": 99,
       "credits": null
     },
     {
@@ -15668,7 +15716,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=65",
       "registrationUrl": null,
-      "page": 98,
+      "page": 99,
       "credits": 0
     },
     {
@@ -15684,7 +15732,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=59",
       "registrationUrl": null,
-      "page": 98,
+      "page": 99,
       "credits": 0
     },
     {
@@ -15812,7 +15860,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=55",
       "registrationUrl": null,
-      "page": 99,
+      "page": 100,
       "credits": 0
     },
     {
@@ -15828,7 +15876,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=57",
       "registrationUrl": null,
-      "page": 99,
+      "page": 100,
       "credits": null
     },
     {
@@ -15844,7 +15892,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=45",
       "registrationUrl": null,
-      "page": 99,
+      "page": 100,
       "credits": 0
     },
     {
@@ -15972,7 +16020,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=44",
       "registrationUrl": null,
-      "page": 100,
+      "page": 101,
       "credits": null
     },
     {
@@ -15988,7 +16036,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=41",
       "registrationUrl": null,
-      "page": 100,
+      "page": 101,
       "credits": null
     },
     {
@@ -16004,7 +16052,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=39",
       "registrationUrl": null,
-      "page": 100,
+      "page": 101,
       "credits": null
     },
     {
@@ -16132,7 +16180,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=32",
       "registrationUrl": null,
-      "page": 101,
+      "page": 102,
       "credits": null
     },
     {
@@ -16148,7 +16196,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=31",
       "registrationUrl": null,
-      "page": 101,
+      "page": 102,
       "credits": null
     },
     {
@@ -16164,7 +16212,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=30",
       "registrationUrl": null,
-      "page": 101,
+      "page": 102,
       "credits": null
     },
     {
@@ -16292,7 +16340,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=21",
       "registrationUrl": null,
-      "page": 102,
+      "page": 103,
       "credits": null
     },
     {
@@ -16308,7 +16356,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=24",
       "registrationUrl": null,
-      "page": 102,
+      "page": 103,
       "credits": null
     },
     {
@@ -16324,7 +16372,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=15",
       "registrationUrl": null,
-      "page": 102,
+      "page": 103,
       "credits": 0
     },
     {
@@ -16452,7 +16500,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=9",
       "registrationUrl": null,
-      "page": 103,
+      "page": 104,
       "credits": 0
     },
     {
@@ -16468,7 +16516,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=8",
       "registrationUrl": null,
-      "page": 103,
+      "page": 104,
       "credits": null
     },
     {
@@ -16484,7 +16532,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=7",
       "registrationUrl": null,
-      "page": 103,
+      "page": 104,
       "credits": null
     },
     {
