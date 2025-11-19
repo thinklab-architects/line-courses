@@ -49,7 +49,9 @@ function resetStatusFilters() {
 
 function syncCreditFilter() {
   if (!elements.creditFilter) return;
-  elements.creditFilter.checked = Boolean(state.filters.hasCreditsOnly);
+  const pressed = Boolean(state.filters.hasCreditsOnly);
+  elements.creditFilter.classList.toggle('filter-chip--active', pressed);
+  elements.creditFilter.setAttribute('aria-pressed', String(pressed));
 }
 
 statusCheckboxes.forEach((checkbox) => {
@@ -75,7 +77,7 @@ syncStatusCheckboxes();
 syncCreditFilter();
 
 if (elements.creditFilter) {
-  elements.creditFilter.addEventListener('change', () => {
+  elements.creditFilter.addEventListener('click', () => {
     state.filters.hasCreditsOnly = !state.filters.hasCreditsOnly;
     syncCreditFilter();
     render();
