@@ -227,31 +227,6 @@ a:focus-visible {
   transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
-.filter-chip {
-  border: none;
-  border-radius: 999px;
-  padding: 0.5rem 1rem;
-  background: rgba(148, 163, 184, 0.18);
-  color: #111111;
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
-  align-self: flex-start;
-}
-
-.filter-chip:hover,
-.filter-chip:focus-visible {
-  background: rgba(148, 163, 184, 0.28);
-  outline: none;
-}
-
-.filter-chip--active {
-  background: rgba(15, 23, 42, 0.95);
-  color: #fff;
-  box-shadow: 0 16px 24px rgba(15, 23, 42, 0.18);
-}
-
 .status-option:hover {
   background: rgba(148, 163, 184, 0.26);
 }
