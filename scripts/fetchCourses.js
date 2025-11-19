@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { load } from 'cheerio';
+import iconv from 'iconv-lite';
 
 const BASE_URL = 'https://www.kaa.org.tw/news_class_list.php';
 const MAX_PAGES = 200;
@@ -139,19 +140,24 @@ async function fetchCourseCredits(detailUrl) {
   }
 
   const buffer = Buffer.from(await response.arrayBuffer());
-  const html = buffer.toString('utf8');
+  let html = buffer.toString('utf8');
+  if (!/\u7e3d/.test(html)) {
+    html = iconv.decode(buffer, 'big5');
+  }
   const $ = load(html);
 
   const creditContainer = $('td')
     .map((_, el) => $(el).text().replace(/\s+/g, ' ').trim())
     .get()
-    .find((text) => /總\s*分|總\s*學分/.test(text));
+    .find((text) => /\u7e3d\s*\u5206|\u7e3d\s*\u5b78\u5206/.test(text));
 
   if (!creditContainer) {
     return null;
   }
 
-  const match = creditContainer.match(/總(?:學)?分[：:\s]*([0-9]+(?:\.[0-9]+)?)/);
+  const match = creditContainer.match(
+    /\u7e3d(?:\u5b78)?\u5206[：:\s]*([0-9]+(?:\.[0-9]+)?)/,
+  );
   if (!match) {
     return null;
   }
