@@ -513,7 +513,9 @@ function render() {
 
 async function loadDocuments() {
   try {
-    const response = await fetch(DATA_URL, { cache: 'no-cache' });
+    const response = await fetch(`${DATA_URL}?_=${Date.now()}`, {
+      cache: 'no-store',
+    });
 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
