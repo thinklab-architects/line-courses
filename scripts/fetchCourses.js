@@ -19,6 +19,48 @@ const __dirname = path.dirname(__filename);
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+async function isPdfUrl(url, timeout = 8000) {
+  if (!url) return false;
+  try {
+    const controller = new AbortController();
+    const id = setTimeout(() => controller.abort(), timeout);
+
+    // try HEAD first
+    const headResp = await fetch(url, { method: 'HEAD', headers: HEADERS, signal: controller.signal });
+    clearTimeout(id);
+    if (headResp && headResp.ok) {
+      const ct = headResp.headers.get('content-type') || '';
+      if (ct.toLowerCase().includes('application/pdf')) return true;
+    }
+  } catch (e) {
+    // ignore and fallback to GET below
+  }
+
+  // fallback: try a small GET (Range) to avoid downloading whole file
+  try {
+    const controller2 = new AbortController();
+    const id2 = setTimeout(() => controller2.abort(), timeout);
+    const getResp = await fetch(url, {
+      method: 'GET',
+      headers: { ...HEADERS, Range: 'bytes=0-1023' },
+      signal: controller2.signal,
+    });
+    clearTimeout(id2);
+    if (getResp && getResp.ok) {
+      const ct2 = getResp.headers.get('content-type') || '';
+      if (ct2.toLowerCase().includes('application/pdf')) return true;
+      // some servers send octet-stream but content looks like PDF (start with %PDF)
+      const buf = Buffer.from(await getResp.arrayBuffer()).slice(0, 16);
+      const head = buf.toString('utf8', 0, Math.min(buf.length, 4));
+      if (head === '%PDF') return true;
+    }
+  } catch (e) {
+    // last resort: treat as not pdf
+  }
+
+  return false;
+}
+
 function cleanText(value) {
   return (
     value
@@ -164,6 +206,7 @@ async function fetchCourseDetail(detailUrl) {
 
   // find downloadable attachments in the detail page
   const attachments = [];
+  const candidates = [];
   // only collect PDF files per request
   const fileExtPattern = /\.pdf(?:[?#].*)?$/i;
 
@@ -219,14 +262,42 @@ async function fetchCourseDetail(detailUrl) {
         if (!href) return;
         const abs = toAbsoluteUrl(href);
         if (!abs) return;
-        if (!fileExtPattern.test(abs)) return;
-        // avoid duplicates
-        if (!attachments.find((x) => x.url === abs)) {
-          const label = cleanText($(anchor).text()) || path.basename(abs);
-          attachments.push({ label, url: abs });
+        const label = cleanText($(anchor).text()) || path.basename(abs);
+        // if url has pdf extension, accept immediately
+        if (fileExtPattern.test(abs)) {
+          if (!attachments.find((x) => x.url === abs)) {
+            attachments.push({ label, url: abs });
+          }
+        } else {
+          // otherwise add to candidates to verify via HEAD/GET
+          candidates.push({ label, url: abs });
         }
       });
     });
+
+  // also scan general anchors that say 檔案下載 or 下載 and treat non-pdf as candidates
+  $('a').each((_, a) => {
+    const t = cleanText($(a).text());
+    const href = $(a).attr('href');
+    if (!href) return;
+    const abs = toAbsoluteUrl(href);
+    if (!abs) return;
+    if (/檔案|下載/.test(t) && !fileExtPattern.test(abs)) {
+      candidates.push({ label: t || path.basename(abs), url: abs });
+    }
+  });
+
+  // verify candidates via HEAD/GET; include those that are confirmed PDFs
+  for (const c of candidates) {
+    try {
+      const ok = await isPdfUrl(c.url);
+      if (ok && !attachments.find((x) => x.url === c.url)) {
+        attachments.push({ label: c.label, url: c.url });
+      }
+    } catch (e) {
+      // ignore per-link errors
+    }
+  }
 
   return { credits, attachments };
 }
