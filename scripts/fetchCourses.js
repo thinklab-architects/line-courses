@@ -166,16 +166,65 @@ async function fetchCourseDetail(detailUrl) {
   const attachments = [];
   const fileExtPattern = /\.(pdf|docx?|xlsx?|pptx?|zip|rar|jpg|jpeg|png|gif)(?:[?#].*)?$/i;
 
+  // primary pass: anchors with explicit file extensions or obvious download hints
   $('a').each((_, anchor) => {
-    const href = $(anchor).attr('href');
-    if (!href) return;
-    const abs = toAbsoluteUrl(href);
-    if (!abs) return;
-    if (fileExtPattern.test(abs)) {
-      const label = cleanText($(anchor).text()) || path.basename(abs);
-      attachments.push({ label, url: abs });
+    const $a = $(anchor);
+    const href = $a.attr('href');
+    const text = cleanText($a.text());
+
+    // try href first
+    if (href) {
+      const abs = toAbsoluteUrl(href);
+      if (abs) {
+        const lower = abs.toLowerCase();
+        const hintInHref = /download|attachment|file|getfile|檔案|下載/.test(lower);
+        if (fileExtPattern.test(abs) || hintInHref || /\b(檔案|下載)\b/.test(text)) {
+          const label = text || path.basename(abs);
+          attachments.push({ label, url: abs });
+          return;
+        }
+      }
+    }
+
+    // fallback: check onclick handlers that may open a file
+    const onclick = $a.attr('onclick') || $a.closest('[onclick]').attr('onclick');
+    if (onclick) {
+      // extract first quoted/http substring
+      const match = onclick.match(/(https?:\\/\\/[^'"\)\s]+)/) || onclick.match(/['\"]([^'\"]+\.(?:pdf|zip|docx?|pptx?|xlsx?)(?:[?#].*)?)['\"]/i);
+      const urlCandidate = match && match[1] ? match[1] : null;
+      if (urlCandidate) {
+        const abs2 = toAbsoluteUrl(urlCandidate);
+        if (abs2) {
+          const label = text || path.basename(abs2);
+          attachments.push({ label, url: abs2 });
+        }
+      }
     }
   });
+
+  // secondary pass: look for nearby blocks labeled "相關檔案" or "檔案下載" and collect anchors inside
+  $('*')
+    .filter((_, el) => /相關檔案|檔案下載|下載檔案/.test(cleanText($(el).text())))
+    .each((_, el) => {
+      const $el = $(el);
+      // find anchors inside the same block or immediate next sibling(s)
+      const localAnchors = $el.find('a').toArray();
+      if (!localAnchors.length) {
+        const nextAnchors = $el.next().find('a').toArray();
+        localAnchors.push(...nextAnchors);
+      }
+      localAnchors.forEach((anchor) => {
+        const href = $(anchor).attr('href');
+        if (!href) return;
+        const abs = toAbsoluteUrl(href);
+        if (!abs) return;
+        // avoid duplicates
+        if (!attachments.find((x) => x.url === abs)) {
+          const label = cleanText($(anchor).text()) || path.basename(abs);
+          attachments.push({ label, url: abs });
+        }
+      });
+    });
 
   return { credits, attachments };
 }
