@@ -386,8 +386,11 @@ function createLinkList(doc) {
     const label = item.label?.trim() || `連結 ${String(index + 1).padStart(2, '0')}`;
 
     const fileExtMatch = url.match(/\.(pdf|jpg|jpeg|png|gif)(?:[?#].*)?$/i);
+    const isPdfMime = item.mime === 'application/pdf';
+    const isDownloadPhp = /download\.php\?b=/i.test(url);
+    const previewable = fileExtMatch || isPdfMime || isDownloadPhp;
 
-    if (fileExtMatch) {
+    if (previewable) {
       const wrapper = document.createElement('div');
       wrapper.className = 'attachment-item';
 
@@ -399,17 +402,20 @@ function createLinkList(doc) {
       a.download = '';
       a.textContent = label;
 
-      const previewBtn = document.createElement('button');
-      previewBtn.className = 'attachment-preview-btn';
-      previewBtn.type = 'button';
-      previewBtn.title = '預覽檔案';
-      previewBtn.innerHTML = '▶';
-      previewBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        openPreview(url, label);
-      });
-
-      wrapper.append(a, previewBtn);
+      if (isPdfMime || /pdf$/i.test(fileExtMatch?.[1] || '') || isDownloadPhp) {
+        const previewBtn = document.createElement('button');
+        previewBtn.className = 'attachment-preview-btn';
+        previewBtn.type = 'button';
+        previewBtn.title = '預覽檔案';
+        previewBtn.innerHTML = '▶';
+        previewBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          openPreview(url, label);
+        });
+        wrapper.append(a, previewBtn);
+      } else {
+        wrapper.append(a);
+      }
       list.appendChild(wrapper);
     } else {
       const link = document.createElement('a');

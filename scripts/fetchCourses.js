@@ -19,24 +19,32 @@ const __dirname = path.dirname(__filename);
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-async function isPdfUrl(url, timeout = 8000) {
-  if (!url) return false;
+async function probeFileUrl(url, timeout = 8000) {
+  const result = { isPdf: false, mime: null };
+  if (!url) return result;
+  const lowerIncludesPdfExt = /\.pdf(?:[?#].*)?$/i.test(url);
   try {
     const controller = new AbortController();
     const id = setTimeout(() => controller.abort(), timeout);
-
-    // try HEAD first
     const headResp = await fetch(url, { method: 'HEAD', headers: HEADERS, signal: controller.signal });
     clearTimeout(id);
     if (headResp && headResp.ok) {
-      const ct = headResp.headers.get('content-type') || '';
-      if (ct.toLowerCase().includes('application/pdf')) return true;
+      const ct = (headResp.headers.get('content-type') || '').toLowerCase();
+      if (ct) result.mime = ct.split(';')[0];
+      if (ct.includes('application/pdf')) {
+        result.isPdf = true;
+        return result;
+      }
+      // if extension suggests PDF but content-type generic
+      if (lowerIncludesPdfExt && /octet-stream|application\/(?:download|force-download)/.test(ct)) {
+        result.isPdf = true;
+        return result;
+      }
     }
-  } catch (e) {
-    // ignore and fallback to GET below
+  } catch {
+    // ignore and fallback
   }
-
-  // fallback: try a small GET (Range) to avoid downloading whole file
+  // fallback small GET to confirm signature
   try {
     const controller2 = new AbortController();
     const id2 = setTimeout(() => controller2.abort(), timeout);
@@ -47,18 +55,24 @@ async function isPdfUrl(url, timeout = 8000) {
     });
     clearTimeout(id2);
     if (getResp && getResp.ok) {
-      const ct2 = getResp.headers.get('content-type') || '';
-      if (ct2.toLowerCase().includes('application/pdf')) return true;
-      // some servers send octet-stream but content looks like PDF (start with %PDF)
-      const buf = Buffer.from(await getResp.arrayBuffer()).slice(0, 16);
-      const head = buf.toString('utf8', 0, Math.min(buf.length, 4));
-      if (head === '%PDF') return true;
+      const ct2 = (getResp.headers.get('content-type') || '').toLowerCase();
+      if (ct2) result.mime = result.mime || ct2.split(';')[0];
+      if (ct2.includes('application/pdf')) {
+        result.isPdf = true;
+        return result;
+      }
+      const buf = Buffer.from(await getResp.arrayBuffer()).slice(0, 8);
+      const sig = buf.toString('utf8', 0, Math.min(buf.length, 4));
+      if (sig === '%PDF') {
+        result.isPdf = true;
+        result.mime = result.mime || 'application/pdf';
+        return result;
+      }
     }
-  } catch (e) {
-    // last resort: treat as not pdf
+  } catch {
+    // ignore
   }
-
-  return false;
+  return result;
 }
 
 function cleanText(value) {
@@ -282,20 +296,28 @@ async function fetchCourseDetail(detailUrl) {
     if (!href) return;
     const abs = toAbsoluteUrl(href);
     if (!abs) return;
-    if (/檔案|下載/.test(t) && !fileExtPattern.test(abs)) {
-      candidates.push({ label: t || path.basename(abs), url: abs });
+    const isDownloadPhp = /download\.php\?b=/i.test(abs);
+    if (/檔案|下載/.test(t)) {
+      if (fileExtPattern.test(abs)) {
+        attachments.push({ label: t || path.basename(abs), url: abs });
+      } else {
+        candidates.push({ label: t || path.basename(abs), url: abs, forceProbe: isDownloadPhp });
+      }
+    } else if (isDownloadPhp) {
+      // even without text match, treat download.php links as candidates
+      candidates.push({ label: t || '檔案下載', url: abs, forceProbe: true });
     }
   });
 
   // verify candidates via HEAD/GET; include those that are confirmed PDFs
   for (const c of candidates) {
     try {
-      const ok = await isPdfUrl(c.url);
-      if (ok && !attachments.find((x) => x.url === c.url)) {
-        attachments.push({ label: c.label, url: c.url });
+      const probe = await probeFileUrl(c.url);
+      if (probe.isPdf && !attachments.find((x) => x.url === c.url)) {
+        attachments.push({ label: c.label, url: c.url, mime: probe.mime || 'application/pdf' });
       }
-    } catch (e) {
-      // ignore per-link errors
+    } catch {
+      // ignore
     }
   }
 
