@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "2025-11-22T18:03:57.951Z",
+  "updatedAt": "2025-11-22T21:24:13.637Z",
   "total": 50,
   "courses": [
     {
@@ -107,7 +107,13 @@
       "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1231&t=course",
       "page": 1,
       "credits": 30,
-      "attachments": []
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1231/2025775079d5e4228f3c86a74af9c5cf",
+          "mime": "application/force-download"
+        }
+      ]
     },
     {
       "title": "法益講座-民事不動產及契約實務案例分享",
@@ -124,7 +130,13 @@
       "registrationUrl": null,
       "page": 1,
       "credits": 30,
-      "attachments": []
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1224/be7cc54598c6c491ab05c49dde4768ff",
+          "mime": "application/force-download"
+        }
+      ]
     },
     {
       "title": "建築師公益諮詢活動 危老重建整合說明課程",
@@ -702,7 +714,13 @@
       "registrationUrl": null,
       "page": 5,
       "credits": 70,
-      "attachments": []
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1201/086df90ea27e428d7fc5e2fd8527e964",
+          "mime": "application/force-download"
+        }
+      ]
     },
     {
       "title": "114大東講堂-「作家吳錦發：史詩[高砂]創作背景」",
