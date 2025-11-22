@@ -131,8 +131,8 @@ function isExpired(deadline) {
   return date.getTime() < Date.now();
 }
 
-async function fetchCourseCredits(detailUrl) {
-  if (!detailUrl) return null;
+async function fetchCourseDetail(detailUrl) {
+  if (!detailUrl) return { credits: null, attachments: [] };
 
   const response = await fetch(detailUrl, { headers: HEADERS });
   if (!response.ok) {
@@ -146,23 +146,38 @@ async function fetchCourseCredits(detailUrl) {
   }
   const $ = load(html);
 
+  // extract credit text from table cells (same logic as before)
   const creditContainer = $('td')
     .map((_, el) => $(el).text().replace(/\s+/g, ' ').trim())
     .get()
     .find((text) => /\u7e3d\s*\u5206|\u7e3d\s*\u5b78\u5206/.test(text));
 
-  if (!creditContainer) {
-    return null;
+  let credits = null;
+  if (creditContainer) {
+    const match = creditContainer.match(
+      /\u7e3d(?:\u5b78)?\u5206[：:\s]*([0-9]+(?:\.[0-9]+)?)/,
+    );
+    if (match) {
+      credits = Number.parseFloat(match[1]);
+    }
   }
 
-  const match = creditContainer.match(
-    /\u7e3d(?:\u5b78)?\u5206[：:\s]*([0-9]+(?:\.[0-9]+)?)/,
-  );
-  if (!match) {
-    return null;
-  }
+  // find downloadable attachments in the detail page
+  const attachments = [];
+  const fileExtPattern = /\.(pdf|docx?|xlsx?|pptx?|zip|rar|jpg|jpeg|png|gif)(?:[?#].*)?$/i;
 
-  return Number.parseFloat(match[1]);
+  $('a').each((_, anchor) => {
+    const href = $(anchor).attr('href');
+    if (!href) return;
+    const abs = toAbsoluteUrl(href);
+    if (!abs) return;
+    if (fileExtPattern.test(abs)) {
+      const label = cleanText($(anchor).text()) || path.basename(abs);
+      attachments.push({ label, url: abs });
+    }
+  });
+
+  return { credits, attachments };
 }
 
 async function enrichCoursesWithCredits(courses) {
@@ -170,17 +185,20 @@ async function enrichCoursesWithCredits(courses) {
 
   for (const course of courses) {
     const courseCopy = { ...course, credits: null };
-    const shouldFetchCredits =
-      course.detailUrl && !isExpired(course.deadline);
+    const shouldFetchDetail = course.detailUrl && !isExpired(course.deadline);
 
-    if (shouldFetchCredits) {
+    if (shouldFetchDetail) {
       try {
-        courseCopy.credits = await fetchCourseCredits(course.detailUrl);
+        const detail = await fetchCourseDetail(course.detailUrl);
+        courseCopy.credits = detail.credits ?? null;
+        courseCopy.attachments = detail.attachments ?? [];
       } catch (error) {
-        console.warn(`Failed to fetch credits for ${course.title}: ${error.message}`);
+        console.warn(`Failed to fetch detail for ${course.title}: ${error.message}`);
       }
 
       await sleep(DETAIL_WAIT_MS);
+    } else {
+      courseCopy.attachments = [];
     }
 
     enriched.push(courseCopy);

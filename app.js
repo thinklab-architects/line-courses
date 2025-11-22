@@ -369,31 +369,118 @@ function createMetaItem(label, content) {
 }
 
 function createLinkList(doc) {
-  const links = doc.links ?? doc.attachments;
+  const list = document.createElement('div');
+  list.className = 'attachment-list';
 
-  if (!links?.length) {
+  const seen = new Set();
+  const allLinks = [];
+  if (Array.isArray(doc.links)) allLinks.push(...doc.links);
+  if (Array.isArray(doc.attachments)) allLinks.push(...doc.attachments);
+
+  allLinks.forEach((item, index) => {
+    if (!item || !item.url) return;
+    if (seen.has(item.url)) return;
+    seen.add(item.url);
+
+    const url = item.url;
+    const label = item.label?.trim() || `連結 ${String(index + 1).padStart(2, '0')}`;
+
+    const fileExtMatch = url.match(/\.(pdf|jpg|jpeg|png|gif)(?:[?#].*)?$/i);
+
+    if (fileExtMatch) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'attachment-item';
+
+      const a = document.createElement('a');
+      a.className = 'attachment-download';
+      a.href = url;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.download = '';
+      a.textContent = label;
+
+      const previewBtn = document.createElement('button');
+      previewBtn.className = 'attachment-preview-btn';
+      previewBtn.type = 'button';
+      previewBtn.title = '預覽檔案';
+      previewBtn.innerHTML = '▶';
+      previewBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openPreview(url, label);
+      });
+
+      wrapper.append(a, previewBtn);
+      list.appendChild(wrapper);
+    } else {
+      const link = document.createElement('a');
+      link.className = 'attachment-link';
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = label;
+      list.appendChild(link);
+    }
+  });
+
+  if (!list.children.length) {
     const empty = document.createElement('span');
     empty.className = 'attachment-empty';
     empty.textContent = '尚未提供連結';
     return empty;
   }
 
-  const list = document.createElement('div');
-  list.className = 'attachment-list';
-
-  links.forEach((item, index) => {
-    const link = document.createElement('a');
-    link.className = 'attachment-link';
-    link.href = item.url;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.textContent =
-      item.label?.trim() || `連結 ${String(index + 1).padStart(2, '0')}`;
-    list.appendChild(link);
-  });
-
   return list;
 }
+
+// Preview modal helpers
+function openPreview(url, title) {
+  const modal = document.getElementById('previewModal');
+  const content = document.getElementById('previewContent');
+  if (!modal || !content) {
+    window.open(url, '_blank', 'noopener');
+    return;
+  }
+
+  content.innerHTML = '';
+
+  const ext = (url.match(/\.([a-z0-9]+)(?:[?#].*)?$/i) || [])[1]?.toLowerCase();
+
+  if (ext === 'pdf') {
+    const iframe = document.createElement('iframe');
+    iframe.src = url;
+    iframe.title = title || '檔案預覽';
+    content.appendChild(iframe);
+  } else if (ext === 'jpg' || ext === 'jpeg' || ext === 'png' || ext === 'gif') {
+    const img = document.createElement('img');
+    img.src = url;
+    img.alt = title || '影像預覽';
+    content.appendChild(img);
+  } else {
+    const msg = document.createElement('div');
+    msg.innerHTML = `<p>此檔案類型無法內嵌預覽。<a href="${url}" target="_blank" rel="noopener noreferrer">在新分頁開啟</a> 或右鍵另存。</p>`;
+    content.appendChild(msg);
+  }
+
+  modal.hidden = false;
+  modal.setAttribute('aria-hidden', 'false');
+}
+
+function closePreview() {
+  const modal = document.getElementById('previewModal');
+  const content = document.getElementById('previewContent');
+  if (!modal || !content) return;
+  content.innerHTML = '';
+  modal.hidden = true;
+  modal.setAttribute('aria-hidden', 'true');
+}
+
+// wire up modal close buttons/backdrop
+document.addEventListener('click', (e) => {
+  const target = e.target;
+  if (target && (target.matches('[data-close]') || target.closest('[data-close]'))) {
+    closePreview();
+  }
+});
 
 function createDocumentCard(doc) {
   const card = document.createElement('article');
