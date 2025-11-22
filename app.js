@@ -438,6 +438,25 @@ function createLinkList(doc) {
   return list;
 }
 
+function getDownloadLink(doc) {
+  const links = Array.isArray(doc.links) ? [...doc.links] : [];
+  if (Array.isArray(doc.attachments)) {
+    links.push(...doc.attachments);
+  }
+
+  if (!links.length) {
+    return null;
+  }
+
+  const pdfLink = links.find(
+    (link) =>
+      typeof link?.url === 'string' &&
+      /\.pdf(?:[?#].*)?$/i.test(link.url),
+  );
+
+  return pdfLink ?? links[0];
+}
+
 // Preview modal helpers
 function openPreview(url, title) {
   const modal = document.getElementById('previewModal');
@@ -613,6 +632,28 @@ function createDocumentCard(doc) {
     sections.push(creditHighlight);
   }
   sections.push(title, metaList);
+
+  const downloadLink = getDownloadLink(doc);
+  const actions = document.createElement('div');
+  actions.className = 'card-actions';
+
+  const downloadButton = document.createElement('a');
+  downloadButton.className = 'download-button';
+
+  if (downloadLink?.url) {
+    downloadButton.href = downloadLink.url;
+    downloadButton.target = '_blank';
+    downloadButton.rel = 'noopener noreferrer';
+    downloadButton.textContent = '下載 PDF';
+    downloadButton.setAttribute('aria-label', '下載課程檔案');
+  } else {
+    downloadButton.textContent = '無可下載檔案';
+    downloadButton.classList.add('download-button--disabled');
+    downloadButton.setAttribute('aria-disabled', 'true');
+  }
+
+  actions.appendChild(downloadButton);
+  sections.push(actions);
 
   card.append(...sections);
   return card;
