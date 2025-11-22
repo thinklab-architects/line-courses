@@ -164,7 +164,8 @@ async function fetchCourseDetail(detailUrl) {
 
   // find downloadable attachments in the detail page
   const attachments = [];
-  const fileExtPattern = /\.(pdf|docx?|xlsx?|pptx?|zip|rar|jpg|jpeg|png|gif)(?:[?#].*)?$/i;
+  // only collect PDF files per request
+  const fileExtPattern = /\.pdf(?:[?#].*)?$/i;
 
   // primary pass: anchors with explicit file extensions or obvious download hints
   $('a').each((_, anchor) => {
@@ -177,8 +178,7 @@ async function fetchCourseDetail(detailUrl) {
       const abs = toAbsoluteUrl(href);
       if (abs) {
         const lower = abs.toLowerCase();
-        const hintInHref = /download|attachment|file|getfile|檔案|下載/.test(lower);
-        if (fileExtPattern.test(abs) || hintInHref || /\b(檔案|下載)\b/.test(text)) {
+        if (fileExtPattern.test(abs)) {
           const label = text || path.basename(abs);
           attachments.push({ label, url: abs });
           return;
@@ -190,8 +190,8 @@ async function fetchCourseDetail(detailUrl) {
     const onclick = $a.attr('onclick') || $a.closest('[onclick]').attr('onclick');
     if (onclick) {
       // extract first http(s) url or quoted filename with known extensions from onclick
-      const mHttp = onclick.match(/https?:\/\/[^'"\)\s]+/i);
-      const mQuoted = onclick.match(/['"]([^'"\]]+\.(?:pdf|zip|docx?|pptx?|xlsx?)(?:[?#].*)?)['"]/i);
+      const mHttp = onclick.match(/https?:\/\/[^'"\)\s]+\.pdf(?:[?#][^'"\)\s]*)?/i);
+      const mQuoted = onclick.match(/['"]([^'"\]]+\.pdf(?:[?#].*)?)['"]/i);
       const urlCandidate = mHttp ? mHttp[0] : mQuoted ? mQuoted[1] : null;
       if (urlCandidate) {
         const abs2 = toAbsoluteUrl(urlCandidate);
@@ -219,6 +219,7 @@ async function fetchCourseDetail(detailUrl) {
         if (!href) return;
         const abs = toAbsoluteUrl(href);
         if (!abs) return;
+        if (!fileExtPattern.test(abs)) return;
         // avoid duplicates
         if (!attachments.find((x) => x.url === abs)) {
           const label = cleanText($(anchor).text()) || path.basename(abs);
