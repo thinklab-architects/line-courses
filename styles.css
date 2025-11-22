@@ -569,6 +569,9 @@ button:focus-visible {
 }
 
 /* Preview modal */
+.preview-modal[hidden] {
+  display: none;
+}
 .preview-modal {
   position: fixed;
   inset: 0;
