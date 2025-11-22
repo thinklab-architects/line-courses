@@ -572,12 +572,16 @@ button:focus-visible {
 .preview-modal[hidden] {
   display: none;
 }
+/* hide by default and only show when explicitly opened via aria-hidden="false" */
 .preview-modal {
   position: fixed;
   inset: 0;
-  display: grid;
+  display: none;
   place-items: center;
   z-index: 1200;
+}
+.preview-modal[aria-hidden="false"] {
+  display: grid;
 }
 
 .preview-modal__backdrop {
