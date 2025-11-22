@@ -552,6 +552,36 @@ function createDocumentCard(doc) {
     link.rel = 'noopener noreferrer';
     link.textContent = titleText;
     title.appendChild(link);
+    // add download toggle next to title when attachments exist
+    if (Array.isArray(doc.attachments) && doc.attachments.length > 0) {
+      const dlWrapper = document.createElement('span');
+      dlWrapper.className = 'document-download-wrapper';
+
+      const dlBtn = document.createElement('button');
+      dlBtn.type = 'button';
+      dlBtn.className = 'course-download-toggle';
+      dlBtn.title = '下載附件';
+      dlBtn.setAttribute('aria-expanded', 'false');
+      dlBtn.innerHTML = '下載';
+
+      const panel = document.createElement('div');
+      panel.className = 'attachment-panel';
+      panel.hidden = true;
+      // populate with attachment list (use doc.attachments only)
+      const attachmentsList = createLinkList({ ...doc, links: [], attachments: doc.attachments });
+      panel.appendChild(attachmentsList);
+
+      dlBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const opened = dlBtn.getAttribute('aria-expanded') === 'true';
+        dlBtn.setAttribute('aria-expanded', String(!opened));
+        panel.hidden = opened;
+      });
+
+      dlWrapper.appendChild(dlBtn);
+      dlWrapper.appendChild(panel);
+      title.appendChild(dlWrapper);
+    }
   } else {
     title.textContent = titleText;
   }

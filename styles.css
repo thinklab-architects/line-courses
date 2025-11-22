@@ -543,6 +543,40 @@ button:focus-visible {
   gap: 0.5rem;
 }
 
+/* Course-level download toggle and panel */
+.document-download-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-left: 0.6rem;
+}
+
+.course-download-toggle {
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  background: rgba(148,163,184,0.12);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: inherit;
+  border: 1px solid rgba(148,163,184,0.18);
+  cursor: pointer;
+}
+
+.course-download-toggle[aria-expanded="true"] {
+  background: rgba(148,163,184,0.22);
+}
+
+.attachment-panel {
+  position: absolute;
+  margin-top: 0.6rem;
+  padding: 0.6rem;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 12px 30px rgba(2,6,23,0.12);
+  z-index: 800;
+}
+
 .attachment-download {
   display: inline-flex;
   align-items: center;
