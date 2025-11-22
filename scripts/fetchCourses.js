@@ -5,7 +5,7 @@ import { load } from 'cheerio';
 import iconv from 'iconv-lite';
 
 const BASE_URL = 'https://www.kaa.org.tw/news_class_list.php';
-const MAX_PAGES = 200;
+const MAX_PAGES = 5;
 const WAIT_MS = 300;
 const DETAIL_WAIT_MS = 400;
 const HEADERS = {
@@ -189,9 +189,10 @@ async function fetchCourseDetail(detailUrl) {
     // fallback: check onclick handlers that may open a file
     const onclick = $a.attr('onclick') || $a.closest('[onclick]').attr('onclick');
     if (onclick) {
-      // extract first quoted/http substring
-      const match = onclick.match(/(https?:\\/\\/[^'"\)\s]+)/) || onclick.match(/['\"]([^'\"]+\.(?:pdf|zip|docx?|pptx?|xlsx?)(?:[?#].*)?)['\"]/i);
-      const urlCandidate = match && match[1] ? match[1] : null;
+      // extract first http(s) url or quoted filename with known extensions from onclick
+      const mHttp = onclick.match(/https?:\/\/[^'"\)\s]+/i);
+      const mQuoted = onclick.match(/['"]([^'"\]]+\.(?:pdf|zip|docx?|pptx?|xlsx?)(?:[?#].*)?)['"]/i);
+      const urlCandidate = mHttp ? mHttp[0] : mQuoted ? mQuoted[1] : null;
       if (urlCandidate) {
         const abs2 = toAbsoluteUrl(urlCandidate);
         if (abs2) {
