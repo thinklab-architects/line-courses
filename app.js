@@ -421,47 +421,6 @@ function getDownloadLink(doc) {
   return pdfLink ?? links[0];
 }
 
-// Preview modal helpers
-function openPreview(url, title) {
-  const modal = document.getElementById('previewModal');
-  const content = document.getElementById('previewContent');
-  if (!modal || !content) {
-    window.open(url, '_blank', 'noopener');
-    return;
-  }
-
-  content.innerHTML = '';
-
-  const ext = (url.match(/\.([a-z0-9]+)(?:[?#].*)?$/i) || [])[1]?.toLowerCase();
-
-  if (ext === 'pdf') {
-    const iframe = document.createElement('iframe');
-    iframe.src = url;
-    iframe.title = title || '檔案預覽';
-    content.appendChild(iframe);
-  } else if (ext === 'jpg' || ext === 'jpeg' || ext === 'png' || ext === 'gif') {
-    const img = document.createElement('img');
-    img.src = url;
-    img.alt = title || '影像預覽';
-    content.appendChild(img);
-  } else {
-    const msg = document.createElement('div');
-    msg.innerHTML = `<p>此檔案類型無法內嵌預覽。<a href="${url}" target="_blank" rel="noopener noreferrer">在新分頁開啟</a> 或右鍵另存。</p>`;
-    content.appendChild(msg);
-  }
-
-  modal.hidden = false;
-  modal.setAttribute('aria-hidden', 'false');
-}
-
-function closePreview() {
-  const modal = document.getElementById('previewModal');
-  const content = document.getElementById('previewContent');
-  if (!modal || !content) return;
-  content.innerHTML = '';
-  modal.hidden = true;
-  modal.setAttribute('aria-hidden', 'true');
-}
 
 // wire up modal close buttons/backdrop
 document.addEventListener('click', (e) => {

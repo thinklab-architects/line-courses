@@ -7,7 +7,8 @@ import iconv from 'iconv-lite';
 const BASE_URL = 'https://www.kaa.org.tw/news_class_list.php';
 const MAX_PAGES = 5;
 const WAIT_MS = 300;
-const DETAIL_WAIT_MS = 400;
+const DETAIL_WAIT_MS = 100;
+const DETAIL_CONCURRENCY = 5;
 const HEADERS = {
   'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
@@ -325,30 +326,47 @@ async function fetchCourseDetail(detailUrl) {
 }
 
 async function enrichCoursesWithCredits(courses) {
-  const enriched = [];
+  if (!courses.length) return [];
 
-  for (const course of courses) {
-    const courseCopy = { ...course, credits: null };
-    const shouldFetchDetail = course.detailUrl && !isExpired(course.deadline);
+  const results = new Array(courses.length);
+  let cursor = 0;
 
-    if (shouldFetchDetail) {
-      try {
-        const detail = await fetchCourseDetail(course.detailUrl);
-        courseCopy.credits = detail.credits ?? null;
-        courseCopy.attachments = detail.attachments ?? [];
-      } catch (error) {
-        console.warn(`Failed to fetch detail for ${course.title}: ${error.message}`);
+  async function worker() {
+    while (true) {
+      const currentIndex = cursor;
+      cursor += 1;
+      if (currentIndex >= courses.length) {
+        break;
       }
 
-      await sleep(DETAIL_WAIT_MS);
-    } else {
-      courseCopy.attachments = [];
-    }
+      const course = courses[currentIndex];
+      const courseCopy = { ...course, credits: null };
+      const shouldFetchDetail = course.detailUrl && !isExpired(course.deadline);
 
-    enriched.push(courseCopy);
+      if (shouldFetchDetail) {
+        try {
+          const detail = await fetchCourseDetail(course.detailUrl);
+          courseCopy.credits = detail.credits ?? null;
+          courseCopy.attachments = detail.attachments ?? [];
+        } catch (error) {
+          console.warn(`Failed to fetch detail for ${course.title}: ${error.message}`);
+          courseCopy.attachments = [];
+        }
+
+        if (DETAIL_WAIT_MS > 0) {
+          await sleep(DETAIL_WAIT_MS);
+        }
+      } else {
+        courseCopy.attachments = [];
+      }
+
+      results[currentIndex] = courseCopy;
+    }
   }
 
-  return enriched;
+  const workerCount = Math.min(DETAIL_CONCURRENCY, courses.length);
+  await Promise.all(Array.from({ length: workerCount }, () => worker()));
+  return results;
 }
 
 async function fetchPage(page) {
