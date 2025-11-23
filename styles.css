@@ -595,32 +595,40 @@ button:focus-visible {
   position: relative;
   width: min(1100px, 92vw);
   max-height: 90vh;
+  padding-top: 52px;
   border-radius: 12px;
   background: #fff;
-  overflow: auto;
+  overflow: hidden;
   box-shadow: 0 40px 80px rgba(2,6,23,0.5);
 }
 
 .preview-modal__close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
-  border: none;
-  font-size: 1.1rem;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  font-size: 1.05rem;
   cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .preview-modal__content {
-  flex: 1;
+  flex: 1 1 auto;
   padding: 0;
-  overflow: auto;
+  overflow: hidden;
   background: #f8fafc;
 }
 
 .preview-modal iframe {
   width: 100%;
-  height: calc(80vh - 82px);
+  height: 100%;
+  min-height: 70vh;
   border: none;
   display: block;
   background: #fff;

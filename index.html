@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-Hant">
   <head>
     <meta charset="utf-8" />
@@ -7,17 +7,17 @@
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
     <meta name="theme-color" content="#e2e5eb" />
-    <title>Course｜高雄建築師公會</title>
+    <title>Course嚚??遣蝭葦?祆?</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="top-bar shell">
       <div class="top-bar__search">
-        <label class="sr-only" for="search">搜尋課程或連結</label>
+        <label class="sr-only" for="search">??隤脩????</label>
         <input
           id="search"
           type="search"
-          placeholder="搜尋課程或連結"
+          placeholder="??隤脩????"
           autocomplete="off"
         />
       </div>
@@ -27,12 +27,12 @@
       <div class="shell hero__inner">
         <div class="hero__lede">
           <p class="hero__eyebrow">
-            KAA社團法人高雄市建築師公會
+            KAA蝷曉?瘜犖擃?撣遣蝭葦?祆?
           </p>
           <h1 class="hero__title">COURSE</h1>
-          <p class="hero__subtitle">專業課程</p>
+          <p class="hero__subtitle">撠平隤脩?</p>
           <p class="hero__description">
-            即時掌握高雄建築師公會的最新課程、講座與報名連結，手機與平板皆可瀏覽。
+            ?單??擃?撱箇?撣怠????啗玨蝔?摨扯??勗????嚗?璈?撟單??汗??
           </p>
           <div class="hero__actions">
             <a
@@ -41,7 +41,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              前往課程列表
+              ??隤脩??”
             </a>
           </div>
         </div>
@@ -49,34 +49,34 @@
     </header>
 
     <main class="shell flow">
-      <section class="controls" aria-label="課程篩選與排序">
+      <section class="controls" aria-label="隤脩?蝭拚??摨?>
         <fieldset class="status-group">
-          <legend class="field-label">顯示課程狀態</legend>
+          <legend class="field-label">憿舐內隤脩????/legend>
           <label class="status-option">
             <input type="checkbox" name="statusFilter" value="due-soon" checked />
-            <span>即將開課</span>
+            <span>?喳??玨</span>
           </label>
           <label class="status-option">
             <input type="checkbox" name="statusFilter" value="active" checked />
-            <span>尚未開課</span>
+            <span>撠?玨</span>
           </label>
           <label class="status-option">
             <input type="checkbox" name="statusFilter" value="expired" />
-            <span>已結束</span>
+            <span>撌脩???/span>
           </label>
         </fieldset>
 
         <div class="field-group">
-          <label class="field-label" for="sortSelect">排序方式</label>
+          <label class="field-label" for="sortSelect">???孵?</label>
           <select id="sortSelect">
-            <option value="deadline-asc">開課日最接近</option>
-            <option value="deadline-desc">開課日晚到早</option>
-            <option value="date-desc">最新課程在前</option>
-            <option value="date-asc">最早課程在前</option>
+            <option value="deadline-asc">?玨?交??亥?</option>
+            <option value="deadline-desc">?玨?交??唳</option>
+            <option value="date-desc">??啗玨蝔??/option>
+            <option value="date-asc">??抵玨蝔??/option>
           </select>
         </div>
 
-        <button id="clearFilters" type="button">重設篩選</button>
+        <button id="clearFilters" type="button">?身蝭拚</button>
 
         <button
           id="creditFilter"
@@ -84,12 +84,12 @@
           type="button"
           aria-pressed="false"
         >
-          有學分
+          ?飛??
         </button>
       </section>
 
       <section aria-live="polite">
-        <div id="status" class="status">課程載入中...</div>
+        <div id="status" class="status">隤脩?頛銝?..</div>
         <div id="documentList" class="document-grid" hidden></div>
       </section>
     </main>
@@ -97,20 +97,20 @@
     <footer class="app-footer">
       <div class="shell footer-inner">
         <p class="footer-copy">
-          資料來源：
+          鞈?靘?嚗?
           <a
             href="https://www.kaa.org.tw/news_class_list.php"
             target="_blank"
             rel="noopener noreferrer"
-          >高雄建築師公會－專業課程</a>
-          ｜GitHub Pages 自動佈署。
+          >擃?撱箇?撣怠??撠平隤脩?</a>
+          嚚itHub Pages ?芸?雿蔡??
         </p>
         <p id="updatedAt" class="footer-updated" aria-live="polite">
-          課程更新：尚未同步
+          隤脩??湔嚗??芸?甇?
         </p>
       </div>
     </footer>
-        <!-- Preview modal for attachments -->
+            <!-- Preview modal for attachments -->
     <div id="previewModal" class="preview-modal" hidden aria-hidden="true">
       <div class="preview-modal__backdrop" data-close></div>
       <div class="preview-modal__panel" role="dialog" aria-modal="true">
@@ -133,3 +133,4 @@
 <script type="module" src="./app.js"></script>
   </body>
 </html>
+
