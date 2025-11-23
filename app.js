@@ -175,6 +175,18 @@ const taipeiDateFormatter = new Intl.DateTimeFormat('en-CA', {
   day: '2-digit',
 });
 
+function buildPreviewUrl(url) {
+  if (!url) return null;
+  try {
+    // Use Google Docs viewer to avoid forced downloads on PDF responses
+    const absolute = new URL(url, window.location.href).href;
+    const encoded = encodeURIComponent(absolute);
+    return `https://docs.google.com/gview?embedded=1&url=${encoded}`;
+  } catch {
+    return null;
+  }
+}
+
 function getTaipeiToday() {
   const formatted = taipeiDateFormatter.format(Date.now());
   return parseDate(formatted);
@@ -363,11 +375,26 @@ function showPreview(url, label) {
   if (!elements.previewModal || !elements.previewContent || !url) return;
   elements.previewContent.replaceChildren();
 
+  const previewUrl = buildPreviewUrl(url) || url;
+
   const iframe = document.createElement('iframe');
-  iframe.src = url;
+  iframe.src = previewUrl;
   iframe.title = label || '檔案預覽';
   iframe.loading = 'lazy';
+  iframe.referrerPolicy = 'no-referrer';
+  iframe.allow = 'fullscreen';
   elements.previewContent.appendChild(iframe);
+
+  // fallback open in new tab if viewer cannot load
+  const fallback = document.createElement('p');
+  fallback.className = 'preview-fallback';
+  const fallbackLink = document.createElement('a');
+  fallbackLink.href = url;
+  fallbackLink.target = '_blank';
+  fallbackLink.rel = 'noopener noreferrer';
+  fallbackLink.textContent = '若無法預覽，點此開啟新視窗下載/查看';
+  fallback.appendChild(fallbackLink);
+  elements.previewContent.appendChild(fallback);
 
   elements.previewModal.hidden = false;
   elements.previewModal.setAttribute('aria-hidden', 'false');
