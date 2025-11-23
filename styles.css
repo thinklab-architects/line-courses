@@ -625,6 +625,35 @@ button:focus-visible {
   height: auto;
 }
 
+.preview-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1.25rem 1.25rem;
+}
+
+.preview-modal__download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-width: 160px;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.preview-modal__download:hover,
+.preview-modal__download:focus-visible {
+  background: #000;
+  transform: translateY(-1px);
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.32);
+}
+
 .app-footer {
   margin: clamp(3.2rem, 6vw, 4.6rem) 0 clamp(2.4rem, 4vw, 3.4rem);
   color: var(--ink-soft);

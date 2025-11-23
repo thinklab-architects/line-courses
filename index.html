@@ -110,15 +110,26 @@
         </p>
       </div>
     </footer>
-    <!-- Preview modal for attachments -->
+        <!-- Preview modal for attachments -->
     <div id="previewModal" class="preview-modal" hidden aria-hidden="true">
       <div class="preview-modal__backdrop" data-close></div>
       <div class="preview-modal__panel" role="dialog" aria-modal="true">
-        <button class="preview-modal__close" aria-label="關閉預覽" data-close>✕</button>
+        <button class="preview-modal__close" aria-label="關閉視窗" data-close>✕</button>
         <div id="previewContent" class="preview-modal__content"></div>
+        <div class="preview-modal__actions">
+          <a
+            id="previewDownload"
+            class="preview-modal__download"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            下載檔案
+          </a>
+        </div>
       </div>
     </div>
 
-    <script type="module" src="./app.js"></script>
+<script type="module" src="./app.js"></script>
   </body>
 </html>

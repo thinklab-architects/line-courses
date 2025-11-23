@@ -33,6 +33,7 @@ const elements = {
   creditFilter: document.getElementById('creditFilter'),
   previewModal: document.getElementById('previewModal'),
   previewContent: document.getElementById('previewContent'),
+  previewDownload: document.getElementById('previewDownload'),
 };
 
 const statusCheckboxes = Array.from(
@@ -370,6 +371,9 @@ function closePreview() {
   elements.previewContent.replaceChildren();
   elements.previewModal.setAttribute('aria-hidden', 'true');
   elements.previewModal.hidden = true;
+  if (elements.previewDownload) {
+    elements.previewDownload.href = '#';
+  }
 }
 
 function showPreview(url, label) {
@@ -377,6 +381,10 @@ function showPreview(url, label) {
   elements.previewContent.replaceChildren();
 
   const previewUrl = buildPreviewUrl(url) || url;
+  if (elements.previewDownload) {
+    elements.previewDownload.href = url;
+    elements.previewDownload.textContent = `下載${label || '檔案'}`;
+  }
 
   const iframe = document.createElement('iframe');
   iframe.src = previewUrl;
