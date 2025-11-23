@@ -401,15 +401,6 @@ function createLinkList(doc) {
   return list;
 }
 
-
-// wire up modal close buttons/backdrop
-document.addEventListener('click', (e) => {
-  const target = e.target;
-  if (target && (target.matches('[data-close]') || target.closest('[data-close]'))) {
-    closePreview();
-  }
-});
-
 function createDocumentCard(doc) {
   const card = document.createElement('article');
   card.className = `document-card document-card--${doc.deadlineCategory}`;
@@ -480,36 +471,6 @@ function createDocumentCard(doc) {
     link.rel = 'noopener noreferrer';
     link.textContent = titleText;
     title.appendChild(link);
-    // add download toggle next to title when attachments exist
-    if (Array.isArray(doc.attachments) && doc.attachments.length > 0) {
-      const dlWrapper = document.createElement('span');
-      dlWrapper.className = 'document-download-wrapper';
-
-      const dlBtn = document.createElement('button');
-      dlBtn.type = 'button';
-      dlBtn.className = 'course-download-toggle';
-      dlBtn.title = '下載附件';
-      dlBtn.setAttribute('aria-expanded', 'false');
-      dlBtn.innerHTML = '下載';
-
-      const panel = document.createElement('div');
-      panel.className = 'attachment-panel';
-      panel.hidden = true;
-      // populate with attachment list (use doc.attachments only)
-      const attachmentsList = createLinkList({ ...doc, links: [], attachments: doc.attachments });
-      panel.appendChild(attachmentsList);
-
-      dlBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const opened = dlBtn.getAttribute('aria-expanded') === 'true';
-        dlBtn.setAttribute('aria-expanded', String(!opened));
-        panel.hidden = opened;
-      });
-
-      dlWrapper.appendChild(dlBtn);
-      dlWrapper.appendChild(panel);
-      title.appendChild(dlWrapper);
-    }
   } else {
     title.textContent = titleText;
   }
@@ -535,28 +496,6 @@ function createDocumentCard(doc) {
     sections.push(creditHighlight);
   }
   sections.push(title, metaList);
-
-  const downloadLink = getDownloadLink(doc);
-  const actions = document.createElement('div');
-  actions.className = 'card-actions';
-
-  const downloadButton = document.createElement('a');
-  downloadButton.className = 'download-button';
-
-  if (downloadLink?.url) {
-    downloadButton.href = downloadLink.url;
-    downloadButton.target = '_blank';
-    downloadButton.rel = 'noopener noreferrer';
-    downloadButton.textContent = '下載 PDF';
-    downloadButton.setAttribute('aria-label', '下載課程檔案');
-  } else {
-    downloadButton.textContent = '無可下載檔案';
-    downloadButton.classList.add('download-button--disabled');
-    downloadButton.setAttribute('aria-disabled', 'true');
-  }
-
-  actions.appendChild(downloadButton);
-  sections.push(actions);
 
   card.append(...sections);
   return card;

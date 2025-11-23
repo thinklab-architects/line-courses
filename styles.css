@@ -535,44 +535,6 @@ button:focus-visible {
   color: var(--ink-soft);
   font-size: 0.9rem;
 }
-
-/* Attachment preview button */
-.attachment-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Course-level download toggle and panel */
-.document-download-wrapper {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-left: 0.6rem;
-}
-
-
-
-.attachment-preview-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background: rgba(17,17,17,0.06);
-  border: 1px solid rgba(148,163,184,0.12);
-  cursor: pointer;
-}
-
-.card-actions {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 0.5rem;
-}
-
-
-
 /* Preview modal */
 .preview-modal[hidden] {
   display: none;

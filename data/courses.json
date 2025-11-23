@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "2025-11-23T03:37:42.376Z",
+  "updatedAt": "2025-11-23T04:20:24.535Z",
   "total": 50,
   "courses": [
     {
@@ -17,7 +17,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1236",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
+      "credits": null,
       "attachments": []
     },
     {
@@ -34,7 +34,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1235",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
+      "credits": null,
       "attachments": []
     },
     {
@@ -51,7 +51,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1234",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
+      "credits": null,
       "attachments": []
     },
     {
@@ -68,7 +68,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1212",
       "registrationUrl": null,
       "page": 1,
-      "credits": 0,
+      "credits": null,
       "attachments": []
     },
     {
@@ -85,7 +85,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1211",
       "registrationUrl": null,
       "page": 1,
-      "credits": 0,
+      "credits": null,
       "attachments": []
     },
     {
