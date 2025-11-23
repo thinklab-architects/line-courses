@@ -30,6 +30,8 @@ const elements = {
   clearFilters: document.getElementById('clearFilters'),
   updatedAt: document.getElementById('updatedAt'),
   creditFilter: document.getElementById('creditFilter'),
+  previewModal: document.getElementById('previewModal'),
+  previewContent: document.getElementById('previewContent'),
 };
 
 const statusCheckboxes = Array.from(
@@ -349,6 +351,51 @@ function updateStatus(filtered, total) {
 function setDocumentListVisibility(hasResults) {
   elements.documentList.hidden = !hasResults;
 }
+
+function closePreview() {
+  if (!elements.previewModal || !elements.previewContent) return;
+  elements.previewContent.replaceChildren();
+  elements.previewModal.setAttribute('aria-hidden', 'true');
+  elements.previewModal.hidden = true;
+}
+
+function showPreview(url, label) {
+  if (!elements.previewModal || !elements.previewContent || !url) return;
+  elements.previewContent.replaceChildren();
+
+  const iframe = document.createElement('iframe');
+  iframe.src = url;
+  iframe.title = label || '檔案預覽';
+  iframe.loading = 'lazy';
+  elements.previewContent.appendChild(iframe);
+
+  elements.previewModal.hidden = false;
+  elements.previewModal.setAttribute('aria-hidden', 'false');
+}
+
+// wire up modal close buttons/backdrop
+document.addEventListener('click', (e) => {
+  const target = e.target;
+  if (target && (target.matches('[data-close]') || target.closest('[data-close]'))) {
+    closePreview();
+  }
+});
+
+// open preview when clicking download/attachment links
+document.addEventListener('click', (e) => {
+  const anchor = e.target.closest('.attachment-link--download');
+  if (!anchor) return;
+  // allow modifier clicks to open new tab as usual
+  if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  e.preventDefault();
+  showPreview(anchor.href, anchor.textContent.trim());
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closePreview();
+  }
+});
 
 function createMetaItem(label, content) {
   const wrapper = document.createElement('div');
