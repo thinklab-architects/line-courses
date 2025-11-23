@@ -6,9 +6,9 @@ import iconv from 'iconv-lite';
 
 const BASE_URL = 'https://www.kaa.org.tw/news_class_list.php';
 const MAX_PAGES = 5;
-const WAIT_MS = 300;
-const DETAIL_WAIT_MS = 100;
-const DETAIL_CONCURRENCY = 5;
+const WAIT_MS = 0;
+const DETAIL_WAIT_MS = 0;
+const DETAIL_CONCURRENCY = 10;
 const HEADERS = {
   'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
@@ -19,62 +19,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-async function probeFileUrl(url, timeout = 8000) {
-  const result = { isPdf: false, mime: null };
-  if (!url) return result;
-  const lowerIncludesPdfExt = /\.pdf(?:[?#].*)?$/i.test(url);
-  try {
-    const controller = new AbortController();
-    const id = setTimeout(() => controller.abort(), timeout);
-    const headResp = await fetch(url, { method: 'HEAD', headers: HEADERS, signal: controller.signal });
-    clearTimeout(id);
-    if (headResp && headResp.ok) {
-      const ct = (headResp.headers.get('content-type') || '').toLowerCase();
-      if (ct) result.mime = ct.split(';')[0];
-      if (ct.includes('application/pdf')) {
-        result.isPdf = true;
-        return result;
-      }
-      // if extension suggests PDF but content-type generic
-      if (lowerIncludesPdfExt && /octet-stream|application\/(?:download|force-download)/.test(ct)) {
-        result.isPdf = true;
-        return result;
-      }
-    }
-  } catch {
-    // ignore and fallback
-  }
-  // fallback small GET to confirm signature
-  try {
-    const controller2 = new AbortController();
-    const id2 = setTimeout(() => controller2.abort(), timeout);
-    const getResp = await fetch(url, {
-      method: 'GET',
-      headers: { ...HEADERS, Range: 'bytes=0-1023' },
-      signal: controller2.signal,
-    });
-    clearTimeout(id2);
-    if (getResp && getResp.ok) {
-      const ct2 = (getResp.headers.get('content-type') || '').toLowerCase();
-      if (ct2) result.mime = result.mime || ct2.split(';')[0];
-      if (ct2.includes('application/pdf')) {
-        result.isPdf = true;
-        return result;
-      }
-      const buf = Buffer.from(await getResp.arrayBuffer()).slice(0, 8);
-      const sig = buf.toString('utf8', 0, Math.min(buf.length, 4));
-      if (sig === '%PDF') {
-        result.isPdf = true;
-        result.mime = result.mime || 'application/pdf';
-        return result;
-      }
-    }
-  } catch {
-    // ignore
-  }
-  return result;
-}
 
 function cleanText(value) {
   return (
@@ -198,12 +142,15 @@ async function fetchCourseDetail(detailUrl) {
 
   const buffer = Buffer.from(await response.arrayBuffer());
   let html = buffer.toString('utf8');
-  if (!/\u7e3d/.test(html)) {
+
+  // handle potential Big5 encoding
+  if (!html.includes('<html')) {
     html = iconv.decode(buffer, 'big5');
   }
+
   const $ = load(html);
 
-  // extract credit text from table cells (same logic as before)
+  // quick credit parsing
   const creditContainer = $('td')
     .map((_, el) => $(el).text().replace(/\s+/g, ' ').trim())
     .get()
@@ -212,18 +159,25 @@ async function fetchCourseDetail(detailUrl) {
   let credits = null;
   if (creditContainer) {
     const match = creditContainer.match(
-      /\u7e3d(?:\u5b78)?\u5206[：:\s]*([0-9]+(?:\.[0-9]+)?)/,
+      /\u7e3d(?:\u5b78)?\u5206[:\uFF1A\s]*([0-9]+(?:\.[0-9]+)?)/,
     );
     if (match) {
       credits = Number.parseFloat(match[1]);
     }
   }
 
-  // find downloadable attachments in the detail page
+  // fast attachment detection (PDFs + download.php) without extra probing
   const attachments = [];
-  const candidates = [];
-  // only collect PDF files per request
   const fileExtPattern = /\.pdf(?:[?#].*)?$/i;
+  const downloadPhpPattern = /download\.php\?b=/i;
+  const seen = new Set();
+
+  const pushAttachment = (url, label) => {
+    if (!url) return;
+    if (seen.has(url)) return;
+    seen.add(url);
+    attachments.push({ label: label || path.basename(url), url });
+  };
 
   // primary pass: anchors with explicit file extensions or obvious download hints
   $('a').each((_, anchor) => {
@@ -234,36 +188,30 @@ async function fetchCourseDetail(detailUrl) {
     // try href first
     if (href) {
       const abs = toAbsoluteUrl(href);
-      if (abs) {
-        const lower = abs.toLowerCase();
-        if (fileExtPattern.test(abs)) {
-          const label = text || path.basename(abs);
-          attachments.push({ label, url: abs });
-          return;
-        }
+      if (abs && (fileExtPattern.test(abs) || downloadPhpPattern.test(abs))) {
+        pushAttachment(abs, text);
+        return;
       }
     }
 
     // fallback: check onclick handlers that may open a file
     const onclick = $a.attr('onclick') || $a.closest('[onclick]').attr('onclick');
     if (onclick) {
-      // extract first http(s) url or quoted filename with known extensions from onclick
-      const mHttp = onclick.match(/https?:\/\/[^'"\)\s]+\.pdf(?:[?#][^'"\)\s]*)?/i);
+      const mHttp = onclick.match(/https?:\/\/[^'")\s]+\.pdf(?:[?#][^'")\s]*)?/i);
       const mQuoted = onclick.match(/['"]([^'"\]]+\.pdf(?:[?#].*)?)['"]/i);
       const urlCandidate = mHttp ? mHttp[0] : mQuoted ? mQuoted[1] : null;
       if (urlCandidate) {
         const abs2 = toAbsoluteUrl(urlCandidate);
         if (abs2) {
-          const label = text || path.basename(abs2);
-          attachments.push({ label, url: abs2 });
+          pushAttachment(abs2, text);
         }
       }
     }
   });
 
-  // secondary pass: look for nearby blocks labeled "相關檔案" or "檔案下載" and collect anchors inside
+  // secondary pass: labeled blocks like "檔案下載"/"附件" and their anchors
   $('*')
-    .filter((_, el) => /相關檔案|檔案下載|下載檔案/.test(cleanText($(el).text())))
+    .filter((_, el) => /檔案下載|附件|下載/.test(cleanText($(el).text())))
     .each((_, el) => {
       const $el = $(el);
       // find anchors inside the same block or immediate next sibling(s)
@@ -277,50 +225,11 @@ async function fetchCourseDetail(detailUrl) {
         if (!href) return;
         const abs = toAbsoluteUrl(href);
         if (!abs) return;
-        const label = cleanText($(anchor).text()) || path.basename(abs);
-        // if url has pdf extension, accept immediately
-        if (fileExtPattern.test(abs)) {
-          if (!attachments.find((x) => x.url === abs)) {
-            attachments.push({ label, url: abs });
-          }
-        } else {
-          // otherwise add to candidates to verify via HEAD/GET
-          candidates.push({ label, url: abs });
+        if (fileExtPattern.test(abs) || downloadPhpPattern.test(abs)) {
+          pushAttachment(abs, cleanText($(anchor).text()));
         }
       });
     });
-
-  // also scan general anchors that say 檔案下載 or 下載 and treat non-pdf as candidates
-  $('a').each((_, a) => {
-    const t = cleanText($(a).text());
-    const href = $(a).attr('href');
-    if (!href) return;
-    const abs = toAbsoluteUrl(href);
-    if (!abs) return;
-    const isDownloadPhp = /download\.php\?b=/i.test(abs);
-    if (/檔案|下載/.test(t)) {
-      if (fileExtPattern.test(abs)) {
-        attachments.push({ label: t || path.basename(abs), url: abs });
-      } else {
-        candidates.push({ label: t || path.basename(abs), url: abs, forceProbe: isDownloadPhp });
-      }
-    } else if (isDownloadPhp) {
-      // even without text match, treat download.php links as candidates
-      candidates.push({ label: t || '檔案下載', url: abs, forceProbe: true });
-    }
-  });
-
-  // verify candidates via HEAD/GET; include those that are confirmed PDFs
-  for (const c of candidates) {
-    try {
-      const probe = await probeFileUrl(c.url);
-      if (probe.isPdf && !attachments.find((x) => x.url === c.url)) {
-        attachments.push({ label: c.label, url: c.url, mime: probe.mime || 'application/pdf' });
-      }
-    } catch {
-      // ignore
-    }
-  }
 
   return { credits, attachments };
 }
@@ -340,7 +249,7 @@ async function enrichCoursesWithCredits(courses) {
       }
 
       const course = courses[currentIndex];
-      const courseCopy = { ...course, credits: null };
+      const courseCopy = { ...course, credits: null, attachments: [] };
       const shouldFetchDetail = course.detailUrl && !isExpired(course.deadline);
 
       if (shouldFetchDetail) {
@@ -409,7 +318,9 @@ async function scrapeCourses() {
       break;
     }
 
-    await sleep(WAIT_MS);
+    if (WAIT_MS > 0) {
+      await sleep(WAIT_MS);
+    }
   }
 
   return courses;
@@ -435,7 +346,7 @@ async function main() {
   try {
     const courses = await scrapeCourses();
     if (!courses.length) {
-      throw new Error('未擷取到任何課程資料，請稍後再試。');
+      throw new Error('未取得任何課程資料，請稍後再試。');
     }
 
     const enriched = await enrichCoursesWithCredits(courses);

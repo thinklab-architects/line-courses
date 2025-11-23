@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "2025-11-23T04:20:24.535Z",
+  "updatedAt": "2025-11-23T04:36:17.366Z",
   "total": 50,
   "courses": [
     {
@@ -17,7 +17,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1236",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
+      "credits": 20,
       "attachments": []
     },
     {
@@ -34,7 +34,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1235",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
+      "credits": 20,
       "attachments": []
     },
     {
@@ -51,7 +51,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1234",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
+      "credits": 20,
       "attachments": []
     },
     {
@@ -68,7 +68,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1212",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -85,7 +85,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1211",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -110,8 +110,7 @@
       "attachments": [
         {
           "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1231/2025775079d5e4228f3c86a74af9c5cf",
-          "mime": "application/force-download"
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1231/2025775079d5e4228f3c86a74af9c5cf"
         }
       ]
     },
@@ -133,8 +132,7 @@
       "attachments": [
         {
           "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1224/be7cc54598c6c491ab05c49dde4768ff",
-          "mime": "application/force-download"
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1224/be7cc54598c6c491ab05c49dde4768ff"
         }
       ]
     },
@@ -717,8 +715,7 @@
       "attachments": [
         {
           "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1201/086df90ea27e428d7fc5e2fd8527e964",
-          "mime": "application/force-download"
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1201/086df90ea27e428d7fc5e2fd8527e964"
         }
       ]
     },
