@@ -378,54 +378,17 @@ function createLinkList(doc) {
   if (Array.isArray(doc.attachments)) allLinks.push(...doc.attachments);
 
   allLinks.forEach((item, index) => {
-    if (!item || !item.url) return;
-    if (seen.has(item.url)) return;
+    if (!item?.url || seen.has(item.url)) return;
     seen.add(item.url);
 
-    const url = item.url;
-    const label = item.label?.trim() || `連結 ${String(index + 1).padStart(2, '0')}`;
-
-    const fileExtMatch = url.match(/\.(pdf|jpg|jpeg|png|gif)(?:[?#].*)?$/i);
-    const isPdfMime = item.mime === 'application/pdf';
-    const isDownloadPhp = /download\.php\?b=/i.test(url);
-    const previewable = fileExtMatch || isPdfMime || isDownloadPhp;
-
-    if (previewable) {
-      const wrapper = document.createElement('div');
-      wrapper.className = 'attachment-item';
-
-      const a = document.createElement('a');
-      a.className = 'attachment-download';
-      a.href = url;
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
-      a.download = '';
-      a.textContent = label;
-
-      if (isPdfMime || /pdf$/i.test(fileExtMatch?.[1] || '') || isDownloadPhp) {
-        const previewBtn = document.createElement('button');
-        previewBtn.className = 'attachment-preview-btn';
-        previewBtn.type = 'button';
-        previewBtn.title = '預覽檔案';
-        previewBtn.innerHTML = '▶';
-        previewBtn.addEventListener('click', (e) => {
-          e.preventDefault();
-          openPreview(url, label);
-        });
-        wrapper.append(a, previewBtn);
-      } else {
-        wrapper.append(a);
-      }
-      list.appendChild(wrapper);
-    } else {
-      const link = document.createElement('a');
-      link.className = 'attachment-link';
-      link.href = url;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.textContent = label;
-      list.appendChild(link);
-    }
+    const link = document.createElement('a');
+    link.className = 'attachment-link';
+    link.href = item.url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent =
+      item.label?.trim() || `附件 ${String(index + 1).padStart(2, '0')}`;
+    list.appendChild(link);
   });
 
   if (!list.children.length) {
@@ -437,6 +400,7 @@ function createLinkList(doc) {
 
   return list;
 }
+
 
 function getDownloadLink(doc) {
   const links = Array.isArray(doc.links) ? [...doc.links] : [];
