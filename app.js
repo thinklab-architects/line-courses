@@ -1,5 +1,6 @@
 const DATA_URL = './data/courses.json';
 const DEADLINE_SOON_DAYS = 7;
+const PREVIEW_VIEWER_BASE = 'https://docs.google.com/viewer?embedded=true&url=';
 const BADGE_TEXT = {
   'due-soon': '即將開課',
   active: '尚未開課',
@@ -178,10 +179,10 @@ const taipeiDateFormatter = new Intl.DateTimeFormat('en-CA', {
 function buildPreviewUrl(url) {
   if (!url) return null;
   try {
-    // Use Google Docs viewer to avoid forced downloads on PDF responses
+    // Use Google Docs viewer (same approach as line-event) to avoid forced downloads
     const absolute = new URL(url, window.location.href).href;
     const encoded = encodeURIComponent(absolute);
-    return `https://docs.google.com/gview?embedded=1&url=${encoded}`;
+    return `${PREVIEW_VIEWER_BASE}${encoded}`;
   } catch {
     return null;
   }
