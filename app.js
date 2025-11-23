@@ -382,12 +382,27 @@ function createLinkList(doc) {
     seen.add(item.url);
 
     const link = document.createElement('a');
-    link.className = 'attachment-link';
     link.href = item.url;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
-    link.textContent =
+    const labelText =
       item.label?.trim() || `附件 ${String(index + 1).padStart(2, '0')}`;
+    link.textContent = labelText;
+
+    const lowerLabel = labelText.toLowerCase();
+    const lowerUrl = (item.url ?? '').toLowerCase();
+    const isRegister =
+      /報名/.test(labelText) ||
+      /register|signup|enroll/.test(lowerUrl);
+    const isDownload =
+      /下載|附件|檔案/.test(labelText) ||
+      /\.pdf\b/.test(lowerUrl) ||
+      /download\.php/.test(lowerUrl);
+
+    link.className = 'attachment-link';
+    if (isRegister) link.classList.add('attachment-link--register');
+    if (isDownload) link.classList.add('attachment-link--download');
+
     list.appendChild(link);
   });
 

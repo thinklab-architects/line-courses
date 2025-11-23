@@ -534,6 +534,30 @@ button:focus-visible {
   transition: background 0.2s ease;
 }
 
+.attachment-link--register {
+  background: #fbbf24;
+  color: #111;
+  box-shadow: 0 12px 24px rgba(251, 191, 36, 0.35);
+}
+
+.attachment-link--register:hover,
+.attachment-link--register:focus-visible {
+  background: #f59e0b;
+  color: #111;
+}
+
+.attachment-link--download {
+  background: #111;
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(17, 17, 17, 0.25);
+}
+
+.attachment-link--download:hover,
+.attachment-link--download:focus-visible {
+  background: #000;
+  color: #fff;
+}
+
 .attachment-link:hover,
 .attachment-link:focus-visible {
   background: rgba(148, 163, 184, 0.26);
