@@ -402,26 +402,6 @@ function createLinkList(doc) {
 }
 
 
-function getDownloadLink(doc) {
-  const links = Array.isArray(doc.links) ? [...doc.links] : [];
-  if (Array.isArray(doc.attachments)) {
-    links.push(...doc.attachments);
-  }
-
-  if (!links.length) {
-    return null;
-  }
-
-  const pdfLink = links.find(
-    (link) =>
-      typeof link?.url === 'string' &&
-      /\.pdf(?:[?#].*)?$/i.test(link.url),
-  );
-
-  return pdfLink ?? links[0];
-}
-
-
 // wire up modal close buttons/backdrop
 document.addEventListener('click', (e) => {
   const target = e.target;
