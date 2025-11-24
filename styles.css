@@ -157,9 +157,10 @@ a:focus-visible {
 }
 
 .hero__logo {
-  height: 32px;
-  width: 32px;
   display: block;
+  height: 1.8rem;
+  width: auto;
+  object-fit: contain;
 }
 
 .hero__title {
