@@ -333,7 +333,7 @@ async function writeOutput(courses) {
   const outPath = path.join(outDir, 'courses.json');
   const payload = {
     source: BASE_URL,
-    updatedAt: new Date().toISOString(),
+    updatedAt: process.env.SCRAPED_AT || new Date().toISOString(),
     total: courses.length,
     courses,
   };
