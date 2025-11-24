@@ -1,11 +1,11 @@
-const DATA_URL = './data/courses.json';
+﻿const DATA_URL = './data/courses.json';
 const DEADLINE_SOON_DAYS = 7;
 const PREVIEW_VIEWER_BASE = 'https://docs.google.com/viewer?embedded=true&url=';
 const BADGE_TEXT = {
-  'due-soon': '即將開課',
-  active: '尚未開課',
-  expired: '已結束',
-  'no-deadline': '尚未排程',
+  'due-soon': '?喳??玨',
+  active: '撠?玨',
+  expired: '撌脩???,
+  'no-deadline': '撠??',
 };
 
 const DEFAULT_STATUS_VALUES = ['due-soon', 'active'];
@@ -22,6 +22,7 @@ const state = {
 };
 
 bootstrapLayout();
+document.title = 'COURSE｜高雄建築師公會';
 
 const elements = {
   status: document.getElementById('status'),
@@ -137,11 +138,11 @@ elements.clearFilters.addEventListener('click', () => {
 loadDocuments();
 
 function bootstrapLayout() {
-  document.title = 'LINE Courses｜高雄建築師公會課程快覽';
+  document.title = "COURSE｜高雄建築師公會";
 }
 
 function formatUpdatedAt(isoString) {
-  if (!isoString) return '課程更新：尚未同步';
+  if (!isoString) return '隤脩??湔嚗??芸?甇?;
 
   const formatter = new Intl.DateTimeFormat('zh-TW', {
     dateStyle: 'medium',
@@ -150,9 +151,9 @@ function formatUpdatedAt(isoString) {
   });
 
   try {
-    return `課程更新：${formatter.format(new Date(isoString))}`;
+    return `隤脩??湔嚗?{formatter.format(new Date(isoString))}`;
   } catch {
-    return `課程更新：${isoString}`;
+    return `隤脩??湔嚗?{isoString}`;
   }
 }
 
@@ -228,22 +229,22 @@ function enrichDocument(doc) {
 
 function formatDeadlineNote(doc) {
   if (doc.daysUntilDeadline == null) {
-    return '尚未提供日期';
+    return '撠???交?';
   }
 
   if (doc.daysUntilDeadline < 0) {
-    return `結束 ${Math.abs(doc.daysUntilDeadline)} 天`;
+    return `蝯? ${Math.abs(doc.daysUntilDeadline)} 憭奈;
   }
 
   if (doc.daysUntilDeadline === 0) {
-    return '今天開課';
+    return '隞予?玨';
   }
 
   if (doc.daysUntilDeadline === 1) {
-    return '1 天後開課';
+    return '1 憭拙??玨';
   }
 
-  return `${doc.daysUntilDeadline} 天後開課`;
+  return `${doc.daysUntilDeadline} 憭拙??玨`;
 }
 
 
@@ -350,16 +351,16 @@ function updateStatus(filtered, total) {
   elements.status.classList.remove('status--error');
 
   if (total === 0) {
-    elements.status.textContent = '目前尚未取得課程資訊，請稍候重試。';
+    elements.status.textContent = '?桀?撠??隤脩?鞈?嚗?蝔?閰艾?;
     return;
   }
 
   if (filtered === 0) {
-    elements.status.textContent = '沒有符合條件的課程。';
+    elements.status.textContent = '瘝?蝚血?璇辣?玨蝔?;
     return;
   }
 
-  elements.status.textContent = `顯示 ${filtered} / ${total} 堂課程`;
+  elements.status.textContent = `憿舐內 ${filtered} / ${total} ?玨蝔;
 }
 
 function setDocumentListVisibility(hasResults) {
@@ -383,12 +384,12 @@ function showPreview(url, label) {
   const previewUrl = buildPreviewUrl(url) || url;
   if (elements.previewDownload) {
     elements.previewDownload.href = url;
-    elements.previewDownload.textContent = `下載${label || '檔案'}`;
+    elements.previewDownload.textContent = `銝?${label || '瑼?'}`;
   }
 
   const iframe = document.createElement('iframe');
   iframe.src = previewUrl;
-  iframe.title = label || '檔案預覽';
+  iframe.title = label || '瑼??汗';
   iframe.loading = 'lazy';
   iframe.referrerPolicy = 'no-referrer';
   iframe.allow = 'fullscreen';
@@ -401,7 +402,7 @@ function showPreview(url, label) {
   fallbackLink.href = url;
   fallbackLink.target = '_blank';
   fallbackLink.rel = 'noopener noreferrer';
-  fallbackLink.textContent = '若無法預覽，點此開啟新視窗下載/查看';
+  fallbackLink.textContent = '?亦瘜?閬踝?暺迨???啗?蝒?頛??亦?';
   fallback.appendChild(fallbackLink);
   elements.previewContent.appendChild(fallback);
 
@@ -469,16 +470,16 @@ function createLinkList(doc) {
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     const labelText =
-      item.label?.trim() || `附件 ${String(index + 1).padStart(2, '0')}`;
+      item.label?.trim() || `?辣 ${String(index + 1).padStart(2, '0')}`;
     link.textContent = labelText;
 
     const lowerLabel = labelText.toLowerCase();
     const lowerUrl = (item.url ?? '').toLowerCase();
     const isRegister =
-      /報名/.test(labelText) ||
+      /?勗?/.test(labelText) ||
       /register|signup|enroll/.test(lowerUrl);
     const isDownload =
-      /下載|附件|檔案/.test(labelText) ||
+      /銝?|?辣|瑼?/.test(labelText) ||
       /\.pdf\b/.test(lowerUrl) ||
       /download\.php/.test(lowerUrl);
 
@@ -492,7 +493,7 @@ function createLinkList(doc) {
   if (!list.children.length) {
     const empty = document.createElement('span');
     empty.className = 'attachment-empty';
-    empty.textContent = '尚未提供連結';
+    empty.textContent = '撠?????';
     return empty;
   }
 
@@ -508,7 +509,7 @@ function createDocumentCard(doc) {
 
   const badge = document.createElement('span');
   badge.className = `badge badge--${doc.deadlineCategory}`;
-  badge.textContent = BADGE_TEXT[doc.deadlineCategory] ?? '狀態不明';
+  badge.textContent = BADGE_TEXT[doc.deadlineCategory] ?? '?????;
   header.appendChild(badge);
 
   const issued = document.createElement('span');
@@ -516,7 +517,7 @@ function createDocumentCard(doc) {
 
   const issuedLabel = document.createElement('span');
   issuedLabel.className = 'document-card__label';
-  issuedLabel.textContent = '課程日期';
+  issuedLabel.textContent = '隤脩??交?';
   issued.appendChild(issuedLabel);
 
   if (doc.date) {
@@ -526,7 +527,7 @@ function createDocumentCard(doc) {
     issued.appendChild(issuedTime);
   } else {
     const placeholder = document.createElement('span');
-    placeholder.textContent = '尚未提供';
+    placeholder.textContent = '撠??';
     issued.appendChild(placeholder);
   }
 
@@ -544,13 +545,13 @@ function createDocumentCard(doc) {
 
     const creditLabel = document.createElement('span');
     creditLabel.className = 'credit-highlight__label';
-    creditLabel.textContent = '課程總分';
+    creditLabel.textContent = '隤脩?蝮賢?';
 
     const creditValueEl = document.createElement('strong');
     creditValueEl.className = 'credit-highlight__value';
     creditValueEl.textContent = Number.isInteger(creditValue)
-      ? `${creditValue} 分`
-      : `${creditValue.toFixed(1)} 分`;
+      ? `${creditValue} ?
+      : `${creditValue.toFixed(1)} ?;
 
     creditHighlight.append(creditLabel, creditValueEl);
   }
@@ -558,7 +559,7 @@ function createDocumentCard(doc) {
   const title = document.createElement('h2');
   title.className = 'document-card__title';
   const titleText =
-    doc.title?.trim() || doc.subject?.trim() || '未提供課程名稱';
+    doc.title?.trim() || doc.subject?.trim() || '?芣?靘玨蝔?蝔?;
   const primaryUrl =
     doc.detailUrl ?? doc.subjectUrl ?? doc.links?.[0]?.url ?? null;
 
@@ -581,12 +582,12 @@ function createDocumentCard(doc) {
   countdown.textContent = formatDeadlineNote(doc);
 
   const timeContent = document.createElement('span');
-  timeContent.textContent = doc.time?.trim() || '尚未提供';
+  timeContent.textContent = doc.time?.trim() || '撠??';
 
   metaList.append(
-    createMetaItem('開課倒數', countdown),
-    createMetaItem('上課時間', timeContent),
-    createMetaItem('課程連結', createLinkList(doc)),
+    createMetaItem('?玨?', countdown),
+    createMetaItem('銝玨??', timeContent),
+    createMetaItem('隤脩????', createLinkList(doc)),
   );
 
   const sections = [header];
@@ -638,7 +639,7 @@ async function loadDocuments() {
     setDocumentListVisibility(state.filtered.length > 0);
   } catch (error) {
     console.error('Unable to load courses', error);
-    elements.status.textContent = '課程載入失敗，請檢查網路或稍後再試。';
+    elements.status.textContent = '隤脩?頛憭望?嚗?瑼Ｘ蝬脰楝??敺?閰艾?;
     elements.status.classList.add('status--error');
   }
 }
