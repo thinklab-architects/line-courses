@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "2025-11-23T15:46:09.042Z",
+  "updatedAt": "2025-11-24T14:28:57.072Z",
   "total": 50,
   "courses": [
     {
@@ -35,6 +35,23 @@
       "registrationUrl": null,
       "page": 1,
       "credits": 20,
+      "attachments": []
+    },
+    {
+      "title": "資訊講座預告",
+      "date": "2026-01-19",
+      "deadline": "2026-01-19",
+      "time": "下午2:30~5:30",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1238"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1238",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -97,20 +114,16 @@
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1231"
-        },
-        {
-          "label": "報名",
-          "url": "https://www.kaa.org.tw/course_apply.php?b=1231&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1231",
-      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1231&t=course",
+      "registrationUrl": null,
       "page": 1,
       "credits": 30,
       "attachments": [
         {
           "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1231/2025775079d5e4228f3c86a74af9c5cf"
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1231/72603567667635428f7dd837920ef554"
         }
       ]
     },
@@ -183,7 +196,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1218",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": null,
       "attachments": []
     },
@@ -199,6 +212,23 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1225",
+      "registrationUrl": null,
+      "page": 2,
+      "credits": null,
+      "attachments": []
+    },
+    {
+      "title": "建築師相關之刑事案例解說",
+      "date": "2025-11-07",
+      "deadline": "2025-11-07",
+      "time": "16:00~17:50",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1237"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1237",
       "registrationUrl": null,
       "page": 2,
       "credits": null,
@@ -336,7 +366,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1228",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -353,7 +383,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1216",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -506,7 +536,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1202",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -523,7 +553,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1184",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -676,7 +706,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1204",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -693,7 +723,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1192",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -833,40 +863,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1180",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "「建築技術規則解析與審查應注意事項」講習會",
-      "date": "2025-03-25",
-      "deadline": "2025-03-25",
-      "time": "下午2:00~5:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1191"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1191",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "教育推廣系列課程 「都更及危老重建實務操作課程(最終場)」-危老重建的效益評估及實例操作（透天型）",
-      "date": "2025-03-20",
-      "deadline": "2025-03-20",
-      "time": "下午2：00~5：00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1171"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1171",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
