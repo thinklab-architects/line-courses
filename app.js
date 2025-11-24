@@ -1,4 +1,4 @@
-﻿const DATA_URL = './data/courses.json';
+const DATA_URL = './data/courses.json';
 const DEADLINE_SOON_DAYS = 7;
 const PREVIEW_VIEWER_BASE = 'https://docs.google.com/viewer?embedded=true&url=';
 const BADGE_TEXT = {
@@ -22,7 +22,6 @@ const state = {
 };
 
 bootstrapLayout();
-document.title = 'COURSE｜高雄建築師公會';
 
 const elements = {
   status: document.getElementById('status'),
@@ -34,7 +33,6 @@ const elements = {
   creditFilter: document.getElementById('creditFilter'),
   previewModal: document.getElementById('previewModal'),
   previewContent: document.getElementById('previewContent'),
-  previewDownload: document.getElementById('previewDownload'),
 };
 
 const statusCheckboxes = Array.from(
@@ -138,7 +136,7 @@ elements.clearFilters.addEventListener('click', () => {
 loadDocuments();
 
 function bootstrapLayout() {
-  document.title = "COURSE｜高雄建築師公會";
+  document.title = 'LINE Courses嚚??遣蝭葦?祆?隤脩?敹怨汗';
 }
 
 function formatUpdatedAt(isoString) {
@@ -372,9 +370,6 @@ function closePreview() {
   elements.previewContent.replaceChildren();
   elements.previewModal.setAttribute('aria-hidden', 'true');
   elements.previewModal.hidden = true;
-  if (elements.previewDownload) {
-    elements.previewDownload.href = '#';
-  }
 }
 
 function showPreview(url, label) {
@@ -382,10 +377,6 @@ function showPreview(url, label) {
   elements.previewContent.replaceChildren();
 
   const previewUrl = buildPreviewUrl(url) || url;
-  if (elements.previewDownload) {
-    elements.previewDownload.href = url;
-    elements.previewDownload.textContent = `銝?${label || '瑼?'}`;
-  }
 
   const iframe = document.createElement('iframe');
   iframe.src = previewUrl;
