@@ -161,6 +161,14 @@ a:focus-visible {
   letter-spacing: 0.02em;
   color: var(--accent-strong);
 }
+.hero__subtitle a {
+  color: inherit;
+  text-decoration: none;
+}
+.hero__subtitle a:hover,
+.hero__subtitle a:focus-visible {
+  text-decoration: underline;
+}
 
 .hero__description {
   margin: 0;
