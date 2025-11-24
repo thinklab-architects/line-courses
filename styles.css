@@ -163,6 +163,13 @@ a:focus-visible {
   object-fit: contain;
 }
 
+.footer-logo {
+  height: 20px;
+  width: auto;
+  vertical-align: middle;
+  margin: -2px 6px 0 4px;
+}
+
 .hero__title {
   margin: 0;
   font-size: clamp(2.6rem, 6vw, 4.4rem);
