@@ -165,9 +165,9 @@ function formatUpdatedAt(isoString) {
     timeZone: 'Asia/Taipei',
   });
   try {
-    return `課程更新：${formatter.format(new Date(isoString))}`;
+    return '課程更新：' + formatter.format(new Date(isoString));
   } catch {
-    return `課程更新：${isoString}`;
+    return '課程更新：' + isoString;
   }
 }
 
