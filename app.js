@@ -1,6 +1,7 @@
 const DATA_URL = './data/courses.json';
 const DEADLINE_SOON_DAYS = 7;
 const PREVIEW_VIEWER_BASE = 'https://docs.google.com/viewer?embedded=true&url=';
+
 const BADGE_TEXT = {
   'due-soon': '即將開課',
   active: '尚未開課',
@@ -61,7 +62,6 @@ function syncCreditFilter() {
 statusCheckboxes.forEach((checkbox) => {
   checkbox.addEventListener('change', () => {
     const { value, checked } = checkbox;
-
     if (checked) {
       state.filters.statuses.add(value);
     } else {
@@ -72,7 +72,6 @@ statusCheckboxes.forEach((checkbox) => {
         return;
       }
     }
-
     render();
   });
 });
@@ -136,17 +135,13 @@ if (elements.clearFilters) {
   });
 }
 
-loadDocuments();
-
 function formatUpdatedAt(isoString) {
   if (!isoString) return '課程更新：尚待同步';
-
   const formatter = new Intl.DateTimeFormat('zh-TW', {
     dateStyle: 'medium',
     timeStyle: 'short',
     timeZone: 'Asia/Taipei',
   });
-
   try {
     return `課程更新：${formatter.format(new Date(isoString))}`;
   } catch {
@@ -270,8 +265,8 @@ function sortDocuments(documents) {
 
 function applyFilters() {
   let results = [...state.documents];
-
   const query = state.filters.search.toLowerCase();
+
   if (query) {
     results = results.filter((doc) => {
       const title = (doc.title ?? doc.subject ?? '').toLowerCase();
@@ -332,11 +327,8 @@ function createMetaItem(label, content) {
   dt.textContent = label;
 
   const dd = document.createElement('dd');
-  if (typeof content === 'string') {
-    dd.textContent = content;
-  } else if (content instanceof Node) {
-    dd.appendChild(content);
-  }
+  if (typeof content === 'string') dd.textContent = content;
+  else if (content instanceof Node) dd.appendChild(content);
 
   wrapper.append(dt, dd);
   return wrapper;
@@ -405,9 +397,7 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    closePreview();
-  }
+  if (e.key === 'Escape') closePreview();
 });
 
 function closePreview() {
@@ -596,3 +586,5 @@ async function loadDocuments() {
     elements.status.classList.add('status--error');
   }
 }
+
+loadDocuments();
