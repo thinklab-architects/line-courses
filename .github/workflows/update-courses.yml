@@ -32,6 +32,8 @@ jobs:
         run: npm run fetch
 
       - name: Commit and push changes
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git add .
           if git diff --staged --quiet; then
@@ -39,8 +41,9 @@ jobs:
             exit 0
           fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git remote set-url origin https://${GH_PAT}@github.com/thinklab-architects/line-courses.git
           git commit -m "chore: auto-update courses data"
           git pull --rebase origin master
           git push
