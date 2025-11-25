@@ -165,12 +165,12 @@ function formatUpdatedAt(isoString) {
     return `資料更新：${isoString}`;
   }
 
-  const datePart = new Intl.DateTimeFormat('zh-TW', {
+  const dateParts = new Intl.DateTimeFormat('zh-TW', {
     timeZone: 'Asia/Taipei',
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
-  }).format(date);
+  }).formatToParts(date);
 
   const timeParts = new Intl.DateTimeFormat('zh-TW', {
     timeZone: 'Asia/Taipei',
@@ -179,9 +179,13 @@ function formatUpdatedAt(isoString) {
     hour12: true,
   }).formatToParts(date);
 
-  const hourStr = (timeParts.find((p) => p.type === 'hour')?.value) || '12';
-  const minuteStr = (timeParts.find((p) => p.type === 'minute')?.value) || '00';
-  const period = (timeParts.find((p) => p.type === 'dayPeriod')?.value) || '';
+  const yearStr = dateParts.find((p) => p.type === 'year')?.value || '';
+  const monthStr = dateParts.find((p) => p.type === 'month')?.value || '';
+  const dayStr = dateParts.find((p) => p.type === 'day')?.value || '';
+
+  const hourStr = timeParts.find((p) => p.type === 'hour')?.value || '12';
+  const minuteStr = timeParts.find((p) => p.type === 'minute')?.value || '00';
+  const period = timeParts.find((p) => p.type === 'dayPeriod')?.value || '';
 
   let hourNum = Number.parseInt(hourStr, 10);
   if (Number.isNaN(hourNum)) hourNum = 0;
@@ -191,8 +195,7 @@ function formatUpdatedAt(isoString) {
   }
   const timeText = `${label}${String(hourNum).padStart(2, '0')}:${minuteStr}`;
 
-  const [y, m, d] = datePart.split('-');
-  return `資料更新：${y}年${m}月${d}日 ${timeText}`;
+  return `資料更新：${yearStr}年${monthStr}月${dayStr}日 ${timeText}`;
 }
 
 function parseDate(value) {
