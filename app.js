@@ -158,17 +158,41 @@ function syncCreditFilter() {
 }
 
 function formatUpdatedAt(isoString) {
-  if (!isoString) return '課程更新：尚待同步';
-  const formatter = new Intl.DateTimeFormat('zh-TW', {
-    dateStyle: 'medium',
-    timeStyle: 'short',
-    timeZone: 'Asia/Taipei',
-  });
-  try {
-    return '課程更新：' + formatter.format(new Date(isoString));
-  } catch {
-    return '課程更新：' + isoString;
+  if (!isoString) return '資料更新：尚待同步';
+
+  const date = new Date(isoString);
+  if (Number.isNaN(date.getTime())) {
+    return `資料更新：${isoString}`;
   }
+
+  const datePart = new Intl.DateTimeFormat('zh-TW', {
+    timeZone: 'Asia/Taipei',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(date);
+
+  const timeParts = new Intl.DateTimeFormat('zh-TW', {
+    timeZone: 'Asia/Taipei',
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: true,
+  }).formatToParts(date);
+
+  const hourStr = (timeParts.find((p) => p.type === 'hour')?.value) || '12';
+  const minuteStr = (timeParts.find((p) => p.type === 'minute')?.value) || '00';
+  const period = (timeParts.find((p) => p.type === 'dayPeriod')?.value) || '';
+
+  let hourNum = Number.parseInt(hourStr, 10);
+  if (Number.isNaN(hourNum)) hourNum = 0;
+  let label = period || '';
+  if (period === '下午' && hourNum >= 6) {
+    label = '晚上';
+  }
+  const timeText = `${label}${String(hourNum).padStart(2, '0')}:${minuteStr}`;
+
+  const [y, m, d] = datePart.split('-');
+  return `資料更新：${y}年${m}月${d}日 ${timeText}`;
 }
 
 function parseDate(value) {
