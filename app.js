@@ -212,7 +212,6 @@ function formatDeadlineNote(doc) {
 
 function sortDocuments(documents) {
   const sorted = [...documents];
-
   const compareDate = (a, b, key, direction = 'desc') => {
     const aDate = a[key];
     const bDate = b[key];
