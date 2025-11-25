@@ -40,6 +40,104 @@ const statusCheckboxes = Array.from(
 );
 
 bootstrapLayout();
+attachEvents();
+loadDocuments();
+
+function bootstrapLayout() {
+  document.title = 'COURSE｜高雄建築師公會';
+}
+
+function attachEvents() {
+  syncStatusCheckboxes();
+  syncCreditFilter();
+
+  statusCheckboxes.forEach((checkbox) => {
+    checkbox.addEventListener('change', () => {
+      const { value, checked } = checkbox;
+      if (checked) {
+        state.filters.statuses.add(value);
+      } else {
+        state.filters.statuses.delete(value);
+        if (state.filters.statuses.size === 0) {
+          state.filters.statuses.add(value);
+          checkbox.checked = true;
+          return;
+        }
+      }
+      render();
+    });
+  });
+
+  if (elements.creditFilter) {
+    elements.creditFilter.addEventListener('click', () => {
+      state.filters.hasCreditsOnly = !state.filters.hasCreditsOnly;
+      syncCreditFilter();
+      render();
+    });
+  }
+
+  if (elements.searchInput) {
+    elements.searchInput.addEventListener('input', (event) => {
+      state.filters.search = event.target.value.trim();
+      render();
+    });
+    elements.searchInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && elements.searchInput.value) {
+        elements.searchInput.value = '';
+        state.filters.search = '';
+        render();
+      }
+    });
+  }
+
+  if (elements.sortSelect) {
+    elements.sortSelect.addEventListener('change', (event) => {
+      state.filters.sort = event.target.value;
+      render();
+    });
+  }
+
+  if (elements.clearFilters) {
+    elements.clearFilters.addEventListener('click', () => {
+      const hasSearch = Boolean(state.filters.search);
+      const hasSort = state.filters.sort !== 'deadline-asc';
+      const hasStatusChange =
+        state.filters.statuses.size !== DEFAULT_STATUS_VALUES.length ||
+        DEFAULT_STATUS_VALUES.some((value) => !state.filters.statuses.has(value));
+      const hasCreditFilter = state.filters.hasCreditsOnly;
+
+      if (!hasSearch && !hasSort && !hasStatusChange && !hasCreditFilter) return;
+
+      state.filters.search = '';
+      state.filters.sort = 'deadline-asc';
+      resetStatusFilters();
+      state.filters.hasCreditsOnly = false;
+      syncCreditFilter();
+      if (elements.searchInput) elements.searchInput.value = '';
+      if (elements.sortSelect) elements.sortSelect.value = 'deadline-asc';
+      render();
+    });
+  }
+
+  document.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target && (target.matches('[data-close]') || target.closest('[data-close]'))) {
+      closePreview();
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    const anchor = e.target.closest('.attachment-link--download');
+    if (!anchor) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    showPreview(anchor.href, anchor.textContent.trim());
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closePreview();
+  });
+}
 
 function syncStatusCheckboxes() {
   statusCheckboxes.forEach((checkbox) => {
@@ -57,82 +155,6 @@ function syncCreditFilter() {
   const pressed = Boolean(state.filters.hasCreditsOnly);
   elements.creditFilter.classList.toggle('filter-chip--active', pressed);
   elements.creditFilter.setAttribute('aria-pressed', String(pressed));
-}
-
-statusCheckboxes.forEach((checkbox) => {
-  checkbox.addEventListener('change', () => {
-    const { value, checked } = checkbox;
-    if (checked) {
-      state.filters.statuses.add(value);
-    } else {
-      state.filters.statuses.delete(value);
-      if (state.filters.statuses.size === 0) {
-        state.filters.statuses.add(value);
-        checkbox.checked = true;
-        return;
-      }
-    }
-    render();
-  });
-});
-
-syncStatusCheckboxes();
-syncCreditFilter();
-
-if (elements.creditFilter) {
-  elements.creditFilter.addEventListener('click', () => {
-    state.filters.hasCreditsOnly = !state.filters.hasCreditsOnly;
-    syncCreditFilter();
-    render();
-  });
-}
-
-if (elements.searchInput) {
-  elements.searchInput.addEventListener('input', (event) => {
-    state.filters.search = event.target.value.trim();
-    render();
-  });
-
-  elements.searchInput.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && elements.searchInput.value) {
-      elements.searchInput.value = '';
-      state.filters.search = '';
-      render();
-    }
-  });
-}
-
-if (elements.sortSelect) {
-  elements.sortSelect.addEventListener('change', (event) => {
-    state.filters.sort = event.target.value;
-    render();
-  });
-}
-
-if (elements.clearFilters) {
-  elements.clearFilters.addEventListener('click', () => {
-    const hasSearch = Boolean(state.filters.search);
-    const hasSort = state.filters.sort !== 'deadline-asc';
-    const hasStatusChange =
-      state.filters.statuses.size !== DEFAULT_STATUS_VALUES.length ||
-      DEFAULT_STATUS_VALUES.some((value) => !state.filters.statuses.has(value));
-    const hasCreditFilter = state.filters.hasCreditsOnly;
-
-    if (!hasSearch && !hasSort && !hasStatusChange && !hasCreditFilter) {
-      return;
-    }
-
-    state.filters.search = '';
-    state.filters.sort = 'deadline-asc';
-    resetStatusFilters();
-    state.filters.hasCreditsOnly = false;
-    syncCreditFilter();
-
-    if (elements.searchInput) elements.searchInput.value = '';
-    if (elements.sortSelect) elements.sortSelect.value = 'deadline-asc';
-
-    render();
-  });
 }
 
 function formatUpdatedAt(isoString) {
@@ -183,7 +205,6 @@ function enrichDocument(doc) {
       (deadlineDate.getTime() - today.getTime()) / (24 * 60 * 60 * 1000),
     );
     daysUntilDeadline = diffDays;
-
     if (diffDays < 0) {
       deadlineCategory = 'expired';
     } else if (diffDays <= DEADLINE_SOON_DAYS) {
@@ -379,25 +400,6 @@ function createLinkList(doc) {
 
   return list;
 }
-
-document.addEventListener('click', (e) => {
-  const target = e.target;
-  if (target && (target.matches('[data-close]') || target.closest('[data-close]'))) {
-    closePreview();
-  }
-});
-
-document.addEventListener('click', (e) => {
-  const anchor = e.target.closest('.attachment-link--download');
-  if (!anchor) return;
-  if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-  e.preventDefault();
-  showPreview(anchor.href, anchor.textContent.trim());
-});
-
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closePreview();
-});
 
 function closePreview() {
   if (!elements.previewModal || !elements.previewContent) return;
