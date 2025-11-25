@@ -31,22 +31,15 @@ jobs:
       - name: Fetch latest courses
         run: npm run fetch
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
-          if git diff --quiet; then
+          git add .
+          if git diff --staged --quiet; then
             echo "No changes to commit."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "chore: auto-update courses data"
-
-      - name: Push changes
-        if: always()
-        run: |
-          if git status --porcelain | grep . >/dev/null; then
-            git push
-          else
-            echo "Nothing to push."
-          fi
+          git commit -m "chore: auto-update courses data"
+          git push
