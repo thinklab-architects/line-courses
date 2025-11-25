@@ -33,7 +33,7 @@ jobs:
 
       - name: Commit and push changes
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add .
           if git diff --staged --quiet; then
@@ -43,7 +43,7 @@ jobs:
 
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git remote set-url origin https://${GH_PAT}@github.com/thinklab-architects/line-courses.git
+          git remote set-url origin https://${GH_TOKEN}@github.com/thinklab-architects/line-courses.git
           git commit -m "chore: auto-update courses data"
           git pull --rebase origin master
           git push
