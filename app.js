@@ -21,8 +21,6 @@ const state = {
   },
 };
 
-bootstrapLayout();
-
 const elements = {
   status: document.getElementById('status'),
   documentList: document.getElementById('documentList'),
@@ -39,6 +37,8 @@ const elements = {
 const statusCheckboxes = Array.from(
   document.querySelectorAll('input[name="statusFilter"]'),
 );
+
+bootstrapLayout();
 
 function syncStatusCheckboxes() {
   statusCheckboxes.forEach((checkbox) => {
@@ -95,7 +95,7 @@ if (elements.searchInput) {
   });
 
   elements.searchInput.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
+    if (event.key === 'Escape' && elements.searchInput.value) {
       elements.searchInput.value = '';
       state.filters.search = '';
       render();
@@ -137,10 +137,6 @@ if (elements.clearFilters) {
 }
 
 loadDocuments();
-
-function bootstrapLayout() {
-  document.title = 'COURSE｜高雄建築師公會';
-}
 
 function formatUpdatedAt(isoString) {
   if (!isoString) return '課程更新：尚待同步';
@@ -588,8 +584,9 @@ async function loadDocuments() {
     state.documents = documents.map(enrichDocument);
     render();
 
-    if (payload.updatedAt) {
-      elements.updatedAt.textContent = formatUpdatedAt(payload.updatedAt);
+    const stamp = payload.updatedAt || payload.scrapedAt || null;
+    if (stamp) {
+      elements.updatedAt.textContent = formatUpdatedAt(stamp);
     }
 
     setDocumentListVisibility(state.filtered.length > 0);
