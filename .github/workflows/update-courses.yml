@@ -2,6 +2,8 @@ name: Update KAA courses data
 
 on:
   workflow_dispatch:
+  # GitHub may automatically disable scheduled workflows after long repository inactivity.
+  # Merging a commit to the default branch or running workflow_dispatch re-enables the cron trigger.
   schedule:
     - cron: '0 * * * *'
 
