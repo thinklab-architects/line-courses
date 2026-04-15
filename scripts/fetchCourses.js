@@ -9,6 +9,7 @@ const MAX_PAGES = 5;
 const WAIT_MS = 0;
 const DETAIL_WAIT_MS = 0;
 const DETAIL_CONCURRENCY = 10;
+const MAX_RETRIES = 3;
 const HEADERS = {
   'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
@@ -73,11 +74,27 @@ function parseCourses(html) {
       '課程資訊',
     );
 
-    const registerLink = buildLink(
+    // Try column 4 first, then scan all cells for registration links
+    let registerLink = buildLink(
       $(cells[4]).text(),
       $(cells[4]).find('a').attr('href'),
       '線上報名',
     );
+
+    // Fallback: search all cells for links containing apply/報名 patterns
+    if (!registerLink) {
+      cells.each((ci, cell) => {
+        if (registerLink) return;
+        $(cell).find('a').each((__, anchor) => {
+          if (registerLink) return;
+          const href = $(anchor).attr('href') || '';
+          const text = cleanText($(anchor).text());
+          if (href.includes('apply') || href.includes('signup') || text.includes('報名')) {
+            registerLink = buildLink(text, href, '線上報名');
+          }
+        });
+      });
+    }
 
     const extras = [];
     $(cells[5])
@@ -135,12 +152,22 @@ function isExpired(deadline) {
 async function fetchCourseDetail(detailUrl) {
   if (!detailUrl) return { credits: null, attachments: [] };
 
-  const response = await fetch(detailUrl, { headers: HEADERS });
-  if (!response.ok) {
-    throw new Error(`Failed to fetch detail: ${response.status} ${response.statusText}`);
+  let buffer;
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      const response = await fetch(detailUrl, { headers: HEADERS });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status} ${response.statusText}`);
+      }
+      buffer = Buffer.from(await response.arrayBuffer());
+      break;
+    } catch (error) {
+      if (attempt === MAX_RETRIES) throw error;
+      const delay = 1000 * 2 ** (attempt - 1);
+      console.warn(`Detail attempt ${attempt}/${MAX_RETRIES}: ${error.message}. Retrying...`);
+      await sleep(delay);
+    }
   }
-
-  const buffer = Buffer.from(await response.arrayBuffer());
   let html = buffer.toString('utf8');
 
   // handle potential Big5 encoding
@@ -284,14 +311,23 @@ async function fetchPage(page) {
     url.searchParams.set('b', String(page));
   }
 
-  const response = await fetch(url, { headers: HEADERS });
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch page ${page}: ${response.status} ${response.statusText}`);
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      const response = await fetch(url, { headers: HEADERS });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status} ${response.statusText}`);
+      }
+      const buffer = Buffer.from(await response.arrayBuffer());
+      return buffer.toString('utf8');
+    } catch (error) {
+      if (attempt === MAX_RETRIES) {
+        throw new Error(`Failed to fetch page ${page} after ${MAX_RETRIES} attempts: ${error.message}`);
+      }
+      const delay = 1000 * 2 ** (attempt - 1);
+      console.warn(`Attempt ${attempt}/${MAX_RETRIES} for page ${page}: ${error.message}. Retrying in ${delay}ms...`);
+      await sleep(delay);
+    }
   }
-
-  const buffer = Buffer.from(await response.arrayBuffer());
-  return buffer.toString('utf8');
 }
 
 async function scrapeCourses() {
