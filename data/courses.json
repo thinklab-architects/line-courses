@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-04-16T03:11:15Z\"",
+  "updatedAt": "\"2026-04-16T05:05:35Z\"",
   "total": 50,
   "courses": [
     {
@@ -153,21 +153,26 @@
       "attachments": []
     },
     {
-      "title": "暫定教育推廣中心講習",
+      "title": "教育推廣「建築師一定要懂的自主都更：整合、分配與開發的關鍵能力」課程",
       "date": "2026-05-14",
       "deadline": "2026-05-14",
-      "time": "下午2：00~5：00",
+      "time": "下午2：00~5：00(2點報到，2：20開課)",
       "links": [
         {
           "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1250"
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1261"
         }
       ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1250",
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1261",
       "registrationUrl": null,
       "page": 1,
       "credits": 0,
-      "attachments": []
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1261/40947af8be1f419b2de85d78b74229e7"
+        }
+      ]
     },
     {
       "title": "(已額滿截止報名)新建建築與新建住宅能效評估實例解說",
