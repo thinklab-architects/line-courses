@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-04-16T01:39:14Z\"",
+  "updatedAt": "\"2026-04-16T03:11:15Z\"",
   "total": 50,
   "courses": [
     {
@@ -183,13 +183,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
       "registrationUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
       "page": 1,
-      "credits": 0,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1258/dc7b1e4fc13ce96910c8386cdb184db5"
-        }
-      ]
+      "credits": 20,
+      "attachments": []
     },
     {
       "title": "115大東講堂「藝術入村-''元創眷永''在馬祖新村」",
