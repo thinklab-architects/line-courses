@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-04-17T03:11:00Z\"",
+  "updatedAt": "\"2026-04-17T05:04:36Z\"",
   "total": 50,
   "courses": [
     {
@@ -73,6 +73,23 @@
       "registrationUrl": null,
       "page": 1,
       "credits": 20,
+      "attachments": []
+    },
+    {
+      "title": "暫定教育推廣中心講習",
+      "date": "2026-06-24",
+      "deadline": "2026-06-24",
+      "time": "下午2：00報到，2：20開課",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1262"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1262",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -187,7 +204,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
       "registrationUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
-      "page": 1,
+      "page": 2,
       "credits": 20,
       "attachments": []
     },
@@ -357,7 +374,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1239",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -527,7 +544,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1244",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -697,7 +714,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1229",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -849,23 +866,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1217",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "建照委審「審驗人員教育訓練講座」暨檢討座談會 (第一場)",
-      "date": "2025-08-21",
-      "deadline": "2025-08-21",
-      "time": "14:00~17:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1226"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1226",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
