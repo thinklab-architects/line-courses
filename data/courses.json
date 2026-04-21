@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-04-21T03:10:55Z\"",
+  "updatedAt": "\"2026-04-21T05:03:41Z\"",
   "total": 50,
   "courses": [
     {
@@ -76,7 +76,7 @@
       "attachments": []
     },
     {
-      "title": "暫定教育推廣中心講習",
+      "title": "教育推廣中心實務課程 「危老重建全製程實務與法規解析」",
       "date": "2026-06-24",
       "deadline": "2026-06-24",
       "time": "下午2：00報到，2：20開課",
@@ -90,7 +90,12 @@
       "registrationUrl": null,
       "page": 1,
       "credits": 0,
-      "attachments": []
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1262/c3aa07a971e4a4585d0765b18e217715"
+        }
+      ]
     },
     {
       "title": "資訊講座 - 建築 3D 列印入門與實務應用",
