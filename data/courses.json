@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-04-21T10:34:48Z\"",
+  "updatedAt": "\"2026-04-21T11:29:50Z\"",
   "total": 50,
   "courses": [
     {
@@ -141,7 +141,7 @@
       "attachments": []
     },
     {
-      "title": "(暫定)115年度「委託使用執照之審查及竣工查驗作業」業務執行說明:市府第五會議室",
+      "title": "115年度「委託使用執照之審查及竣工查驗作業」業務執行說明:市府第五會議室",
       "date": "2026-05-20",
       "deadline": "2026-05-20",
       "time": "14:30~17:30 (14:00開始報到)",
@@ -149,13 +149,22 @@
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1257"
+        },
+        {
+          "label": "報名",
+          "url": "https://www.kaa.org.tw/course_apply.php?b=1257&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1257",
-      "registrationUrl": null,
+      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1257&t=course",
       "page": 1,
       "credits": 0,
-      "attachments": []
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1257/b896bb140264ddbe26d7a521ce2d2f46"
+        }
+      ]
     },
     {
       "title": "115年度大東講堂「修.空間」",
