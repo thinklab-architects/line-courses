@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-04-23T00:47:31Z\"",
+  "updatedAt": "\"2026-04-23T01:39:05Z\"",
   "total": 50,
   "courses": [
     {
@@ -257,6 +257,23 @@
       "attachments": []
     },
     {
+      "title": "老宅延壽機能復新計畫座談會",
+      "date": "2026-04-10",
+      "deadline": "2026-04-10",
+      "time": "17:00-18:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1263"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1263",
+      "registrationUrl": null,
+      "page": 2,
+      "credits": null,
+      "attachments": []
+    },
+    {
       "title": "115年度「委託使用執照之審查及竣工查驗作業」業務執行教育訓練",
       "date": "2026-03-30",
       "deadline": "2026-03-30",
@@ -371,7 +388,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1234",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -541,7 +558,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1232",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -711,7 +728,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1222",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -863,23 +880,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1245",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "法益講座-營建工程職業安全衛生管理及職安設施安全防範與常見缺失",
-      "date": "2025-08-22",
-      "deadline": "2025-08-22",
-      "time": "下午2:00~5:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1217"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1217",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
