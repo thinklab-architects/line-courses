@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-04-24T00:47:45Z\"",
+  "updatedAt": "\"2026-04-24T01:39:22Z\"",
   "total": 50,
   "courses": [
     {
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "title": "資訊講座 - 建築 3D 列印入門與實務應用",
+      "title": "資訊講座 - 建築 3D 列印入門與實務應用(已額滿)",
       "date": "2026-06-16",
       "deadline": "2026-06-16",
       "time": "下午2:30-5:30",
@@ -106,14 +106,10 @@
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1260"
-        },
-        {
-          "label": "報名",
-          "url": "https://www.kaa.org.tw/course_apply.php?b=1260&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1260",
-      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1260&t=course",
+      "registrationUrl": null,
       "page": 1,
       "credits": 30,
       "attachments": [
@@ -291,6 +287,23 @@
       "attachments": []
     },
     {
+      "title": "AI 物聯網（AIoT）在工程監測之應用",
+      "date": "2026-03-27",
+      "deadline": "2026-03-27",
+      "time": "下午2:00-5:30",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1264"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1264",
+      "registrationUrl": null,
+      "page": 2,
+      "credits": null,
+      "attachments": []
+    },
+    {
       "title": "學術「地域主義的先行者-陳仁和百年+3建築紀念大展」參訪活動",
       "date": "2026-03-13",
       "deadline": "2026-03-13",
@@ -371,7 +384,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1238",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -541,7 +554,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1233",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -711,7 +724,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1220",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -863,23 +876,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1219",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "建築結構講習-建築師擔任等別監督人實務解析",
-      "date": "2025-08-26",
-      "deadline": "2025-08-26",
-      "time": "14:00~17:30",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1245"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1245",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
