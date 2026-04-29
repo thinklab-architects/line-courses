@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-04-29T09:47:14Z\"",
+  "updatedAt": "\"2026-04-29T10:40:43Z\"",
   "total": 50,
   "courses": [
     {
@@ -120,21 +120,30 @@
       ]
     },
     {
-      "title": "暫定學術講習",
+      "title": "學術講座「低蘊含碳建築設計實務與 LEBR 評估應用」",
       "date": "2026-06-05",
       "deadline": "2026-06-05",
-      "time": "上午9：30~12：00",
+      "time": "上午9：30~12：00(9：10報到)",
       "links": [
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1259"
+        },
+        {
+          "label": "報名",
+          "url": "https://www.kaa.org.tw/course_apply.php?b=1259&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1259",
-      "registrationUrl": null,
+      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1259&t=course",
       "page": 1,
       "credits": 0,
-      "attachments": []
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1259/234f3dbf339d48df2f692c47324e4fff"
+        }
+      ]
     },
     {
       "title": "115年度「委託使用執照之審查及竣工查驗作業」業務執行說明:市府第五會議室",
