@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-05-07T03:14:09Z\"",
+  "updatedAt": "\"2026-05-07T05:13:17Z\"",
   "total": 50,
   "courses": [
     {
@@ -56,6 +56,23 @@
       "registrationUrl": null,
       "page": 1,
       "credits": 20,
+      "attachments": []
+    },
+    {
+      "title": "暫定學術講習",
+      "date": "2026-07-02",
+      "deadline": "2026-07-02",
+      "time": "下午2：00~5：00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1265"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1265",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -197,7 +214,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1261",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 20,
       "attachments": [
         {
@@ -372,7 +389,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1243",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -542,7 +559,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1242",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -712,7 +729,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1230",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -864,23 +881,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1208",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "「2025建築技術規則及綠建築錯誤樣態實務課程」(一)",
-      "date": "2025-08-28",
-      "deadline": "2025-08-28",
-      "time": "14:00~17:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1219"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1219",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
