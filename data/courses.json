@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-05-12T05:18:52Z\"",
+  "updatedAt": "\"2026-05-12T07:07:15Z\"",
   "total": 50,
   "courses": [
     {
@@ -216,12 +216,7 @@
       "registrationUrl": null,
       "page": 2,
       "credits": 20,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1261/40947af8be1f419b2de85d78b74229e7"
-        }
-      ]
+      "attachments": []
     },
     {
       "title": "(已額滿截止報名)新建建築與新建住宅能效評估實例解說",
