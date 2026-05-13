@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-05-13T01:42:17Z\"",
+  "updatedAt": "\"2026-05-13T03:14:31Z\"",
   "total": 50,
   "courses": [
     {
@@ -39,6 +39,23 @@
       "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1255&t=course",
       "page": 1,
       "credits": 20,
+      "attachments": []
+    },
+    {
+      "title": "暫定學術講習",
+      "date": "2026-08-05",
+      "deadline": "2026-08-05",
+      "time": "下午2：00~5：00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1266"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1266",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -176,7 +193,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1257",
       "registrationUrl": null,
       "page": 1,
-      "credits": 0,
+      "credits": 20,
       "attachments": [
         {
           "label": "檔案下載",
@@ -197,7 +214,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1252",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 20,
       "attachments": []
     },
@@ -367,7 +384,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1248",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -537,7 +554,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1224",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -707,7 +724,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1210",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -859,23 +876,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1221",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "114大東講堂「漂流於馬來半島--以母屋為始的馬來民居建築故事」",
-      "date": "2025-09-06",
-      "deadline": "2025-09-06",
-      "time": "下午2：00~5：00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1208"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1208",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
