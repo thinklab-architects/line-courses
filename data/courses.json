@@ -1,8 +1,30 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-06-04T07:46:37Z\"",
+  "updatedAt": "\"2026-06-04T09:26:13Z\"",
   "total": 50,
   "courses": [
+    {
+      "title": "(建照委審教育訓練)「建造執照審查實務分享及注意事項」",
+      "date": "2026-09-17",
+      "deadline": "2026-09-17",
+      "time": "下午2:30~5:00(下午2:20開始報到)",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1268"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1268",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1268/ad9273da6e25e22f83a79caea7f040cf"
+        }
+      ]
+    },
     {
       "title": "115年度大東講堂「建築師的斜槓人生-從城市美學到樂活書法」",
       "date": "2026-08-22",
@@ -197,7 +219,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1257",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": null,
       "attachments": []
     },
@@ -367,7 +389,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1247",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -537,7 +559,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1240",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -707,7 +729,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1237",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -859,23 +881,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1216",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "114大東講堂「回家的距離-維冠由撤離到重建的故事」",
-      "date": "2025-09-13",
-      "deadline": "2025-09-13",
-      "time": "下午2：00~5：00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1209"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1209",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
