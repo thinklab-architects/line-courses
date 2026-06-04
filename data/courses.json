@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-06-04T05:42:22Z\"",
+  "updatedAt": "\"2026-06-04T07:46:37Z\"",
   "total": 50,
   "courses": [
     {
@@ -76,7 +76,7 @@
       "attachments": []
     },
     {
-      "title": "暫定學術講習",
+      "title": "建築師的淨零實戰課：從建築能效、低碳設計到AI碳管理",
       "date": "2026-07-02",
       "deadline": "2026-07-02",
       "time": "下午2：00~5：00",
@@ -84,13 +84,22 @@
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1265"
+        },
+        {
+          "label": "報名",
+          "url": "https://www.kaa.org.tw/course_apply.php?b=1265&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1265",
-      "registrationUrl": null,
+      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1265&t=course",
       "page": 1,
-      "credits": 0,
-      "attachments": []
+      "credits": 20,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1265/22672ff58cdb0358612712459466422d"
+        }
+      ]
     },
     {
       "title": "115年度大東講堂「你的房子安全嗎？都更、危老與延壽一次搞懂」",
