@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-06-05T15:06:28Z\"",
+  "updatedAt": "\"2026-06-05T16:52:56Z\"",
   "total": 50,
   "courses": [
     {
@@ -242,13 +242,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1259",
       "registrationUrl": null,
       "page": 2,
-      "credits": 20,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1259/234f3dbf339d48df2f692c47324e4fff"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "115年度「委託使用執照之審查及竣工查驗作業」業務執行說明:市府第五會議室",
