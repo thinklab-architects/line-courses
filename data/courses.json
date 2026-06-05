@@ -1,8 +1,52 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-06-05T09:16:13Z\"",
+  "updatedAt": "\"2026-06-05T11:11:57Z\"",
   "total": 50,
   "courses": [
+    {
+      "title": "(建照委審教育訓練三)「變更使用、簡易室內裝修竣工審查實務分享及注意事項」",
+      "date": "2026-11-12",
+      "deadline": "2026-11-12",
+      "time": "下午2:30~5:00(下午2:20開始報到)",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1270"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1270",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1270/6e0bb3f4e7ab862f4d16596259ae054e"
+        }
+      ]
+    },
+    {
+      "title": "(建照委審教育訓練二)「拆除執照及變更起造人、雜照(昇降設備及廣告物)審查實務及注意事項」",
+      "date": "2026-10-15",
+      "deadline": "2026-10-15",
+      "time": "下午2:30~5:00(下午2:20開始報到)",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1269"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1269",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1269/a543cb1764bb362f5c9f625d1b93e03d"
+        }
+      ]
+    },
     {
       "title": "(建照委審教育訓練一)「建造執照審查實務分享及注意事項」",
       "date": "2026-09-17",
@@ -175,7 +219,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1260",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 30,
       "attachments": [
         {
@@ -197,7 +241,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1259",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 20,
       "attachments": [
         {
@@ -355,7 +399,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1251",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -372,7 +416,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1264",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -525,7 +569,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1211",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -542,7 +586,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1231",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -695,7 +739,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1241",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -712,7 +756,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1225",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -847,40 +891,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1227",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "「114、115年度建築物室內裝修審查人員講習會」",
-      "date": "2025-09-19",
-      "deadline": "2025-09-19",
-      "time": "14:00~17:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1228"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1228",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "耐震標章特別監督報告製作及現場監督經驗分享",
-      "date": "2025-09-17",
-      "deadline": "2025-09-17",
-      "time": "下午2：00~5：00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1216"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1216",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
