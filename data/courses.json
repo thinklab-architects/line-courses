@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-06-10T11:20:29Z\"",
+  "updatedAt": "\"2026-06-10T13:20:02Z\"",
   "total": 50,
   "courses": [
     {
@@ -17,8 +17,13 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1270",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
-      "attachments": []
+      "credits": 0,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1270/6e0bb3f4e7ab862f4d16596259ae054e"
+        }
+      ]
     },
     {
       "title": "(建照委審教育訓練二)「拆除執照及變更起造人、雜照(昇降設備及廣告物)審查實務及注意事項」",
@@ -99,7 +104,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1255",
       "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1255&t=course",
       "page": 1,
-      "credits": null,
+      "credits": 20,
       "attachments": []
     },
     {
