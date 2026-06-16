@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-06-16T14:41:18Z\"",
+  "updatedAt": "\"2026-06-16T16:35:45Z\"",
   "total": 50,
   "courses": [
     {
@@ -220,13 +220,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1260",
       "registrationUrl": null,
       "page": 2,
-      "credits": 30,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1260/0226c26ddee1e2887cb65e67993e772c"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "學術講座「低蘊含碳建築設計實務與 LEBR 評估應用」",
