@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-06-24T15:01:22Z\"",
+  "updatedAt": "\"2026-06-24T16:49:21Z\"",
   "total": 50,
   "courses": [
     {
@@ -219,13 +219,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1262",
       "registrationUrl": null,
       "page": 2,
-      "credits": 20,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1262/c3aa07a971e4a4585d0765b18e217715"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "資訊講座 - 建築 3D 列印入門與實務應用(已額滿)",
