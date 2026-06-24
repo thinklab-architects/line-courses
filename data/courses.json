@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-06-24T01:43:40Z\"",
+  "updatedAt": "\"2026-06-24T03:14:36Z\"",
   "total": 50,
   "courses": [
     {
@@ -125,6 +125,27 @@
       "attachments": []
     },
     {
+      "title": "法益講座-專案管理研習課程",
+      "date": "2026-08-04",
+      "deadline": "2026-08-04",
+      "time": "9：30~17：00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1272"
+        },
+        {
+          "label": "報名",
+          "url": "https://www.kaa.org.tw/course_apply.php?b=1272&t=course"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1272",
+      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1272&t=course",
+      "page": 1,
+      "credits": 50,
+      "attachments": []
+    },
+    {
       "title": "115年度大東講堂「建築師的手繪日記」",
       "date": "2026-07-04",
       "deadline": "2026-07-04",
@@ -197,7 +218,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1262",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 20,
       "attachments": [
         {
@@ -372,7 +393,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1249",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -542,7 +563,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1239",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -712,7 +733,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1244",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -864,23 +885,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1222",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "「建築物簡易室內裝修」講習會",
-      "date": "2025-09-26",
-      "deadline": "2025-09-26",
-      "time": "14:00~17:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1229"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1229",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
