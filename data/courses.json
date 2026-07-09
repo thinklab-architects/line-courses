@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-07-09T05:23:32Z\"",
+  "updatedAt": "\"2026-07-09T07:18:22Z\"",
   "total": 50,
   "courses": [
     {
@@ -68,6 +68,57 @@
           "url": "https://www.kaa.org.tw/download.php?b=advance/1268/ad9273da6e25e22f83a79caea7f040cf"
         }
       ]
+    },
+    {
+      "title": "暫定學術講習(室裝)",
+      "date": "2026-09-15",
+      "deadline": "2026-09-15",
+      "time": null,
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1274"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1274",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
+      "attachments": []
+    },
+    {
+      "title": "暫定學術講習(室裝)",
+      "date": "2026-09-03",
+      "deadline": "2026-09-03",
+      "time": "下午2：00~5：00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1273"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1273",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
+      "attachments": []
+    },
+    {
+      "title": "暫定學術講習",
+      "date": "2026-08-27",
+      "deadline": "2026-08-27",
+      "time": "下午2：00~5：00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1275"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1275",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
+      "attachments": []
     },
     {
       "title": "115年度大東講堂「建築師的斜槓人生-從城市美學到樂活書法」",
@@ -154,7 +205,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1254",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": null,
       "attachments": []
     },
@@ -171,7 +222,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1265",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": null,
       "attachments": []
     },
@@ -188,7 +239,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1253",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": null,
       "attachments": []
     },
@@ -324,7 +375,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1261",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -341,7 +392,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
       "registrationUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -358,7 +409,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1236",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -494,7 +545,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1243",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -511,7 +562,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1238",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -528,7 +579,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1234",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -664,7 +715,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1242",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -681,7 +732,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1233",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -698,7 +749,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1232",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -816,57 +867,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1210",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "「建築物簡易室內裝修」講習 (第二場)",
-      "date": "2025-10-16",
-      "deadline": "2025-10-16",
-      "time": "14:00~17:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1230"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1230",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "AI×BIM：建築與室內設計的全新工作流",
-      "date": "2025-10-13",
-      "deadline": "2025-10-13",
-      "time": "下午1：40報到，2：00開課",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1220"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1220",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "建築師應了解面對淨零與永續的ESG作為",
-      "date": "2025-10-09",
-      "deadline": "2025-10-09",
-      "time": "下午1：40報到，2：00開課",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1222"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1222",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
