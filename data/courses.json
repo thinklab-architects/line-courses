@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-07-13T01:38:40Z\"",
+  "updatedAt": "\"2026-07-13T03:09:32Z\"",
   "total": 50,
   "courses": [
     {
@@ -104,7 +104,7 @@
       "attachments": []
     },
     {
-      "title": "暫定學術講習",
+      "title": "學術講座-「 新規上路:建築&光電的下一哩路」",
       "date": "2026-08-27",
       "deadline": "2026-08-27",
       "time": "下午2：00~5：00",
@@ -112,13 +112,22 @@
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1275"
+        },
+        {
+          "label": "報名",
+          "url": "https://www.kaa.org.tw/course_apply.php?b=1275&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1275",
-      "registrationUrl": null,
+      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1275&t=course",
       "page": 1,
-      "credits": 0,
-      "attachments": []
+      "credits": 20,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1275/e191b6cae978bfdfd7f04270ca220b73"
+        }
+      ]
     },
     {
       "title": "115年度大東講堂「建築師的斜槓人生-從城市美學到樂活書法」",
@@ -155,23 +164,6 @@
       "attachments": []
     },
     {
-      "title": "暫定學術講習",
-      "date": "2026-08-05",
-      "deadline": "2026-08-05",
-      "time": "下午2：00~5：00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1266"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1266",
-      "registrationUrl": null,
-      "page": 1,
-      "credits": 0,
-      "attachments": []
-    },
-    {
       "title": "法益講座-專案管理研習課程",
       "date": "2026-08-04",
       "deadline": "2026-08-04",
@@ -205,7 +197,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1254",
       "registrationUrl": null,
-      "page": 2,
+      "page": 1,
       "credits": null,
       "attachments": []
     },
@@ -375,7 +367,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1261",
       "registrationUrl": null,
-      "page": 3,
+      "page": 2,
       "credits": null,
       "attachments": []
     },
@@ -545,7 +537,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1243",
       "registrationUrl": null,
-      "page": 4,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -715,7 +707,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1242",
       "registrationUrl": null,
-      "page": 5,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -867,6 +859,23 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1210",
+      "registrationUrl": null,
+      "page": 5,
+      "credits": null,
+      "attachments": []
+    },
+    {
+      "title": "「建築物簡易室內裝修」講習 (第二場)",
+      "date": "2025-10-16",
+      "deadline": "2025-10-16",
+      "time": "14:00~17:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1230"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1230",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
