@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-07-17T10:35:21Z\"",
+  "updatedAt": "\"2026-07-17T11:31:52Z\"",
   "total": 50,
   "courses": [
     {
@@ -32,6 +32,23 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1280",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 20,
+      "attachments": []
+    },
+    {
+      "title": "(建照委審教育訓練四)「建造執照審查實務分享及注意事項」",
+      "date": "2026-12-10",
+      "deadline": "2026-12-10",
+      "time": "下午2:30~5:00(下午2:20開始報到)",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1282"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1282",
       "registrationUrl": null,
       "page": 1,
       "credits": 20,
@@ -184,7 +201,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1273",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 0,
       "attachments": []
     },
@@ -367,7 +384,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1259",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -537,7 +554,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1251",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -707,7 +724,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1211",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -859,23 +876,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1218",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "「建築物同層排水工法及排水通氣技術」講習會",
-      "date": "2025-11-11",
-      "deadline": "2025-11-11",
-      "time": "14:00~17:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1241"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1241",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
