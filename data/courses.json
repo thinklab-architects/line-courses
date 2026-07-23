@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-07-23T08:57:23Z\"",
+  "updatedAt": "\"2026-07-23T09:53:20Z\"",
   "total": 50,
   "courses": [
     {
@@ -372,6 +372,23 @@
       "attachments": []
     },
     {
+      "title": "0801 光電新制解套：5400Pa防漏工法與零出資資本對接實務",
+      "date": "2026-06-05",
+      "deadline": "2026-06-05",
+      "time": "17:10~18:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1283"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1283",
+      "registrationUrl": null,
+      "page": 3,
+      "credits": null,
+      "attachments": []
+    },
+    {
       "title": "學術講座「低蘊含碳建築設計實務與 LEBR 評估應用」",
       "date": "2026-06-05",
       "deadline": "2026-06-05",
@@ -537,7 +554,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1263",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -707,7 +724,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1212",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -859,23 +876,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1244",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "法益-涉訟案例講座",
-      "date": "2025-11-13",
-      "deadline": "2025-11-13",
-      "time": "下午2:00~5:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1218"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1218",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
