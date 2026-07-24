@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-07-24T01:37:22Z\"",
+  "updatedAt": "\"2026-07-24T03:07:51Z\"",
   "total": 50,
   "courses": [
     {
@@ -232,6 +232,32 @@
       ]
     },
     {
+      "title": "資訊講座 - 點雲時代來臨:建築與室內設計的數位測繪革命",
+      "date": "2026-08-25",
+      "deadline": "2026-08-25",
+      "time": "下午2:00-4:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1284"
+        },
+        {
+          "label": "報名",
+          "url": "https://www.kaa.org.tw/course_apply.php?b=1284&t=course"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1284",
+      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1284&t=course",
+      "page": 2,
+      "credits": 20,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1284/0b7ddf01be65d14c8c0831d982b373dc"
+        }
+      ]
+    },
+    {
       "title": "115年度大東講堂「建築師的斜槓人生-從城市美學到樂活書法」",
       "date": "2026-08-22",
       "deadline": "2026-08-22",
@@ -367,7 +393,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1260",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -537,7 +563,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1249",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -707,7 +733,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1239",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -859,23 +885,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1232",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "「建築物公共安全檢查實務課程」講習會",
-      "date": "2025-11-14",
-      "deadline": "2025-11-14",
-      "time": "14:00~17:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1244"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1244",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
