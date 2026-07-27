@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-07-26T23:22:26Z\"",
+  "updatedAt": "\"2026-07-27T00:45:09Z\"",
   "total": 50,
   "courses": [
     {
@@ -300,14 +300,10 @@
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1272"
-        },
-        {
-          "label": "報名",
-          "url": "https://www.kaa.org.tw/course_apply.php?b=1272&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1272",
-      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1272&t=course",
+      "registrationUrl": null,
       "page": 2,
       "credits": 50,
       "attachments": []
