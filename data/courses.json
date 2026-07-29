@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-07-29T10:54:58Z\"",
+  "updatedAt": "\"2026-07-29T11:45:51Z\"",
   "total": 50,
   "courses": [
     {
@@ -85,8 +85,13 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1270",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
-      "attachments": []
+      "credits": 0,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1270/6e0bb3f4e7ab862f4d16596259ae054e"
+        }
+      ]
     },
     {
       "title": "115年度大東講堂「 漂遊於蘇門答臘 – 為地理隔離的七個種族民居建築故事」",
@@ -102,7 +107,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1278",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
+      "credits": 20,
       "attachments": []
     },
     {
@@ -119,7 +124,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1277",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
+      "credits": 20,
       "attachments": []
     },
     {
@@ -136,8 +141,13 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1269",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
-      "attachments": []
+      "credits": 0,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1269/a543cb1764bb362f5c9f625d1b93e03d"
+        }
+      ]
     },
     {
       "title": "(建照委審教育訓練一)「建造執照審查實務分享及注意事項」",
@@ -153,8 +163,13 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1268",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
-      "attachments": []
+      "credits": 0,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1268/ad9273da6e25e22f83a79caea7f040cf"
+        }
+      ]
     },
     {
       "title": "暫定學術講習(室裝)",
@@ -170,7 +185,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1274",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -187,7 +202,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1273",
       "registrationUrl": null,
       "page": 2,
-      "credits": null,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -234,8 +249,13 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1284",
       "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1284&t=course",
       "page": 2,
-      "credits": null,
-      "attachments": []
+      "credits": 20,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1284/0b7ddf01be65d14c8c0831d982b373dc"
+        }
+      ]
     },
     {
       "title": "115年度大東講堂「建築師的斜槓人生-從城市美學到樂活書法」",
