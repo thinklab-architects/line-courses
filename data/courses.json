@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-07-31T07:04:36Z\"",
+  "updatedAt": "\"2026-07-31T09:05:01Z\"",
   "total": 50,
   "courses": [
     {
@@ -51,7 +51,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1282",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
+      "credits": null,
       "attachments": []
     },
     {
@@ -68,7 +68,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1279",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
+      "credits": null,
       "attachments": []
     },
     {
@@ -107,7 +107,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1278",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
+      "credits": null,
       "attachments": []
     },
     {
@@ -124,7 +124,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1277",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
+      "credits": null,
       "attachments": []
     },
     {
@@ -141,13 +141,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1269",
       "registrationUrl": null,
       "page": 1,
-      "credits": 0,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1269/a543cb1764bb362f5c9f625d1b93e03d"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "(建照委審教育訓練一)「建造執照審查實務分享及注意事項」",
@@ -163,13 +158,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1268",
       "registrationUrl": null,
       "page": 1,
-      "credits": 0,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1268/ad9273da6e25e22f83a79caea7f040cf"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "暫定學術講習(室裝)",
@@ -185,7 +175,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1274",
       "registrationUrl": null,
       "page": 1,
-      "credits": 0,
+      "credits": null,
       "attachments": []
     },
     {
