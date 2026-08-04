@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-08-04T05:06:39Z\"",
+  "updatedAt": "\"2026-08-04T06:58:15Z\"",
   "total": 50,
   "courses": [
     {
@@ -150,6 +150,40 @@
       ]
     },
     {
+      "title": "(暫定)資訊講座-AI工程",
+      "date": "2026-10-14",
+      "deadline": "2026-10-14",
+      "time": "下午3:00-5:30",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1287"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1287",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
+      "attachments": []
+    },
+    {
+      "title": "資訊講座-從 NAS 到 AI：建築師事務所數位安全、營運韌性與未來工作模式(暫定)",
+      "date": "2026-09-21",
+      "deadline": "2026-09-21",
+      "time": "下午2:00-5:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1286"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1286",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 30,
+      "attachments": []
+    },
+    {
       "title": "(建照委審教育訓練一)「建造執照審查實務分享及注意事項」",
       "date": "2026-09-17",
       "deadline": "2026-09-17",
@@ -162,7 +196,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1268",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 0,
       "attachments": [
         {
@@ -184,7 +218,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1274",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 0,
       "attachments": []
     },
@@ -355,7 +389,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1253",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -372,7 +406,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1262",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -525,7 +559,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
       "registrationUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -542,7 +576,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1236",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -695,7 +729,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1238",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -712,7 +746,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1234",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -847,40 +881,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1242",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "建築師公益諮詢活動 危老重建整合說明課程",
-      "date": "2025-11-15",
-      "deadline": "2025-11-15",
-      "time": "上午9:00~11:30",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1233"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1233",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "建築師公益諮詢活動 危老重建整合說明課程",
-      "date": "2025-11-14",
-      "deadline": "2025-11-14",
-      "time": "下午2:00-16:30",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1232"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1232",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
