@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-08-04T15:49:57Z\"",
+  "updatedAt": "\"2026-08-04T16:39:31Z\"",
   "total": 50,
   "courses": [
     {
@@ -339,7 +339,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1272",
       "registrationUrl": null,
       "page": 2,
-      "credits": 50,
+      "credits": null,
       "attachments": []
     },
     {
