@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-08-06T04:14:05Z\"",
+  "updatedAt": "\"2026-08-06T07:40:59Z\"",
   "total": 50,
   "courses": [
     {
@@ -167,7 +167,7 @@
       "attachments": []
     },
     {
-      "title": "資訊講座-從 NAS 到 AI：建築師事務所數位安全、營運韌性與未來工作模式(暫定)",
+      "title": "資訊講座-從 NAS 到 AI：建築師事務所數位安全、營運韌性與未來工作模式",
       "date": "2026-09-21",
       "deadline": "2026-09-21",
       "time": "下午2:00-5:00",
@@ -175,13 +175,22 @@
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1286"
+        },
+        {
+          "label": "報名",
+          "url": "https://www.kaa.org.tw/course_apply.php?b=1286&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1286",
-      "registrationUrl": null,
+      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1286&t=course",
       "page": 1,
       "credits": 30,
-      "attachments": []
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1286/bae4412bed86bb90857d430dd5f69639"
+        }
+      ]
     },
     {
       "title": "(建照委審教育訓練一)「建造執照審查實務分享及注意事項」",
