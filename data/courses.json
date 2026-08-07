@@ -1,10 +1,10 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-08-07T00:03:30Z\"",
+  "updatedAt": "\"2026-08-07T03:50:05Z\"",
   "total": 50,
   "courses": [
     {
-      "title": "115年度大東講堂「街頭塗鴉與藝術 」",
+      "title": "115年度大東講堂「街頭塗鴉與藝術 」(本場無積分)",
       "date": "2026-12-19",
       "deadline": "2026-12-19",
       "time": "下午2：00~5：00",
@@ -17,7 +17,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1281",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
+      "credits": 0,
       "attachments": []
     },
     {
