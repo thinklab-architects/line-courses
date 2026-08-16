@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-08-16T12:41:31Z\"",
+  "updatedAt": "\"2026-08-16T13:32:10Z\"",
   "total": 50,
   "courses": [
     {
@@ -124,7 +124,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1277",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
+      "credits": 20,
       "attachments": []
     },
     {
@@ -141,8 +141,13 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1269",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
-      "attachments": []
+      "credits": 20,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1269/a543cb1764bb362f5c9f625d1b93e03d"
+        }
+      ]
     },
     {
       "title": "(暫定)資訊講座-AI工程",
@@ -158,7 +163,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1287",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -179,8 +184,13 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1286",
       "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1286&t=course",
       "page": 1,
-      "credits": null,
-      "attachments": []
+      "credits": 30,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1286/bae4412bed86bb90857d430dd5f69639"
+        }
+      ]
     },
     {
       "title": "(建照委審教育訓練一)「建造執照審查實務分享及注意事項」",
@@ -196,8 +206,13 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1268",
       "registrationUrl": null,
       "page": 2,
-      "credits": null,
-      "attachments": []
+      "credits": 20,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1268/ad9273da6e25e22f83a79caea7f040cf"
+        }
+      ]
     },
     {
       "title": "暫定學術講習(室裝)",
@@ -213,7 +228,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1274",
       "registrationUrl": null,
       "page": 2,
-      "credits": null,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -230,7 +245,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1273",
       "registrationUrl": null,
       "page": 2,
-      "credits": null,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -247,8 +262,13 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1275",
       "registrationUrl": null,
       "page": 2,
-      "credits": null,
-      "attachments": []
+      "credits": 20,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1275/e191b6cae978bfdfd7f04270ca220b73"
+        }
+      ]
     },
     {
       "title": "資訊講座 - 點雲時代來臨:建築與室內設計的數位測繪革命(已額滿)",
