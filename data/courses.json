@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-08-15T23:21:27Z\"",
+  "updatedAt": "\"2026-08-16T01:24:09Z\"",
   "total": 50,
   "courses": [
     {
@@ -34,7 +34,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1280",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
+      "credits": null,
       "attachments": []
     },
     {
@@ -68,7 +68,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1279",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
+      "credits": null,
       "attachments": []
     },
     {
@@ -124,7 +124,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1277",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
+      "credits": null,
       "attachments": []
     },
     {
@@ -206,13 +206,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1268",
       "registrationUrl": null,
       "page": 2,
-      "credits": 20,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1268/ad9273da6e25e22f83a79caea7f040cf"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "暫定學術講習(室裝)",
