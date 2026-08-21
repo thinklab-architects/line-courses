@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-08-21T05:33:55Z\"",
+  "updatedAt": "\"2026-08-21T06:50:07Z\"",
   "total": 50,
   "courses": [
     {
@@ -158,13 +158,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1269",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1269/a543cb1764bb362f5c9f625d1b93e03d"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "(暫定)資訊講座-AI工程",
