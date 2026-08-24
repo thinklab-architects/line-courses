@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-08-24T14:43:17Z\"",
+  "updatedAt": "\"2026-08-24T15:39:48Z\"",
   "total": 50,
   "courses": [
     {
@@ -107,7 +107,7 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1278",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
+      "credits": 20,
       "attachments": []
     },
     {
@@ -275,8 +275,13 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1275",
       "registrationUrl": null,
       "page": 2,
-      "credits": null,
-      "attachments": []
+      "credits": 20,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1275/e191b6cae978bfdfd7f04270ca220b73"
+        }
+      ]
     },
     {
       "title": "資訊講座 - 點雲時代來臨:建築與室內設計的數位測繪革命(已額滿)",
