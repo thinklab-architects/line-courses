@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-08-25T15:43:18Z\"",
+  "updatedAt": "\"2026-08-25T16:38:39Z\"",
   "total": 50,
   "courses": [
     {
@@ -263,13 +263,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1284",
       "registrationUrl": null,
       "page": 2,
-      "credits": 20,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1284/0b7ddf01be65d14c8c0831d982b373dc"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "115年度大東講堂「建築師的斜槓人生-從城市美學到樂活書法」",
