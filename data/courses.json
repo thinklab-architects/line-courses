@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-09-03T03:30:14Z\"",
+  "updatedAt": "\"2026-09-03T08:40:04Z\"",
   "total": 50,
   "courses": [
     {
@@ -228,6 +228,23 @@
       ]
     },
     {
+      "title": "「2026建築技術規則及綠建築錯誤樣態實務課程」(一)",
+      "date": "2026-09-02",
+      "deadline": "2026-09-02",
+      "time": "14:00~17:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1291"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1291",
+      "registrationUrl": null,
+      "page": 2,
+      "credits": null,
+      "attachments": []
+    },
+    {
       "title": "學術講座-「 新規上路:建築&光電的下一哩路」(已額滿截止)",
       "date": "2026-08-27",
       "deadline": "2026-08-27",
@@ -359,7 +376,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1254",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -529,7 +546,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1252",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -699,7 +716,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1248",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -851,23 +868,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1246",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "法益講座-民事不動產及契約實務案例分享",
-      "date": "2025-11-24",
-      "deadline": "2025-11-24",
-      "time": "下午2:00~5:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1224"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1224",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
