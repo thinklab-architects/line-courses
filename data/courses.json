@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-09-07T03:30:33Z\"",
+  "updatedAt": "\"2026-09-07T09:03:30Z\"",
   "total": 50,
   "courses": [
     {
@@ -296,6 +296,23 @@
       "attachments": []
     },
     {
+      "title": "法益講座-「高雄市立圖書館總館及共構文創會館BOT工程之特殊結構行為與施工過程分享」",
+      "date": "2026-08-19",
+      "deadline": "2026-08-19",
+      "time": "下午2:00~5:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1292"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1292",
+      "registrationUrl": null,
+      "page": 2,
+      "credits": null,
+      "attachments": []
+    },
+    {
       "title": "「建築線送審與臨接狀況18例設計解方分享」",
       "date": "2026-08-18",
       "deadline": "2026-08-18",
@@ -359,7 +376,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1288",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -529,7 +546,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1267",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -699,7 +716,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1235",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -851,23 +868,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1240",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "建築結構講習-結構實務及階段補強探討",
-      "date": "2025-11-25",
-      "deadline": "2025-11-25",
-      "time": "14:00~17:30",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1246"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1246",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
