@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-09-11T00:55:53Z\"",
+  "updatedAt": "\"2026-09-11T05:42:45Z\"",
   "total": 50,
   "courses": [
     {
@@ -94,6 +94,23 @@
       ]
     },
     {
+      "title": "暫定學術講習",
+      "date": "2026-11-09",
+      "deadline": "2026-11-09",
+      "time": "全日",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1293"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1293",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
+      "attachments": []
+    },
+    {
       "title": "115年度大東講堂「 漂遊於蘇門答臘 – 為地理隔離的七個種族民居建築故事」",
       "date": "2026-11-07",
       "deadline": "2026-11-07",
@@ -179,7 +196,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1287",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 0,
       "attachments": []
     },
@@ -359,7 +376,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1272",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -529,7 +546,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1257",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -699,7 +716,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1247",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -851,23 +868,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1231",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "「都市設計審議規範相關修正及簡化程序說明講習」",
-      "date": "2025-11-27",
-      "deadline": "2025-11-27",
-      "time": "14:00~17:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1240"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1240",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
