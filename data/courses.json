@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-09-14T00:54:56Z\"",
+  "updatedAt": "\"2026-09-14T05:54:34Z\"",
   "total": 50,
   "courses": [
     {
@@ -128,6 +128,23 @@
       "attachments": []
     },
     {
+      "title": "暫定學術講習",
+      "date": "2026-11-06",
+      "deadline": "2026-11-06",
+      "time": "上午9：30~12：00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1294"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1294",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
+      "attachments": []
+    },
+    {
       "title": "115年度大東講堂「人文、風土、建築」",
       "date": "2026-10-24",
       "deadline": "2026-10-24",
@@ -174,7 +191,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1269",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 20,
       "attachments": [
         {
@@ -196,6 +213,27 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1287",
       "registrationUrl": null,
+      "page": 2,
+      "credits": 0,
+      "attachments": []
+    },
+    {
+      "title": "學術講座「智慧建築2024｜中央監控系統與節能管理實務」",
+      "date": "2026-10-05",
+      "deadline": "2026-10-05",
+      "time": "上午9：40~12：00(9：25報到)",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1295"
+        },
+        {
+          "label": "報名",
+          "url": "https://www.kaa.org.tw/course_apply.php?b=1295&t=course"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1295",
+      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1295&t=course",
       "page": 2,
       "credits": 0,
       "attachments": []
@@ -342,7 +380,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1290",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -359,7 +397,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1255",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -512,7 +550,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1259",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -529,7 +567,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1271",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -682,7 +720,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1251",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -699,7 +737,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1264",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -834,40 +872,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1212",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "114大東講堂「氣候中和的生活美學：在建築裡遇見減碳未來」",
-      "date": "2025-12-06",
-      "deadline": "2025-12-06",
-      "time": "下午2：00~5：00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1211"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1211",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "從傳統渲染到 AI 輔助，重構事務所的高品質工作流程",
-      "date": "2025-12-02",
-      "deadline": "2025-12-02",
-      "time": "下午2:00~5:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1231"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1231",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
