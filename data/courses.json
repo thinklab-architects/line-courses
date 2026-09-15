@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-09-15T01:14:49Z\"",
+  "updatedAt": "\"2026-09-15T07:22:26Z\"",
   "total": 50,
   "courses": [
     {
@@ -201,21 +201,30 @@
       ]
     },
     {
-      "title": "(暫定)資訊講座-AI工程",
+      "title": "資訊講座-建築師的AI工程管理入門與實務應用",
       "date": "2026-10-14",
       "deadline": "2026-10-14",
-      "time": "下午3:00-5:30",
+      "time": "下午2:00-5:00",
       "links": [
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1287"
+        },
+        {
+          "label": "報名",
+          "url": "https://www.kaa.org.tw/course_apply.php?b=1287&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1287",
-      "registrationUrl": null,
+      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1287&t=course",
       "page": 2,
-      "credits": 0,
-      "attachments": []
+      "credits": 30,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1287/d06196183a472a496feb51a001e365e3"
+        }
+      ]
     },
     {
       "title": "學術講座「智慧建築2024｜中央監控系統與節能管理實務」",
