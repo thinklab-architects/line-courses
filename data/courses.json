@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-09-17T13:08:21Z\"",
+  "updatedAt": "\"2026-09-17T17:59:53Z\"",
   "total": 50,
   "courses": [
     {
@@ -283,13 +283,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1268",
       "registrationUrl": null,
       "page": 2,
-      "credits": 20,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1268/ad9273da6e25e22f83a79caea7f040cf"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "「2026建築技術規則及綠建築錯誤樣態實務課程」(二)",
