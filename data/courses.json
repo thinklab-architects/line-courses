@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-09-21T10:26:57Z\"",
+  "updatedAt": "\"2026-09-21T16:49:36Z\"",
   "total": 50,
   "courses": [
     {
@@ -261,13 +261,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1286",
       "registrationUrl": null,
       "page": 2,
-      "credits": 30,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1286/bae4412bed86bb90857d430dd5f69639"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "(建照委審教育訓練一)「建造執照審查實務分享及注意事項」",
