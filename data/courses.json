@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-09-29T01:33:16Z\"",
+  "updatedAt": "\"2026-09-29T08:01:05Z\"",
   "total": 50,
   "courses": [
     {
@@ -145,6 +145,23 @@
       "attachments": []
     },
     {
+      "title": "暫定學術講習",
+      "date": "2026-11-02",
+      "deadline": "2026-11-02",
+      "time": "全日",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1297"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1297",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
+      "attachments": []
+    },
+    {
       "title": "115年度大東講堂「人文、風土、建築」",
       "date": "2026-10-24",
       "deadline": "2026-10-24",
@@ -174,7 +191,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1289",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 0,
       "attachments": []
     },
@@ -241,6 +258,23 @@
       "registrationUrl": null,
       "page": 2,
       "credits": 0,
+      "attachments": []
+    },
+    {
+      "title": "法益講座-建築物施工界面整合實務與常見缺失 （含水電工程）",
+      "date": "2026-09-23",
+      "deadline": "2026-09-23",
+      "time": "下午2:00~5:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1301"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1301",
+      "registrationUrl": null,
+      "page": 2,
+      "credits": null,
       "attachments": []
     },
     {
@@ -341,7 +375,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1284",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -358,7 +392,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1256",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -511,7 +545,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1262",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -528,7 +562,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1260",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -681,7 +715,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1236",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -698,7 +732,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1249",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -833,40 +867,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1238",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "115大東講堂「與時光交會：空間博物館」",
-      "date": "2026-01-17",
-      "deadline": "2026-01-17",
-      "time": "下午2：00~5：00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1234"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1234",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "法益講座-工程履約爭議與問題解析",
-      "date": "2025-12-24",
-      "deadline": "2025-12-24",
-      "time": "下午2:00~5:00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1239"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1239",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
