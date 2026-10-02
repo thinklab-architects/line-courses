@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-10-02T01:21:57Z\"",
+  "updatedAt": "\"2026-10-02T08:04:27Z\"",
   "total": 50,
   "courses": [
     {
@@ -85,8 +85,13 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1270",
       "registrationUrl": null,
       "page": 1,
-      "credits": null,
-      "attachments": []
+      "credits": 20,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1270/6e0bb3f4e7ab862f4d16596259ae054e"
+        }
+      ]
     },
     {
       "title": "暫定學術講習",
