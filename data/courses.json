@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-10-06T00:38:33Z\"",
+  "updatedAt": "\"2026-10-06T07:17:45Z\"",
   "total": 50,
   "courses": [
     {
@@ -196,23 +196,6 @@
       "attachments": []
     },
     {
-      "title": "暫定學術講習",
-      "date": "2026-10-21",
-      "deadline": "2026-10-21",
-      "time": "下午2：00~5：00(2點報到，2：20開課)",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1289"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1289",
-      "registrationUrl": null,
-      "page": 2,
-      "credits": 0,
-      "attachments": []
-    },
-    {
       "title": "(建照委審教育訓練二)「拆除執照及變更起造人、雜照(昇降設備及廣告物)審查實務及注意事項」",
       "date": "2026-10-15",
       "deadline": "2026-10-15",
@@ -375,7 +358,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1291",
       "registrationUrl": null,
-      "page": 3,
+      "page": 2,
       "credits": null,
       "attachments": []
     },
@@ -545,7 +528,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1265",
       "registrationUrl": null,
-      "page": 4,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -715,7 +698,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1261",
       "registrationUrl": null,
-      "page": 5,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -867,6 +850,23 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1248",
+      "registrationUrl": null,
+      "page": 5,
+      "credits": null,
+      "attachments": []
+    },
+    {
+      "title": "為因應2050全球淨零碳排趨勢-節能空調在建築實務之策略及應用",
+      "date": "2026-01-21",
+      "deadline": "2026-01-21",
+      "time": "下午2：00報到，2：20開課",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1243"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1243",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
