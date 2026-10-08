@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-10-08T00:46:24Z\"",
+  "updatedAt": "\"2026-10-08T07:04:19Z\"",
   "total": 50,
   "courses": [
     {
@@ -236,6 +236,23 @@
       ]
     },
     {
+      "title": "智慧建築2024｜中央監控系統與節能管理實務",
+      "date": "2026-10-05",
+      "deadline": "2026-10-05",
+      "time": "上午9：30~12：00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1304"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1304",
+      "registrationUrl": null,
+      "page": 2,
+      "credits": null,
+      "attachments": []
+    },
+    {
       "title": "「2026建築技術規則及綠建築錯誤樣態實務課程」(三)",
       "date": "2026-09-29",
       "deadline": "2026-09-29",
@@ -367,7 +384,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1284",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -537,7 +554,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1262",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -707,7 +724,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1236",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -859,23 +876,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1238",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "115大東講堂「與時光交會：空間博物館」",
-      "date": "2026-01-17",
-      "deadline": "2026-01-17",
-      "time": "下午2：00~5：00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1234"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1234",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
