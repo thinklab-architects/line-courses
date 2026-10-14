@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-10-14T14:55:26Z\"",
+  "updatedAt": "\"2026-10-14T19:13:11Z\"",
   "total": 50,
   "courses": [
     {
@@ -223,13 +223,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1287",
       "registrationUrl": null,
       "page": 2,
-      "credits": 30,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1287/d06196183a472a496feb51a001e365e3"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "智慧建築2024｜中央監控系統與節能管理實務",
