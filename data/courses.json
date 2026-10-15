@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-10-15T14:05:16Z\"",
+  "updatedAt": "\"2026-10-15T18:55:11Z\"",
   "total": 50,
   "courses": [
     {
@@ -201,13 +201,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1269",
       "registrationUrl": null,
       "page": 2,
-      "credits": 20,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1269/a543cb1764bb362f5c9f625d1b93e03d"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "資訊講座-建築師的AI工程管理入門與實務應用",
