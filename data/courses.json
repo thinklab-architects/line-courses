@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-10-29T09:32:37Z\"",
+  "updatedAt": "\"2026-10-29T16:42:04Z\"",
   "total": 50,
   "courses": [
     {
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "title": "暫定學術講習",
+      "title": "學術講座「我國近零碳建築政策暨新版智慧建築標章、綠建築標章重點解析」(本場次無積分)",
       "date": "2026-11-09",
       "deadline": "2026-11-09",
       "time": "全日",
@@ -125,7 +125,12 @@
       "registrationUrl": null,
       "page": 1,
       "credits": 0,
-      "attachments": []
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1293/387630dc14a898f6739d35a56b48aeff"
+        }
+      ]
     },
     {
       "title": "115年度大東講堂「 漂遊於蘇門答臘 – 為地理隔離的七個種族民居建築故事」",
