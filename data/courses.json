@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-11-04T08:57:09Z\"",
+  "updatedAt": "\"2026-11-04T17:00:54Z\"",
   "total": 50,
   "courses": [
     {
@@ -176,6 +176,23 @@
       ]
     },
     {
+      "title": "「小型透天、高雄厝及華廈請照面積檢討實務操作」講習",
+      "date": "2026-11-04",
+      "deadline": "2026-11-04",
+      "time": "14:00~17:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1308"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1308",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": null,
+      "attachments": []
+    },
+    {
       "title": "法益講座-從桃園航高爭議看建築師執業風險",
       "date": "2026-11-03",
       "deadline": "2026-11-03",
@@ -188,7 +205,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1307",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": null,
       "attachments": []
     },
@@ -358,7 +375,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1296",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -528,7 +545,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1254",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -698,7 +715,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1252",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -850,23 +867,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1235",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "「戶外走讀陳仁和建築特展」學術參訪活動",
-      "date": "2026-02-27",
-      "deadline": "2026-02-27",
-      "time": "上午8：45報到，9：00出發",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1248"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1248",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
