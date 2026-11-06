@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-11-06T10:29:44Z\"",
+  "updatedAt": "\"2026-11-06T17:49:28Z\"",
   "total": 50,
   "courses": [
     {
@@ -167,13 +167,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1294",
       "registrationUrl": null,
       "page": 1,
-      "credits": 20,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1294/e92aa03cb800334e5d65e191faa207d0"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "「小型透天、高雄厝及華廈請照面積檢討實務操作」講習",
