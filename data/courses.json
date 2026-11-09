@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-11-09T15:30:23Z\"",
+  "updatedAt": "\"2026-11-09T23:58:59Z\"",
   "total": 50,
   "courses": [
     {
@@ -145,13 +145,8 @@
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1293",
       "registrationUrl": null,
       "page": 1,
-      "credits": 0,
-      "attachments": [
-        {
-          "label": "檔案下載",
-          "url": "https://www.kaa.org.tw/download.php?b=advance/1293/387630dc14a898f6739d35a56b48aeff"
-        }
-      ]
+      "credits": null,
+      "attachments": []
     },
     {
       "title": "115年度大東講堂「 漂遊於蘇門答臘 – 為地理隔離的七個種族民居建築故事」",
