@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-11-09T05:10:11Z\"",
+  "updatedAt": "\"2026-11-09T15:30:23Z\"",
   "total": 50,
   "courses": [
     {
@@ -52,6 +52,23 @@
       "registrationUrl": null,
       "page": 1,
       "credits": 20,
+      "attachments": []
+    },
+    {
+      "title": "建築師職業心路歷程分享：從開業到公會服務",
+      "date": "2026-12-07",
+      "deadline": "2026-12-07",
+      "time": "下午2:30-5:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1309"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1309",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
       "attachments": []
     },
     {
@@ -183,7 +200,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1308",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": null,
       "attachments": []
     },
@@ -353,7 +370,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1268",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -523,7 +540,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1288",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -693,7 +710,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1267",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -845,23 +862,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1247",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "115大東講堂「攝影 建築 生活 意象」",
-      "date": "2026-03-07",
-      "deadline": "2026-03-07",
-      "time": "下午2：00~5：00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1235"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1235",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
