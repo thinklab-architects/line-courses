@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-11-09T23:58:59Z\"",
+  "updatedAt": "\"2026-11-10T07:02:52Z\"",
   "total": 50,
   "courses": [
     {
@@ -183,6 +183,23 @@
       "attachments": []
     },
     {
+      "title": "自走式5G專網平台智慧營建機器人",
+      "date": "2026-11-06",
+      "deadline": "2026-11-06",
+      "time": null,
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1310"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1310",
+      "registrationUrl": null,
+      "page": 2,
+      "credits": null,
+      "attachments": []
+    },
+    {
       "title": "「小型透天、高雄厝及華廈請照面積檢討實務操作」講習",
       "date": "2026-11-04",
       "deadline": "2026-11-04",
@@ -348,7 +365,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1286",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -518,7 +535,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1272",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -688,7 +705,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1257",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -840,23 +857,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1264",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "學術「地域主義的先行者-陳仁和百年+3建築紀念大展」參訪活動",
-      "date": "2026-03-13",
-      "deadline": "2026-03-13",
-      "time": "上午9：30~12：00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1247"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1247",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
