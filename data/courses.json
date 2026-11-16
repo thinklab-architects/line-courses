@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-11-16T00:48:57Z\"",
+  "updatedAt": "\"2026-11-16T07:43:28Z\"",
   "total": 50,
   "courses": [
     {
@@ -72,10 +72,14 @@
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1282"
+        },
+        {
+          "label": "報名",
+          "url": "https://www.kaa.org.tw/course_apply.php?b=1282&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1282",
-      "registrationUrl": null,
+      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1282&t=course",
       "page": 1,
       "credits": 20,
       "attachments": []
@@ -89,13 +93,22 @@
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1309"
+        },
+        {
+          "label": "報名",
+          "url": "https://www.kaa.org.tw/course_apply.php?b=1309&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1309",
-      "registrationUrl": null,
+      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1309&t=course",
       "page": 1,
-      "credits": 0,
-      "attachments": []
+      "credits": 20,
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1309/37c821f826a8a8310af8cca31acf599f"
+        }
+      ]
     },
     {
       "title": "以建築實務分享-專業智能的養成與職場甘苦談",
@@ -116,7 +129,12 @@
       "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1303&t=course",
       "page": 1,
       "credits": 20,
-      "attachments": []
+      "attachments": [
+        {
+          "label": "檔案下載",
+          "url": "https://www.kaa.org.tw/download.php?b=advance/1303/fcc402f9ad40d03d5ce49b95f47381df"
+        }
+      ]
     },
     {
       "title": "115年度大東講堂「看與思的N面向 」",
