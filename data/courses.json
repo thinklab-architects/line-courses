@@ -1,8 +1,25 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-11-16T18:03:06Z\"",
+  "updatedAt": "\"2026-11-17T02:20:18Z\"",
   "total": 50,
   "courses": [
+    {
+      "title": "116學術委員會台中參訪活動(暫定)",
+      "date": "2027-02-26",
+      "deadline": "2027-02-26",
+      "time": "全天",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1312"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1312",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 0,
+      "attachments": []
+    },
     {
       "title": "「機水電工程預算書圖審查及注意事項」鑑定實務講座",
       "date": "2026-12-23",
@@ -200,7 +217,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1278",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": null,
       "attachments": []
     },
@@ -370,7 +387,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1302",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -540,7 +557,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1290",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -710,7 +727,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1259",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -862,23 +879,6 @@
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1263",
-      "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "115年度「委託使用執照之審查及竣工查驗作業」業務執行教育訓練",
-      "date": "2026-03-30",
-      "deadline": "2026-03-30",
-      "time": "14:30~17:30 (14:00開始報到)",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1251"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1251",
       "registrationUrl": null,
       "page": 5,
       "credits": null,
