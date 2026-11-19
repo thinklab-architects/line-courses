@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-11-19T02:20:41Z\"",
+  "updatedAt": "\"2026-11-19T11:15:20Z\"",
   "total": 50,
   "courses": [
     {
@@ -18,6 +18,23 @@
       "registrationUrl": null,
       "page": 1,
       "credits": 0,
+      "attachments": []
+    },
+    {
+      "title": "學術講座 建築物防火避難安全性能驗證技術手冊簡要說明暨審查原則影響建築設計之實例分析",
+      "date": "2027-01-11",
+      "deadline": "2027-01-11",
+      "time": "下午2:00-下午5:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1315"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1315",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 20,
       "attachments": []
     },
     {
@@ -204,7 +221,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1279",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 20,
       "attachments": []
     },
@@ -374,7 +391,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1287",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -544,7 +561,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1284",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -714,7 +731,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1262",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -867,23 +884,6 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
       "registrationUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "115大東講堂「藝術入村-''元創眷永''在馬祖新村」",
-      "date": "2026-04-18",
-      "deadline": "2026-04-18",
-      "time": "下午2：00~5：00",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1236"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1236",
-      "registrationUrl": null,
       "page": 5,
       "credits": null,
       "attachments": []
