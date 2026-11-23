@@ -1,6 +1,6 @@
 {
   "source": "https://www.kaa.org.tw/news_class_list.php",
-  "updatedAt": "\"2026-11-23T00:01:08Z\"",
+  "updatedAt": "\"2026-11-23T08:40:16Z\"",
   "total": 50,
   "courses": [
     {
@@ -76,6 +76,23 @@
       "attachments": []
     },
     {
+      "title": "學術講座(暫定)",
+      "date": "2026-12-28",
+      "deadline": "2026-12-28",
+      "time": "下午2:00-5:00",
+      "links": [
+        {
+          "label": "細節",
+          "url": "https://www.kaa.org.tw/news_class_show.php?b=1316"
+        }
+      ],
+      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1316",
+      "registrationUrl": null,
+      "page": 1,
+      "credits": 20,
+      "attachments": []
+    },
+    {
       "title": "「機水電工程預算書圖審查及注意事項」鑑定實務講座",
       "date": "2026-12-23",
       "deadline": "2026-12-23",
@@ -144,14 +161,10 @@
         {
           "label": "細節",
           "url": "https://www.kaa.org.tw/news_class_show.php?b=1282"
-        },
-        {
-          "label": "報名",
-          "url": "https://www.kaa.org.tw/course_apply.php?b=1282&t=course"
         }
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1282",
-      "registrationUrl": "https://www.kaa.org.tw/course_apply.php?b=1282&t=course",
+      "registrationUrl": null,
       "page": 1,
       "credits": 20,
       "attachments": []
@@ -195,7 +208,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1303",
       "registrationUrl": null,
-      "page": 1,
+      "page": 2,
       "credits": 20,
       "attachments": [
         {
@@ -370,7 +383,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1269",
       "registrationUrl": null,
-      "page": 2,
+      "page": 3,
       "credits": null,
       "attachments": []
     },
@@ -540,7 +553,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1275",
       "registrationUrl": null,
-      "page": 3,
+      "page": 4,
       "credits": null,
       "attachments": []
     },
@@ -710,7 +723,7 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1253",
       "registrationUrl": null,
-      "page": 4,
+      "page": 5,
       "credits": null,
       "attachments": []
     },
@@ -863,23 +876,6 @@
       ],
       "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1261",
       "registrationUrl": null,
-      "page": 5,
-      "credits": null,
-      "attachments": []
-    },
-    {
-      "title": "(已額滿截止報名)新建建築與新建住宅能效評估實例解說",
-      "date": "2026-04-24",
-      "deadline": "2026-04-24",
-      "time": "上午9：30~12：00(9：10報到)",
-      "links": [
-        {
-          "label": "細節",
-          "url": "https://www.kaa.org.tw/news_class_show.php?b=1258"
-        }
-      ],
-      "detailUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
-      "registrationUrl": "https://www.kaa.org.tw/news_class_show.php?b=1258",
       "page": 5,
       "credits": null,
       "attachments": []
